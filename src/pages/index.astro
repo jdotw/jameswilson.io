@@ -91,7 +91,6 @@ const articlePosts = await getCollection("articles");
     {
       astroPosts.map((post) => (
         <a href={`/astro/${post.slug}`}>
-          <Debug post={post} />
           <Image
             height={500}
             width={500}
