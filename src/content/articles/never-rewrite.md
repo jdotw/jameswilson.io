@@ -1,0 +1,41 @@
+---
+author: James Wilson
+categories:
+  - Leadership
+date: "2020-06-17T15:20:29Z"
+gf_format_audio_embed:
+  - ""
+gf_format_gallery_images:
+  - ""
+gf_format_link_text:
+  - ""
+gf_format_link_url:
+  - ""
+gf_format_quote_author_text:
+  - ""
+gf_format_quote_author_url:
+  - ""
+gf_format_quote_content:
+  - ""
+gf_format_video_embed:
+  - ""
+guid: https://jameswilson.io/?p=7535
+id: 7535
+image: stock/old-and-new.jpg
+rs_page_bg_color:
+  - "#ffffff"
+slide_template:
+  - default
+title: Never Rewrite
+url: /never-rewrite/
+---
+
+Rapidly evolving paradigms, languages and technologies create in an innate desire to rewrite old code. Outside of very specific circumstances, the urge to rewrite rather than incrementally improve is an anti-pattern that slows down the pace of delivery and puts the business at risk from subtle logic lost in a rewrite. The old maxim is true; unless every single person that was involved in version 1.0 is present when you re-write to create version 2.0, then you end up with just another, different version 1.0. While incremental improvement instead of rewriting is almost always the better approach, there are ways to architect your platform and structure your teams such that a rewrite is palatable if it provides value with the risk profile sufficiently mitigated.
+
+Engineers look back on code that's been written in the past through the lens of what they know now and what technologies are prominent today. This gives rise to a desire to re-do work that's following outdated paradigms or using languages and frameworks that are no longer as popular or well supported. Software engineers are curiosity driven problem solvers. They're constantly learning in a field that continually produces new languages, new styles of writing code, and new modes for how to solve problems. It's natural then to gravitate toward wanting to re-write something rather than incrementally improve it. In theory, a re-write will provide the engineering team with the satisfaction and efficiencies of working with a newer language or environment. However, it's unlikely to provide quantifiable business benefit and more likely to overburden the team into burnout.
+
+There is ample, almost inevitable, opportunity for subtle business logic and functionality to be lost or broken in a rewrite. Even if absolute care is given to preserve and transfer all codified logic from the old system to the new, there's a persistent drift that occurs between the old system in production and the new system being built. The system in production, except in the rarest of cases, will continue to change in response to business demands. While the rewrite is still being written, it has to replicate not only what the old system was doing but also the ways in which the old system continues to evolve until it is decommissioned. That decommissioning point can seem increasingly distant due to this widening gap between the old and new. The resources required to not only rewrite but also duplicate the evolving functionality will overload the team and risk burn-out. Rewrites begin as well intended exercises to modernize a codebase with the promise of improving the efficiency, but end up consuming so much time and effort that the business, and the team, suffers.
+
+Incremental progress toward a desired end state is the antidote. Even if the end state has no remnants of the old system, arriving at that point by implementing small, isolated new code paths is a vastly better approach than a wholesale rewrite. This may be perceived as less desirable because it requires more change to the old codebase. It will prevent the team from immediately immersing themselves entirely in the desired new languages and frameworks. This is offset by allowing smaller, isolated uses of the new stack to be placed in production sooner. Rather than building the replacement system and _then_ switching over to it, the key to successfully arriving at the desired end state is this: build out as little of the new system as possible to enable production use of that newly written code as soon as possible. Rapidly moving the new code into production and being able to validate small, isolated sub-systems or features reduces the risk of lost logic and minimizes the gap between the old and new systems. One last re-write won't set the team up for success; only the adoption of an incremental approach to achieving the desired outcome will create lasting and sustainable change.
+
+Enabling greater flexibility to modernize components in the future is a byproduct of the iterative approach. Newly implemented functionality can be wrapped in a layer of abstraction that allows for stronger definition and enforcement of inter-service communication contracts. If there is strong separation of concerns, across well defined interfaces between the components, then it should be possible for each component to continue to evolve with autonomy in isolation. Structuring your engineering organization around teams are comprised of the skills required to have self-contained ownership of these components results in a degree of accountability, ownership and autonomy that will improve productivity and morale far more than a re-write ever could.

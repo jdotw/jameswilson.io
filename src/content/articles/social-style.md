@@ -1,0 +1,41 @@
+---
+author: James Wilson
+categories:
+  - Leadership
+date: "2020-05-21T10:33:58Z"
+gf_format_audio_embed:
+  - ""
+gf_format_gallery_images:
+  - ""
+gf_format_link_text:
+  - ""
+gf_format_link_url:
+  - ""
+gf_format_quote_author_text:
+  - ""
+gf_format_quote_author_url:
+  - ""
+gf_format_quote_content:
+  - ""
+gf_format_video_embed:
+  - ""
+guid: https://jameswilson.io/?p=7518
+id: 7518
+image: stock/org-game.jpg
+rs_page_bg_color:
+  - "#ffffff"
+slide_template:
+  - default
+title: Social Style
+url: /social-style/
+---
+
+[Social Style](https://tracom.com/social-style-training/model) and similar typologies give you a framework for understanding the personality archetypes that exist in the workplace. From this framework you can strengthen your ability to manage to different styles as well as how to your own style to suit a given situation. Learning about social styles raises awareness of the leadership weaknesses that are apparent in your style. Once embedded in the organization, the framework provides a way to drive separation between behaviors that are observed and the personality of individuals. The latter helps to avoid inferring intent from behaviors that you find frustrating or difficult when they are actually caused by differences in social style.
+
+The framework defines the Driver, Analytical, Expressive and Amiable social style archetypes. These form 4 quadrants; analytical in the top left, driver in the top right, expressive in the bottom right, and amiable in the bottom left. Individuals will exist somewhere on this 4-quadrant spectrum based on self assessment and peer review. Peer review is essential to resolving the bias inherent in some styles. In simplest terms, the driver is concerned with task and result, the analytical wants all the answers before they get started, the amiable will follow along but needs to know you're on their side, and the expressive will let you know exactly what they think — often as they're still working that out for themselves! Some people are extremes of a particular style; others are primarily aligned with a style but gravitate toward one of the adjacent styles. For example, I'm a total driver; however I've worked with drivers that tend to be a little more analytical than I.
+
+Learning about the archetypal social styles gives us a language to describe behaviors and characteristics that we see in ourselves and our colleagues. This language can be used to effect outward change through an understanding of how to interact with an individual based on their style. Inward-facing change occurs through taking on some of the characteristics of styles adjacent to our dominant quadrant. An individual can flex their own style, to a degree referred to as versatility, toward one of their adjacent styles, but they're very unlikely to be able to take on their polar opposite style. For me as a driver (top-right) that means I can bend to being more analytical (top-left) or expressive (bottom right), but I won't be successful in being amiable (bottom-left) because it's too out of character for my style.
+
+Personally, I found a lot of value in understanding social styles due to the leadership weaknesses that can occur if aspects of my social style are not kept in check. As a driver, I'm motivated by results and I care about the task and the outcome. Note the lack of anything remotely human in that! Understanding needs of other styles helped me to understand why I was having difficulty managing certain personality types. For example, the driver in me trusts intuition in the face of ambiguity. That's in conflict with the analytical that needs to resolve that ambiguity before moving forward. Before learning about social styles, I was too quick to assume this seemingly endless questioning stemmed from lack of trust. However, I know now that it's better framed as an unaddressed differences in our social styles. Understanding the primal tendencies of each style helps you determine how to compensate for these differing needs rather than having them become frustration points. As a driver, I have to ensure I invest the time needed to bring the other social styles up to the same level of readiness and alignment to embark on a task.
+
+The concept and language of social styles gives us an abstraction layer to talk about behaviors as a factor of style rather than an attribute of the individual. This separation is particularly useful in performance management. It's easier, and kinder, to talk to someone about how their social style is giving rise to behaviors that are preventing them from performing to the expectations of their role — as opposed to the problem being them or their personality. For the notion of social styles to be valuable in this situation, it has to be part of the corporate culture. The terms driver, expressive, amiable and analytical must be accepted and regularly used in the workplace.

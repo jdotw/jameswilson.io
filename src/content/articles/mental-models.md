@@ -1,0 +1,43 @@
+---
+author: James Wilson
+categories:
+  - Leadership
+  - Uncategorized
+date: "2020-06-02T11:51:31Z"
+excerpt:
+  "Leveraging a mental models allows us to build software that surprises and
+  delights the user by avoiding the trap of functional yet frustrating software. "
+gf_format_audio_embed:
+  - ""
+gf_format_gallery_images:
+  - ""
+gf_format_link_text:
+  - ""
+gf_format_link_url:
+  - ""
+gf_format_quote_author_text:
+  - ""
+gf_format_quote_author_url:
+  - ""
+gf_format_quote_content:
+  - ""
+gf_format_video_embed:
+  - ""
+guid: https://jameswilson.io/?p=7528
+id: 7528
+image: stock/brain-gears.jpg
+rs_page_bg_color:
+  - "#ffffff"
+slide_template:
+  - default
+title: Mental Models
+url: /mental-models/
+---
+
+Mental models describe the intentions, expectations and extenuating circumstances that are present when a person interacts with a user interface. The intentions help us understand what the user interface must make possible for the user. The expectations inform what elements must be present in order for the user to connect with the interface. The extenuating circumstances alert us to environmental factors that we can leverage, or mitigate, to influence the user experience. Rather than describing a reality, the mental model describes a filter through which the user perceives reality, determines how to act, and how they interpret the response to their actions.
+
+The mental model must be abstracted from a particular implementation or solution. It should be a construct that we can reuse to evaluate different ideas or interfaces rather than being intrinsically tied to any implementation. Consider the button in my refrigerator that stops it beeping when I've left the door open too long. In using that button, my mental model is not “I want a button to stop the alarm from beeping”. My mental model is, “When I'm doing something that requires the fridge door to remain open for a long time, I expect there to be a way to stop the annoying beeping sound”. My intent is to do something in the fridge that takes a while. My expectation is that I can stop the alarm from beeping. The extenuating circumstance is that I find the beeping to be annoying. The notion of a button to stop the alarm doesn't even factor into the mental model. In fact, I'd be much happier if there was no button! My mental model would be much better served by the fridge sensing that I was still putting away groceries and that suppressing the alarm automatically. Removing any predetermined implementation from the model allows us to use the model to drive toward a better solution.
+
+A great app does something in a way that satisfies a particular model to an iteratively increasing degree of perfection. The lens through which the user is looking when they determine whether your app is perfect for them is their mental model. Take, for example, an app that helps a user find the nearest coffee shop. That's easy to build: Get the user's location, a list of nearby coffee shops, sort by distance, done! But, the result is mediocre because it doesn't fully consider the mental model. It speaks to intent only; to get coffee. Now consider a mental model whereby the user expects to exert a preference on how far they're willing to walk for a great cup of coffee. Now you've got the beginnings of creating an app that people will love, because it caters for not just their intent but also their expectations. You could take this further with a niche mental model wherein your user only ever wants the finest coffee available, and will be glad to discover when they happen to be nearby such a coffee shop. That's the polar opposite to someone who is feeling half-awake and _needs_ a coffee now! The user experience to satisfy these two mental models would be, and should be, entirely different.
+
+The time at which sign-in, account setup, or permission dialogs are presented, and how that meshes with the users mental model, is key to the user completing these tasks and not abandoning you app. We naively assume a user will sign up before they can use an app because we know it's a functional requirement of how the app works. However, that's far removed from the users mental model. Consider our coffee app example, and a feature that gradually improves the recommendations based on learned habits of similar users. The users mental model is “I intend to get a great coffee using this app and I expect that it gets better as I use the app”. The notion of needing, let alone desiring an account does not factor into this mental model at all. You can try to explain away the need to sign in, but, I promise you, no one reads text or dialogs. Instead, you need to place this hurdle closer to the point where the user will intuitively understand the benefit they get, and away from the critical path toward satisfying their intent. Allow the user to find their coffee. When your app determines that an account would improve the _next_ recommendation, tell them about this right after you find them _this_ cup of coffee. Mental models help to avoid creating software that is technically and objectively functional, but subjectively lacks the surprise and delight that will result in continued use and recommendation of your app.

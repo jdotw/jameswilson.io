@@ -1,15 +1,120 @@
 ---
+import { getCollection, getEntryBySlug } from "astro:content";
+import { Debug } from "astro/components";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import type { date } from "astro/zod";
+import { Image } from "@astrojs/image/components";
+
+// Get all entries from a collection. Requires the name of the collection as an argument.
+const astroPosts = await getCollection("astro");
+const articlePosts = await getCollection("articles");
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Hey">
+  <div class="bg-black text-white">
+    <!-- Hero -->
+    <div class="flex flex-row justify-between">
+      <div>Title</div>
+      <div>Article Card</div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3">
+      <div class="ring-1">Video 1</div>
+      <div class="ring-1">Video 2</div>
+      <div class="ring-1">Video 3</div>
+    </div>
+  </div>
+
+  <div class="bg-gray-700">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div><h2>Title</h2><h3>Subtitle</h3><p>Text</p></div>
+      <div>
+        <div class="grid grid-cols-2 md:grid-cols-3">
+          <div class="ring-1">
+            <img src="http://localhost" alt="employer" />
+            <p>Employer</p>
+          </div>
+          <div class="ring-1">
+            <img src="http://localhost" alt="employer" />
+            <p>Employer</p>
+          </div>
+          <div class="ring-1">
+            <img src="http://localhost" alt="employer" />
+            <p>Employer</p>
+          </div>
+          <div class="ring-1">
+            <img src="http://localhost" alt="employer" />
+            <p>Employer</p>
+          </div>
+          <div class="ring-1">
+            <img src="http://localhost" alt="employer" />
+            <p>Employer</p>
+          </div>
+          <div class="ring-1">
+            <img src="http://localhost" alt="employer" />
+            <p>Employer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div>Article Hero</div>
+    <div class="grid grid-cols-1 md:grid-cols-3">
+      <div>Article Card 1</div>
+      <div>Article Card 2</div>
+      <div>Article Card 3</div>
+      <div class="hidden md:block">Article Card 4</div>
+      <div class="hidden md:block">Article Card 5</div>
+      <div class="hidden md:block">Article Card 6</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Astrophotography</h2>
+    {
+      astroPosts.map((post) => (
+        <a href={`/astro/${post.slug}`}>
+          <Debug post={post} />
+          <Image
+            height={500}
+            width={500}
+            src={`/${post.data.image}`}
+            alt={post.data.title}
+            format="jpg"
+          />
+        </a>
+      ))
+    }
+  </div>
+
+  <div>
+    {
+      articlePosts.map((post) => (
+        <li>
+          <a href={`/articles/${post.slug}`}>{post.data.title}</a>
+          <time datetime={post.data.date.toISOString()}>
+            {post.data.date.toDateString()}
+          </time>
+        </li>
+      ))
+    }
+  </div>
+
+  <h1 class="bg-red-500">Yo Eleventy</h1>
+  <p class="text-red-900">This site rocks.</p>
+
+  <h2 class="bg-yellow-200">Articles</h2>
+  <ul>
+    <!-- {% for post in collections.article %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {% endfor %} -->
+  </ul>
+
+  <h2 class="text-purple-800">Astrophotos</h2>
+  <ul class="bg-slate-500">
+    <!-- {% for post in collections.astro %}
+      <li class="ring-2"><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {% endfor %} -->
+  </ul>
+</BaseLayout>

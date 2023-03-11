@@ -1,0 +1,61 @@
+---
+author: James Wilson
+categories:
+  - Leadership
+date: "2020-05-25T11:07:10Z"
+gf_format_audio_embed:
+  - ""
+gf_format_gallery_images:
+  - ""
+gf_format_link_text:
+  - ""
+gf_format_link_url:
+  - ""
+gf_format_quote_author_text:
+  - ""
+gf_format_quote_author_url:
+  - ""
+gf_format_quote_content:
+  - ""
+gf_format_video_embed:
+  - ""
+guid: https://jameswilson.io/?p=7522
+id: 7522
+image: stock/hands-meeting.jpg
+rs_page_bg_color:
+  - "#ffffff"
+slide_template:
+  - default
+title: Difficult Conversations
+url: /difficult-conversations/
+---
+
+We make difficult conversations unnecessarily worse for all parties by delaying, procrastinating and ruminating. Don't delay, but do prepare enough so that you can confidently own the message you're conveying. Remember that everyone in the room is human, and after the meeting follow up to ensure clarity and progress toward the outcome you seek. If handled well, trust will be forged between both parties.
+
+## Preparation
+
+[Crucial Conversations](https://www.amazon.com/Crucial-Conversations-Talking-Stakes-Edition/dp/0071771328) teaches us that the health of an organization can be measured by the time that elapses between an issue being identified and it being discussed. The shorter that time period, the healthier the organization due to the lack of pathology that flourishes in delay. There may be legitimate reasons to delay a conversation, but I posit that procrastination is the leading cause and the least legitimate of all. Procrastination is delay without purpose. It gives rise to rumination and over-rehearsing the conversation in our mind. That's unhealthy for the conversation that's going to happen anyway because we enter it with a tainted, self-realizing negative idea of what the outcome will be.
+
+Wherever possible, try to have the conversation on the same day that clarity is reached as to the message to be delivered. It's exceedingly rare for the other party not to have some inkling or intuition that this conversation is coming. Thus the delay is damaging for both parties. The receiver of the message likely to also be experiencing stress caused by anticipation and uncertainty. The same rumination and mental pre-determination of the outcome can happen in the person you're intending to have this conversation with. Until the conversation is had, keep the mental screenplay to a minimum. [Pema Chödrön](https://en.wikipedia.org/wiki/Pema_Chödrön) has a beautiful way to deal with this in her book ‘[When Things Fall Apart](https://www.amazon.com/When-Things-Fall-Apart-Difficult/dp/1611803438)'. When you find yourself going through the scenario in your mind, steal yourself away in that moment and realize it's “_just thinking_”. It's just an imagined version, often an overly negative one, of how the conversation might go.
+
+Don't delay, but do prepare. Going into the conversation unprepared, or worse under a self-excusing guise of transparency or urgency is unfair to the other party (and a sure way to embarrass yourself). If this message is going to affect the other person, you owe it to them to deliver with clarity, conviction, and empathy. Take the time to ensure you can confidently own the message you're delivering by being deliberate in the language choices used to convey the core of the message. That's typically two or three key sentences. Find what those are, and write them down. Remove any weak language and make it clear that ownership of the message rests clearly with you. Speak in terms of “I have decided”, not “we have decided”. Regardless of consensus, in that room it's you delivering the message and you must own it. Leave no doubt as to the conviction of what you're conveying. Don't speaking in terms of “I think…”, “I guess…”, “I suppose…”. That gives rise to doubt as to the strength of thought that has gone into the message being delivered.
+
+Depending on the occasion, you may be tempted to take a written form of communication with you to the meeting. I advise against this unless required by policy. Taking in a written communication will make that the focus, and that will weaken the essential human connection between both parties. There's also something to be said for the flexibility of not having anything written on paper until after discussing the issue verbally! You never know what additional information you may uncover in the meeting itself.
+
+## In The Room
+
+Frame the message you're delivering in a way that separates the individual from the problem. To be successful in delivering the message in a way that builds trust and respect is to avoid criticism of the individual. Focusing on the actions and result induces a guilt response that the receiver can leverage to positively change their behavior. Conversely if the message is focussed on the individual it will invoke shame that will cause the individual to disengage and withdraw from the issue ([Dr Brene Brown](https://brenebrown.com) has done incredible research on this). The problem it not them, the problem is what they did or how they did it. Describe what you've observed in terms of actions, avoiding any insinuation of intent. As [John Perry Barlow](https://www.mail-archive.com/silklist@lists.hserus.net/msg08034.html) taught us, “Never assume the motives of others are, to them, less noble than yours are to you”. Explain the outcome that these actions create and why that's a problem for you. Again, own the message. It's a problem to you — not the company, not the team, not the boss — _you_!
+
+Start with a Vulnerable Diversion: offer up something in the opening moments of the conversation that makes you real. A story from the weekend, something amusing that happened today, a thought that's been on your mind. During the conversation, adopt a stance of de-escalation at any cost — except backing down from the key message. If the discussion becomes heated, then always apply this filter to any response that comes to mind: does it need to be said, is it true, and is it kind? If all three are not met, then it's better left unsaid. Delivering a conversation that has the potential to become heated is an opportunity to leverage self-awareness. When the other party become agitated, any sort of verbal tick, subconscious physical fidget or other stress induced behavior on your part can become a source of irritation for them. Becoming more aware of these unconscious actions, and learning to quell them in moments of stress is the self-mastery that allows an experienced leader to appear calm at all times. Record yourself giving a presentation on a topic, that will give you an insight into the subconscious things we do when we're uncomfortable.
+
+If you find yourself on the receiving end of a difficult conversation, bias for listening and receiving the message in the room so that you can process it on your own outside of the room, and then act accordingly. Going straight to action will likely lead to a response you'll regret. If you feel that you can calmly engage in a conversation about the matter being discussed, then leverage the [Agree, Build and Compare](/posts/agree-build-compare/) framework. Agree and Build upon points that ring true to establish common ground, and then compare your view to what you're interpreting from the other party when you disagree. Never say you disagree, and avoid getting dug into a defensive posture that leaves you no where to go. In most cases however, it's better to listen in this meeting, and hold the conversation for a follow up. This way you will have processed the message, and the other party will be experiencing less stress having already delivered the difficult message.
+
+What you're being told is someones interpretation of reality, and the course of action they've decided to take. Unpack the situation and be mindful of the dimensions that exist. The first two dimensions to separate is agreeing with the assessment being presented to you versus reconciling the impact of the course of action being outlined. Consider what is objective fact, and what is subjective or opinion in what you're hearing. The persons perception of reality is intrinsically their own and you're unlikely to change it. It's the action being described that has material impact on you. Therefore it is prudent to focus on understanding the action rather than arguing the perceptions that lead to this point. Avoid imagining and believing the worst possible outcome from this news is going to come to fruition.
+
+## Follow Up
+
+When both parties leave the room, the chance to draw a positive outcome from this conversation begins. For the person delivering the message, it is crucial that you follow up immediately with written notes about the key points of the discussion and the next steps. The moment the receiver walks out of the room, the adrenalin and sense of shock from hearing the message will begin to morph into a series of other emotions as they process the news. As this transformation occurs, elements of the message will become amplified to the point of distortion. A subtle nuance that you may not have even intended could become a focal point for them. Getting an objective and concise set of notes to the receiver immediately will reinforce your message, and give them an immutable account of the meeting to compare with their mutable memory. If there are follow up items, deliver on them with clockwork precision. You're on trial now in their eyes, and any perceived failure in doing what you said, when you said, will weaken your credibility and undermine the strength of the message.
+
+For the receiver, depending on how surprised or aggrieved you are, you may feel compelled to seek comfort in the discussing what's just happened with friends and colleagues. There's a stark difference between seeking to confirm your righteous indignation through the agreement of others, and processing what you've been told by seeking advice from a trusted confidant. The former is gossip, the latter is productive. No matter what role you play in the organization, there's always someone looking to you as a peer, looking up to you as a role model, and looking down to you as a subordinate. Whenever we think we get away with a snide comment or a throw-away remark, we never in fact get away with it — especially when said as a pressure relief following a difficult conversation. Those people looking toward, up, and down to you take notice.
+
+If the message is delivered clearly, with empathy and a thoughtful follow up, then what happens next is a paradoxical increase in trust between the two parties. Paradoxical because you wouldn't necessarily expect that delivering a difficult message would be a trust building exercise. It can be, and this should be an underlying goal second only to resolving the issue at hand. The process will make the receiver inherently vulnerable, and if that's matched by the person delivering the message then a genuine connection is formed. The person delivering the message will deeply appreciate the receiver listening and taking on board the message; and the receiver will, in time, appreciate that they're being given a chance to resolve a problem that has been brought to their attention.
