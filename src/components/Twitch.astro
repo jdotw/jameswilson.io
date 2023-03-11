@@ -1,0 +1,11 @@
+---
+import InlineVideo from "./InlineVideo.astro";
+
+const { channel } = Astro.props;
+---
+
+<InlineVideo
+  src={`https://player.twitch.tv/?channel=${channel}&parent=${
+    import.meta.env.PROD ? "jameswilson.io" : "localhost"
+  }&autoplay=true&muted=true`}
+/>

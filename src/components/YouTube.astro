@@ -1,0 +1,10 @@
+---
+import InlineVideo from "./InlineVideo.astro";
+
+const { embed } = Astro.props;
+---
+
+<InlineVideo
+  src={`https://www.youtube.com/embed/${embed}`}
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+/>

@@ -4,6 +4,11 @@ import { Debug } from "astro/components";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import type { date } from "astro/zod";
 import { Image } from "@astrojs/image/components";
+import ArticleCard from "../components/ArticleCard.astro";
+import Twitch from "../components/Twitch.astro";
+import YouTube from "../components/YouTube.astro";
+import PagePreview from "../components/PagePreview.astro";
+import IconGrid from "../components/IconGrid.astro";
 
 // Get all entries from a collection. Requires the name of the collection as an argument.
 const astroPosts = await getCollection("astro");
@@ -13,50 +18,61 @@ const articlePosts = await getCollection("articles");
 <BaseLayout title="Hey">
   <div class="bg-black text-white">
     <!-- Hero -->
-    <div class="flex flex-row justify-between">
-      <div>Title</div>
-      <div>Article Card</div>
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex flex-col py-20">
+        <h1 class="text-2xl font-bold text-center md:text-left">
+          James Wilson
+        </h1>
+        <h2 class="text-l text-center md:text-left">
+          Engineer. Leader.<br />Astrophotographer. Musician.
+        </h2>
+      </div>
+      <div class="w-48 hidden md:block"><ArticleCard /></div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3">
-      <div class="ring-1">Video 1</div>
-      <div class="ring-1">Video 2</div>
-      <div class="ring-1">Video 3</div>
-    </div>
-  </div>
-
-  <div class="bg-gray-700">
-    <div class="flex flex-col md:flex-row justify-between">
-      <div><h2>Title</h2><h3>Subtitle</h3><p>Text</p></div>
-      <div>
-        <div class="grid grid-cols-2 md:grid-cols-3">
-          <div class="ring-1">
-            <img src="http://localhost" alt="employer" />
-            <p>Employer</p>
-          </div>
-          <div class="ring-1">
-            <img src="http://localhost" alt="employer" />
-            <p>Employer</p>
-          </div>
-          <div class="ring-1">
-            <img src="http://localhost" alt="employer" />
-            <p>Employer</p>
-          </div>
-          <div class="ring-1">
-            <img src="http://localhost" alt="employer" />
-            <p>Employer</p>
-          </div>
-          <div class="ring-1">
-            <img src="http://localhost" alt="employer" />
-            <p>Employer</p>
-          </div>
-          <div class="ring-1">
-            <img src="http://localhost" alt="employer" />
-            <p>Employer</p>
-          </div>
-        </div>
+      <div class="col-span-1"><Twitch channel="jdotw" /></div>
+      <div class="col-span-1">
+        <YouTube embed="-ROZuPlJWFo?list=UUuNEUzvXLwaMn51uUsB0ILQ" />
+      </div>
+      <div class="col-span-1">
+        <YouTube embed="o83GysKTvO0?list=PL3kd2QrOG8tDcczjFb-Qwg2sSr_8w1vfP" />
       </div>
     </div>
+    <div class="w-100 block md:hidden"><ArticleCard /></div>
   </div>
+
+  <PagePreview
+    page="engineer"
+    title="Software Engineer"
+    subtitle="C, Swift, Javascript - iOS, macOS, Linux, Web"
+    text="I've been writing software for over 20 years and thoroughly enjoy coding professionally and as a hobby. At Apple I worked extensively with C and Objective-C, and have since picked up Swift for iOS, macOS, watchOS and tvOS development. I've used JavaScript for front-end with React and React Native, and Node.js backend work. More recently I've been using Go for micro services development."
+  >
+    <IconGrid
+      icons={[
+        {
+          image: "/employers/wow-76.png",
+          title: "Chief Digital Technolgoy Officer",
+        },
+        {
+          image: "/employers/apple-76-white.png",
+          title: "Senior Engineering Manager",
+        },
+        {
+          image: "/employers/aws-76-white.png",
+          title: "Senior Engineering Manager",
+        },
+        {
+          image: "/employers/cba-76-color.png",
+          title: "Distinguished Engineer",
+        },
+        {
+          image: "/employers/cisco-76-color.png",
+          title: "Customer Support Engineer",
+        },
+        { image: "/employers/lithium-76-color.png", title: "Founder, Lithium" },
+      ]}
+    />
+  </PagePreview>
 
   <div>
     <div>Article Hero</div>
