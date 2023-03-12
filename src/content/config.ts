@@ -2,6 +2,7 @@ import { image, z, defineCollection } from "astro:content";
 const articlesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
+    subtitle: z.string().optional(),
     tags: z.array(z.string()).default(["article"]),
     image: z.string(),
     //image: image().refine((img) => img.width >= 1080, {

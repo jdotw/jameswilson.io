@@ -1,0 +1,33 @@
+---
+import { Image } from "@astrojs/image/components";
+
+type Props = {
+  title: string;
+  subtitle: string;
+  icons: Array<string>;
+  styles?: string;
+  dark?: boolean;
+};
+const { title, subtitle, icons, styles, dark } = Astro.props;
+---
+
+<div
+  class={`flex flex-col md:flex-row ${
+    dark ? "bg-black text-white" : ""
+  } ${styles}`}
+>
+  <div class="flex flex-col w-full md:w-1/5">
+    <div>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
+    </div>
+    {
+      icons.map((icon) => (
+        <Image alt={title} src={icon} width={150} height={150} format="png" />
+      ))
+    }
+  </div>
+  <div class="flex w-full md:w-4/5">
+    <slot />
+  </div>
+</div>
