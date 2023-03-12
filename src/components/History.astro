@@ -3,12 +3,13 @@ import { Image } from "@astrojs/image/components";
 
 type Props = {
   title: string;
-  subtitle: string;
-  icons: Array<string>;
+  subtitle?: string;
+  icons?: Array<string>;
   styles?: string;
   dark?: boolean;
+  timeline?: boolean;
 };
-const { title, subtitle, icons, styles, dark } = Astro.props;
+const { title, subtitle, icons = [], styles, dark, timeline } = Astro.props;
 ---
 
 <div
@@ -17,15 +18,24 @@ const { title, subtitle, icons, styles, dark } = Astro.props;
   } ${styles}`}
 >
   <div class="flex flex-col w-full md:w-1/5">
-    <div>
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
+    <div class="">
+      <h1 class="text-center">{title}</h1>
+      {subtitle && <h2 class="text-center">{subtitle}</h2>}
     </div>
-    {
-      icons.map((icon) => (
-        <Image alt={title} src={icon} width={150} height={150} format="png" />
-      ))
-    }
+    <div class="flex flex-col items-center flex-grow">
+      {
+        icons.map((icon) => (
+          <Image alt={title} src={icon} width={150} height={150} format="png" />
+        ))
+      }
+      {
+        timeline && (
+          <div class="flex justify-center h-full py-5">
+            <div class="w-px h-full bg-neutral-400" />
+          </div>
+        )
+      }
+    </div>
   </div>
   <div class="flex w-full md:w-4/5">
     <slot />

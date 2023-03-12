@@ -1,0 +1,56 @@
+---
+import { Image } from "@astrojs/image/components";
+import Twitch from "./Twitch.astro";
+import YouTube from "./YouTube.astro";
+interface Props {
+  title: string;
+  subtitle?: string;
+  images?: { title: string; src: string }[];
+  featureType: "image" | "youtube" | "twitch";
+  featureSrc: string;
+}
+const { title, subtitle, images, featureType, featureSrc } = Astro.props;
+---
+
+<div class="flex flex-col">
+  <div class="flex flex-col md:flex-row">
+    <div class="w-full md:w-2/5">
+      <div>
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+      </div>
+      <div>
+        {
+          featureType === "image" && (
+            <Image
+              src={featureSrc}
+              width={600}
+              height={615}
+              alt={title}
+              format="png"
+            />
+          )
+        }
+        {featureType === "youtube" && <YouTube embed={featureSrc} />}
+        {featureType === "twitch" && <Twitch channel={featureSrc} />}
+      </div>
+    </div>
+    <div class="w-full md:w-3/5">
+      <slot />
+    </div>
+  </div>
+  <div class="flex flex-row justify-center">
+    {
+      images &&
+        images.map((image) => (
+          <Image
+            src={image.src}
+            width={200}
+            height={170}
+            format="png"
+            alt={image.title}
+          />
+        ))
+    }
+  </div>
+</div>

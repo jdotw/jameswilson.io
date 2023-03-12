@@ -3,6 +3,7 @@ interface Props {
   icons: {
     image: string;
     title: string;
+    text?: string;
   }[];
 }
 const { icons } = Astro.props;
@@ -16,6 +17,9 @@ const { icons } = Astro.props;
           <img src={icon.image} alt={icon.title} />
         </div>
         <p class="text-center text-xs">{icon.title}</p>
+        {icon.text && (
+          <p class="text-center text-xs text-gray-500">{icon.text}</p>
+        )}
       </div>
     ))
   }

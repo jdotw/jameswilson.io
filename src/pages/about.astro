@@ -1,0 +1,181 @@
+---
+import IconGrid from "../components/IconGrid.astro";
+import History from "../components/History.astro";
+import { Image } from "@astrojs/image/components";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Articles from "../components/Articles.astro";
+import AstroPhotos from "../components/AstroPhotos.astro";
+---
+
+<BaseLayout title="About">
+  <div>
+    <div class="flex flex-col md:flex-row">
+      <Image
+        src="/about/headshot.jpg"
+        width={455}
+        height={455}
+        format="png"
+        alt="Photo of James"
+      />
+      <div>
+        <h1>Who I Am</h1>
+        <p>
+          I'm an executive leader with 20 years of experience in Software and
+          Network Engineering spanning Australia and the US. As Chief Engineer
+          at x15ventures in Sydney, I built the engineering team that builds and
+          scales the ventures. Promoted to Distinguished Engineer, Retail
+          Banking Services, I defined the group Cloud Native and API Strategy to
+          drive the transformation toward a micro services cloud architecture
+          for CBA Group. At Apple, in Cupertino, I was responsible for the
+          engineering teams that developed the Mail, Contacts, Calendar,
+          Reminders and Settings apps, the out-of-box device setup experience,
+          and the iCloud Data Protection frameworks. I spent time at Amazon Web
+          Services in Seattle and Ireland working on applying machine learning
+          to network monitoring and anomaly detection at a massive, global
+          scale. Outside of work I'm a father, an astrophotographer, musician
+          and maker.
+        </p>
+      </div>
+    </div>
+    <History title="What I Do">
+      <div>
+        <Image
+          src="/about/pointing.jpg"
+          width={698}
+          height={262}
+          alt="Pointing at a screen"
+          format="png"
+        />
+        <p>
+          I lead teams to solve complex problems and achieve impactful outcomes
+          by being an integrated part of the problem solving process and the
+          development of talent within teams. I pride myself on staying active
+          as a coder and technical contributor either on the job or through side
+          projects to keep my skills sharp and knowledge relevant. When leading
+          engineers in an executive capacity, my role is to bridge between what
+          the business wants and what the engineering team can deliver. Crucial
+          to building trust and confidence within the team is being able to talk
+          their language, understand the complexities in their work, and to
+          enjoy the pursuit of excellence through software engineering.
+        </p>
+        <p>
+          I’m a driver by nature and have learned how to modulate my management
+          approach to suit the individuals that I’m working with and their own
+          style, capabilities, and confidence level. I don’t have a prescribed
+          management style, but instead strive to build learning organizations
+          through leveraging a shared self, organizational and situational
+          awareness. Each team is different, every person an individual, and
+          each challenge we face will require a different approach. The most
+          creative and innovative solutions require us to leverage experience
+          and embrace ambiguity.
+        </p>
+      </div>
+    </History>
+    <History title="Where I've Worked">
+      <div>
+        <Image
+          src="/about/wwdc.png"
+          width={698}
+          height={262}
+          alt="On stage at Apples WWDC"
+          format="png"
+        />
+        <IconGrid
+          icons={[
+            {
+              image: "/employers/cba-76-color.png",
+              title: "Distinguished Engineer",
+              text: "Building great digital experiences and leading the market requires an API layer that consistently and intuitively exposes the underlying capabilities and data that powers the organisations products and systems. In my role as Distinguished Engineer at CBA Retail Banking Service I defined the group’s Cloud Native and API strategy; a North Star for how to evolve the complex banking landscape toward an increasingly technology and software driven organization.",
+            },
+            {
+              image: "/employers/apple-76-black.png",
+              title: "Snr. Eng. Manager",
+              text: "Remained a hands-on contributor of code while leading an organization of 50 engineers. Delivered many sessions at WWDC and worked on the initial version of Apple Pay, App Store and Software Update. As a Senior Manager in iOS, managed the Mail, Contacts, Calendar, Reminders, Settings and Setup Assistant (out of box experience) apps as well as the frameworks for Accounts, Authentication and Mobile Device Management. Directly responsible for the design and implementation of iCloud Family Sharing, Two Factor Authentication for Apple ID, and iCloud Data Protection.",
+            },
+            {
+              image: "/employers/aws-76-color.png",
+              title: "Snr. Eng. Manager",
+              text: "Lead a global organization of 50 software engineers, system engineers, and data scientists to build, deploy and maintain the software that monitors the global Amazon Web Service (AWS) network. Lead a fundamental shift from threshold based monitoring to machine learning applications to detect anomalies at a massive scale with teams in San Jose, Denver, Seattle and Dublin, Ireland.",
+            },
+            {
+              image: "/employers/x15-76-color.png",
+              title: "Chief Engineer",
+              text: "As the first Chief Engineer at x15ventures, I built up the engineering team that delivered the first few in-house built ventures. x15ventures is CBA group’s startup builder and scaler subsidiary. Our mission was to show that a high quality product can be built in much less time by using modern tools, languages and workplace environments; and to then translate these lessons back into the bank to improve software engineering across the group.",
+            },
+            {
+              image: "/employers/cisco-76-color.png",
+              title: "CSE-3",
+              text: "Started at Cisco straight out of high school in a logistics support coordinator role. Spent nights and weekends in the lab learning everything I could about Cisco’s hardware and Software. Became one of the youngest ever Cisco Certified Internetworking Experts within a year. As a Customer Support Engineer, remotely troubleshot, and resolved problems for Cisco customers.",
+            },
+          ]}
+        />
+      </div>
+    </History>
+    <History title="The Value I Add">
+      <div>
+        <Image
+          src="/about/talking.jpg"
+          width={698}
+          height={262}
+          alt="Talking to colleagues"
+          format="png"
+        />
+        <div>
+          <h1>Technical Leadership</h1>
+          <p>
+            I help organizations make technology choices that are aligned with
+            their vision and realize growth potential. I’ve learnt to develop
+            frameworks for decision making practices that empower individuals
+            and teams to arrive at sound technology choices through
+            accountability and autonomy. I can lead an organization through the
+            key milestones of their growth from delivering an minimum viable
+            product, to readying that product for broad market penetration, to
+            scaling up the workforce and infrastructure to support growth, and
+            the continued evolution and reinvention of a product or service. I’m
+            experienced in enacting architectural shifts to divest non-core
+            activities and increase efficiencies, and I’ve worked extensively
+            with teams to plot a course through transforming and modernizing
+            their front-end, native app and back-end code bases and
+            infrastructure.
+          </p>
+        </div>
+        <div>
+          <h1>People Management</h1><p>
+            I can increase the delivery capabilities of an engineering
+            organization through hiring, talent development, organizational
+            restructuring and performance management. Building trust between
+            managers and reports, establishing open dialogs for feedback, and
+            instilling a culture of sincere appreciation and recognition enables
+            a company to emerge stronger from any challenge. I believe strongly
+            in the practice of situational leadership with appreciation for the
+            different social styles present in a workforce. I am able to
+            modulate the level of directive vs. supportive input I provide to
+            match the capabilities vs confidence of a team or an individual.
+            I’ve created, restructured and grown teams in the US, EMEA and APAC
+            markets and am sensitive to the cultural strengths and opportunities
+            to build diversity in thought through global expansion.
+          </p>
+        </div>
+        <div>
+          <h1>Problem Solving</h1><p>
+            I can be hands-on when a team needs deep technical guidance, or
+            hands-off when a team can arrive at the solution but needs
+            organizational help realizing that outcome. I remain an active
+            software developer and code regularly in Swift, Objective-C,
+            JavaScript with NodeJS or React, and C. Keeping my coding skills
+            sharp allows me to dive deep into solving an architectural problem
+            at a whiteboard, or a code-level problem with an engineer. Paramount
+            to my ability to be successful in any role is being the bridge
+            between the technical language and concepts of an engineering
+            organization, and the many other functions within the organization.
+            I achieve this through articulating concepts and outcomes in a way
+            that resonates with my audience by first understanding their
+            concerns, motivating factors and mental model of the problem or
+            situation.
+          </p>
+        </div>
+      </div>
+    </History>
+    <Articles />
+  </div>
+</BaseLayout>

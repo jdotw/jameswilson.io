@@ -9,13 +9,8 @@ import Twitch from "../components/Twitch.astro";
 import YouTube from "../components/YouTube.astro";
 import PagePreview from "../components/PagePreview.astro";
 import IconGrid from "../components/IconGrid.astro";
-
-// Get all entries from a collection. Requires the name of the collection as an argument.
-const astroPosts = await getCollection("astro");
-const articlePosts = (await getCollection("articles")).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
-);
-const latestPost = articlePosts[0];
+import Articles from "../components/Articles.astro";
+import AstroPhotos from "../components/AstroPhotos.astro";
 ---
 
 <BaseLayout title="Hey">
@@ -91,40 +86,8 @@ const latestPost = articlePosts[0];
       format="png"
     />
   </PagePreview>
-  <div>
-    <div class="flex flex-col md:flex-row items-center">
-      <div class="flex flex-col md:flex-grow">
-        <h1>{latestPost.data.title}</h1>
-        {latestPost.data.subtitle && <h2>{latestPost.data.subtitle}</h2>}
-      </div>
-      <Image
-        src={`/${latestPost.data.image}`}
-        alt={latestPost.data.title}
-        width={500}
-        height={300}
-        format="png"
-      />
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols-3">
-      {
-        articlePosts.slice(1).map((post) => (
-          <div class="flex flex-col items-center">
-            <div class="flex flex-col md:flex-grow">
-              <h1>{post.data.title}</h1>
-              {post.data.subtitle && <h2>{post.data.subtitle}</h2>}
-            </div>
-            <Image
-              src={`/${post.data.image}`}
-              alt={post.data.title}
-              width={200}
-              height={100}
-              format="png"
-            />
-          </div>
-        ))
-      }
-    </div>
-  </div>
+
+  <Articles />
 
   <PagePreview
     page="maker"
@@ -164,37 +127,7 @@ const latestPost = articlePosts[0];
     </div>
   </PagePreview>
 
-  <div>
-    <h1>Astrophotography</h1>
-    <h2>Deep Sky Objects: Nebula and Galaxies</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
-      {
-        astroPosts.map((post) => (
-          <div>
-            <h2>{post.data.title}</h2>
-            <a href={`/astro/${post.slug}`}>
-              <Image
-                class="rounded-md"
-                height={500}
-                width={500}
-                src={`/${post.data.image}`}
-                alt={post.data.title}
-                format="jpg"
-              />
-            </a>
-          </div>
-        ))
-      }
-    </div>
-    <p>
-      Astrophotography is using a telescope and a specialized camera to take
-      extremely exposure photos of distant, deep sky objects like nebula and
-      galaxies that are millions of light years away. It's like looking back in
-      time. The images seen here are a glimpse of how a remote part of our
-      universe looked millions of years ago. All images seen here were captured
-      in either San Jose, California or Sydney, Australia from 2015 onward.
-    </p>
-  </div>
+  <AstroPhotos />
 
   <PagePreview
     page="music"
