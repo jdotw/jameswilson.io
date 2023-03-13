@@ -28,6 +28,7 @@ slide_template:
   - default
 title: Getting Started With Confidence
 url: /getting-started-with-confidence/
+excerpt: "Getting started as a software developer requires some research before you can do much, but learning through solving problems will help you become productive and proficient faster. Beginners and experts alike need to absorb the basic principals and tooling of a new framework or language before using it. The depths to which you can research any technology is limitless. Therefore it is important to balance the acquisition of knowledge with practical application of what you're learning."
 ---
 
 Getting started as a software developer requires some research before you can do much, but learning through solving problems will help you become productive and proficient faster. Beginners and experts alike need to absorb the basic principals and tooling of a new framework or language before using it. The depths to which you can research any technology is limitless. Therefore it is important to balance the acquisition of knowledge with practical application of what you're learning. Learning what's needed to solve a particular problem, as you solve the problem itself, transforms that newly acquired knowledge into capabilities and confidence. Identifying problems and seeking to learn just-enough to solve them provides the focus to avoid endless learning without actually getting started. With each solution comes the confidence from realizing that you, the learner, can achieve outcomes with the new capabilities that you've acquired.

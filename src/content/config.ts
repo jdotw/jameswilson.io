@@ -5,6 +5,7 @@ const articlesCollection = defineCollection({
     subtitle: z.string().optional(),
     tags: z.array(z.string()).default(["article"]),
     image: z.string(),
+    excerpt: z.string().optional(),
     //image: image().refine((img) => img.width >= 1080, {
     //  message: "Article image must be at least 1080 pixels wide!",
     //}),

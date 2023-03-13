@@ -11,6 +11,11 @@ import PagePreview from "../components/PagePreview.astro";
 import IconGrid from "../components/IconGrid.astro";
 import Articles from "../components/Articles.astro";
 import AstroPhotos from "../components/AstroPhotos.astro";
+
+const articlePosts = (await getCollection("articles")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+const latestPost = articlePosts[0];
 ---
 
 <BaseLayout title="Hey">
@@ -25,7 +30,9 @@ import AstroPhotos from "../components/AstroPhotos.astro";
           Engineer. Leader.<br />Astrophotographer. Musician.
         </h2>
       </div>
-      <div class="w-48 hidden md:block"><ArticleCard /></div>
+      <div class="w-48 hidden md:block">
+        <ArticleCard article={latestPost} />
+      </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3">
       <div class="col-span-1"><Twitch channel="jdotw" /></div>
@@ -36,7 +43,9 @@ import AstroPhotos from "../components/AstroPhotos.astro";
         <YouTube embed="o83GysKTvO0?list=PL3kd2QrOG8tDcczjFb-Qwg2sSr_8w1vfP" />
       </div>
     </div>
-    <div class="w-100 block md:hidden"><ArticleCard /></div>
+    <div class="w-100 block md:hidden">
+      <ArticleCard article={latestPost} />
+    </div>
   </div>
 
   <PagePreview
@@ -67,7 +76,10 @@ import AstroPhotos from "../components/AstroPhotos.astro";
           image: "/employers/cisco-76-color.png",
           title: "Customer Support Engineer",
         },
-        { image: "/employers/lithium-76-color.png", title: "Founder, Lithium" },
+        {
+          image: "/employers/lithium-76-color.png",
+          title: "Founder, Lithium",
+        },
       ]}
     />
   </PagePreview>
