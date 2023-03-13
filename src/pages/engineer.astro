@@ -5,7 +5,7 @@ import { Image } from "@astrojs/image/components";
 import PageLayout from "../layouts/PageLayout.astro";
 ---
 
-<PageLayout title="Engineer" background="/backgrounds/xcode.jpg">
+<PageLayout title="Engineer" background={`bg-[url("/backgrounds/xcode.jpg")]`}>
   <div>
     <p>
       I write software to solve problems. Whether that's in a corporate
