@@ -19,18 +19,24 @@ const latestPost = articlePosts[0];
 ---
 
 <BaseLayout title="Hey">
-  <div class="bg-black text-white">
+  <div class="bg-[#c4c4c4] text-black">
     <!-- Hero -->
-    <div class="flex flex-col md:flex-row justify-between items-center">
+    <div
+      class="flex flex-col md:flex-row justify-end items-center bg-[url('/about/headshot-wide.png')] bg-cover bg-no-repeat bg-center"
+    >
       <div class="flex flex-col py-20">
-        <h1 class="text-2xl font-bold text-center md:text-left">
+        <h1 class="text-2xl font-bold text-center md:text-right">
           James Wilson
         </h1>
-        <h2 class="text-l text-center md:text-left">
-          Engineer. Leader.<br />Astrophotographer. Musician.
+        <h2 class="text-l text-center md:text-right text-3xl">
+          <a href="/engineer" class="underline">Engineer</a>.<br /><a
+            href="/leader"
+            class="underline">Leader</a
+          >.<br /><a href="/astro" class="underline">Astrophotographer</a><br
+          /><a href="/music" class="underline">Musician</a>.
         </h2>
       </div>
-      <div class="w-48 hidden md:block">
+      <div class="w-56 hidden md:block">
         <ArticleCard article={latestPost} />
       </div>
     </div>
