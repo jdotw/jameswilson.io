@@ -12,10 +12,12 @@ const latestPost = articlePosts[0];
 
 <div class="">
   <h2 class="heading-2">Articles</h2>
-  <div class="hidden md:flex items-center mt-5">
+  <div
+    class="hidden md:flex items-center mt-5 md:flex-col justify-between rounded-lg bg-white p-3 mb-3"
+  >
     <ArticlePreview article={latestPost} />
   </div>
-  <div class="grid grid-cols-2 md:grid-cols-3">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
     {articlePosts.slice(1).map((post) => <ArticleCard article={post} />)}
   </div>
 </div>
