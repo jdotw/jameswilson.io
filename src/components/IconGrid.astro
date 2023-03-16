@@ -9,17 +9,15 @@ interface Props {
 const { icons } = Astro.props;
 ---
 
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-3 gap-5">
   {
     icons.map((icon) => (
-      <div class="flex flex-col col-span-1 items-center p-2">
-        <div class="w-[76px] h-[76px] mb-3">
-          <img src={icon.image} alt={icon.title} />
+      <div class="flex flex-col items-center p-2 col-span-1">
+        <div class="flex flex-row h-[76px] w-[76px] items-center justify-center mb-5">
+          <img src={icon.image} alt={icon.title} class="" />
         </div>
-        <p class="text-center text-xs">{icon.title}</p>
-        {icon.text && (
-          <p class="text-center text-xs text-gray-500">{icon.text}</p>
-        )}
+        <p class="text-center text-sm text-gray-400">{icon.title}</p>
+        {icon.text && icon.text}
       </div>
     ))
   }

@@ -19,6 +19,13 @@ module.exports = {
   plugins: [
     plugin(function astroComponentsPlugin({ addComponents, theme }) {
       addComponents({
+        ".hero-heading-1": {
+          "@apply font-oswald text-5xl text-right leading-tight": {},
+        },
+        ".hero-heading-2": {
+          "@apply font-oswald text-3xl text-right leading-tight": {},
+        },
+
         ".heading-1": {
           "@apply font-oswald text-7xl leading-tight": {},
         },

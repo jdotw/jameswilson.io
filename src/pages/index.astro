@@ -20,22 +20,22 @@ const latestPost = articlePosts[0];
 ---
 
 <BaseLayout title="Hey">
-  <div class="bg-[#c4c4c4] text-black">
+  <div class="bg-neutral-900 text-white">
     <!-- Hero -->
     <div
-      class="flex flex-row justify-end items-center bg-[url('/about/headshot-wide.png')] bg-cover bg-no-repeat bg-center"
+      class="flex flex-row justify-end items-center bg-[url('/about/headshot-wide-cropped-left-no-bg.png')] bg-cover bg-no-repeat bg-left"
     >
-      <div class="flex flex-col py-20">
-        <h1 class="heading-1 text-right">James Wilson</h1>
-        <h2 class="text-right text-3xl font-oswald">
+      <div class="flex flex-col py-20 pr-5">
+        <h1 class="hero-heading-1">James Wilson</h1>
+        <h2 class="hero-heading-2">
           <a href="/engineer" class="underline">Engineer</a>.<br /><a
             href="/leader"
             class="underline">Leader</a
-          >.<br /><a href="/astro" class="underline">Astrophotographer</a><br
+          >.<br /><a href="/astro" class="underline">Astrophotographer</a>.<br
           /><a href="/music" class="underline">Musician</a>.
         </h2>
       </div>
-      <div class="w-56 hidden md:block">
+      <div class="hidden md:flex md:w-64 lg:w-72">
         <ArticleCard article={latestPost} />
       </div>
     </div>
@@ -50,8 +50,8 @@ const latestPost = articlePosts[0];
     </div>
   </div>
 
-  <div class="p-5">
-    <div class="w-full flex md:hidden">
+  <div class="p-5 sm:hidden">
+    <div class="w-full flex">
       <ArticlePreview article={latestPost} />
     </div>
   </div>
@@ -63,34 +63,36 @@ const latestPost = articlePosts[0];
       subtitle="C, Swift, Javascript - iOS, macOS, Linux, Web"
       text="I've been writing software for over 20 years and thoroughly enjoy coding professionally and as a hobby. At Apple I worked extensively with C and Objective-C, and have since picked up Swift for iOS, macOS, watchOS and tvOS development. I've used JavaScript for front-end with React and React Native, and Node.js backend work. More recently I've been using Go for micro services development."
     >
-      <IconGrid
-        icons={[
-          {
-            image: "/employers/wow-76.png",
-            title: "Chief Digital Technolgoy Officer",
-          },
-          {
-            image: "/employers/apple-76-white.png",
-            title: "Senior Engineering Manager",
-          },
-          {
-            image: "/employers/aws-76-white.png",
-            title: "Senior Engineering Manager",
-          },
-          {
-            image: "/employers/cba-76-color.png",
-            title: "Distinguished Engineer",
-          },
-          {
-            image: "/employers/cisco-76-color.png",
-            title: "Customer Support Engineer",
-          },
-          {
-            image: "/employers/lithium-76-color.png",
-            title: "Founder, Lithium",
-          },
-        ]}
-      />
+      <div class="flex flex-grow w-full">
+        <IconGrid
+          icons={[
+            {
+              image: "/employers/woolworths-5-logo-png-transparent.png",
+              title: "Chief Digital Technolgoy Officer",
+            },
+            {
+              image: "/employers/apple-76-white.png",
+              title: "Senior Engineering Manager",
+            },
+            {
+              image: "/employers/aws-76-white.png",
+              title: "Senior Engineering Manager",
+            },
+            {
+              image: "/employers/cba-76-color.png",
+              title: "Distinguished Engineer",
+            },
+            {
+              image: "/employers/cisco-76-color.png",
+              title: "Customer Support Engineer",
+            },
+            {
+              image: "/employers/lithium-76-color.png",
+              title: "Founder, Lithium",
+            },
+          ]}
+        />
+      </div>
     </PagePreview>
 
     <PagePreview
