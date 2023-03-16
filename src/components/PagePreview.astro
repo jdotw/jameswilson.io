@@ -1,5 +1,5 @@
 ---
-const { page, title, subtitle, text } = Astro.props;
+const { page, title, subtitle, text, flipped } = Astro.props;
 ---
 
 <div class="flex flex-col mb-5">
@@ -7,7 +7,11 @@ const { page, title, subtitle, text } = Astro.props;
     <h2 class="heading-2"><a href={page}>{title}</a></h2>
     <h3 class="heading-4">{subtitle}</h3>
   </div>
-  <div class="flex flex-col md:flex-row gap-5">
+  <div
+    class={`flex flex-col md:flex-row gap-5 ${
+      flipped && "md:flex-row-reverse"
+    }`}
+  >
     <div class="w-full md:w-6/12">
       <p class="text-1">
         {text}
