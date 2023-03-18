@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-05-19T04:36:45Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7490
-id: 7490
 image: stock/org-chart.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Accountability and Ownership
-url: /accountability-and-ownership/
+excerpt: Structuring an organizing with teams that are assigned ownership of value-drivers (products, features, services), and individuals that are appointed as directly responsible for specific outcomes sets up the foundation for self-organization, empowerment and autonomy. Ownership and accountability are related but crucially different.
 ---
 
 Structuring an organizing with teams that are assigned ownership of value-drivers (products, features, services), and individuals that are appointed as directly responsible for specific outcomes sets up the foundation for self-organization, empowerment and autonomy. Ownership and accountability are related but crucially different. Ownership refers to what a team is responsible for designing, implementing and supporting. It's a more permanent construct than accountability which is assigned to an individual for a specific outcome, which may be permanent or until the outcome is achieved. Having clearly defined ownership at the team level and accountability at the individual level empowers the team to self-organize around it's purpose lead by individuals who have agency to achieve what the business expects from them.

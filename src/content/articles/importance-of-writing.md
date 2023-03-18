@@ -4,37 +4,9 @@ categories:
   - Engineering
   - Leadership
 date: "2020-04-23T02:05:00Z"
-excerpt:
-  Writing to a fixed-length is an exercise that benefits the author by forcing
-  you to distill your thinking down to the essence of the idea you want to convey.
-  Through this process you become clearer and more confident in your own thinking.
-  The result is a document that is crystal clear, that will be easy for the reader
-  to grasp, and that you can leverage to gain traction for your idea.
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: http://box5312.temp.domains/~jameswk2/?p=6899
-id: 6899
+excerpt: Writing to a fixed-length is an exercise that benefits the author by forcing you to distill your thinking down to the essence of the idea you want to convey. Through this process you become clearer and more confident in your own thinking. The result is a document that is crystal clear, that will be easy for the reader to grasp, and that you can leverage to gain traction for your idea.
 image: stock/writing.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: The Importance of Writing
-url: /the-importance-of-writing/
 ---
 
 Writing to a fixed-length is an exercise that benefits the author by forcing you to distill your thinking down to the essence of the idea you want to convey. I was skeptical about this at first. I, like many software engineers, prefer code to documentation. However, the benefit of this particular format is immense, and it is realized by introducing a size limit: The document must be either 1 or 6 pages in length, and no where in between. Adopting this length limit forces the writer to iteratively refine the message down to its essence without any cruft or tangential thoughts. Through this process you become clearer and more confident in your own thinking. The result is a document that is crystal clear, that will be easy for the reader to grasp, and that you can leverage to gain traction for your idea.

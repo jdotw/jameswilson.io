@@ -7,6 +7,11 @@ interface Props {
 const { title, subtitle, background } = Astro.props;
 ---
 
+<div class="bg-black text-white flex flex-col" style="display: none;">
+  <a class="p-1" href="#">First</a>
+  <a class="p-1" href="#">Second</a>
+</div>
+
 <div
   x-data="{open: false}"
   class={`bg-neutral-900 text-neutral-50 flex flex-col  bg-black text-white ${background} bg-cover bg-center bg-no-repeat`}
@@ -44,7 +49,16 @@ const { title, subtitle, background } = Astro.props;
         </button>
       </div>
     </div>
-    <div class="p-5" x-show="open" x-transition>
+    <div
+      class="p-5"
+      x-show="open"
+      x-transition:enter="transition ease-out duration-100"
+      x-transition:enter-start="transform opacity-0 scale-100"
+      x-transition:enter-end="transform opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-100"
+      x-transition:leave-start="transform opacity-100 scale-100"
+      x-transition:leave-end="transform opacity-0 scale-100"
+    >
       <div class="flex flex-col items-end gap-5">
         <a href="/">Home</a>
         <a href="/engineer">Engineer</a>

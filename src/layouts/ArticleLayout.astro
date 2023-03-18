@@ -16,7 +16,7 @@ const { Content } = await post.render();
     subtitle={post.data.subtitle}
     background={post.data.image}
   />
-  <div class="p-5 bg-neutral-100">
+  <div class="p-5 bg-white">
     <Image
       src={import(`../assets/${post.data.image}`)}
       format="webp"
@@ -24,7 +24,7 @@ const { Content } = await post.render();
       class="rounded-lg"
     />
   </div>
-  <div class="p-5 pt-1 bg-neutral-100 text-black">
+  <div class="p-5 pt-1 bg-white text-gray-700">
     <div class="text-1 space-y-3">
       <Content class="text-1" />
     </div>

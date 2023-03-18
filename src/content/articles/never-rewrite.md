@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-06-17T15:20:29Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7535
-id: 7535
 image: stock/old-and-new.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Never Rewrite
-url: /never-rewrite/
+excerpt: Rapidly evolving paradigms, languages and technologies create in an innate desire to rewrite old code. Outside of very specific circumstances, the urge to rewrite rather than incrementally improve is an anti-pattern that slows down the pace of delivery and puts the business at risk from subtle logic lost in a rewrite.
 ---
 
 Rapidly evolving paradigms, languages and technologies create in an innate desire to rewrite old code. Outside of very specific circumstances, the urge to rewrite rather than incrementally improve is an anti-pattern that slows down the pace of delivery and puts the business at risk from subtle logic lost in a rewrite. The old maxim is true; unless every single person that was involved in version 1.0 is present when you re-write to create version 2.0, then you end up with just another, different version 1.0. While incremental improvement instead of rewriting is almost always the better approach, there are ways to architect your platform and structure your teams such that a rewrite is palatable if it provides value with the risk profile sufficiently mitigated.

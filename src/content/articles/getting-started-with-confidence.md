@@ -3,31 +3,8 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-07-02T12:46:10Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7539
-id: 7539
 image: stock/start-sign.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Getting Started With Confidence
-url: /getting-started-with-confidence/
 excerpt: "Getting started as a software developer requires some research before you can do much, but learning through solving problems will help you become productive and proficient faster..."
 ---
 

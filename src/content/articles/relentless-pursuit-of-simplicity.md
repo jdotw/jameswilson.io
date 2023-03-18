@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-06-11T19:50:03Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7532
-id: 7532
 image: stock/simple-ideas.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Relentless Pursuit of Simplicity
-url: /relentless-pursuit-of-simplicity/
+excerpt: The relentless pursuit of simplicity is the discipline to avoid initiatives that are not core to the mission of your business, the dedication to abstract away all complexity from the customer in achieving that mission, and continually divesting all activities that are not central to how you provide value to your customers.
 ---
 
 The relentless pursuit of simplicity is the discipline to avoid initiatives that are not core to the mission of your business, the dedication to abstract away all complexity from the customer in achieving that mission, and continually divesting all activities that are not central to how you provide value to your customers. It's a bias for saying no, a guideline to know when to say yes, and a call to perpetual vigilance. Adopting these practices helps maintain the essence of what makes your business unique. It frees up the resources needed to remain proficient at delivering innovative products with a sublime level of simplicity.

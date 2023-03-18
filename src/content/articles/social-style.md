@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-05-21T10:33:58Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7518
-id: 7518
 image: stock/org-game.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Social Style
-url: /social-style/
+excerpt: Social Style and similar typologies give you a framework for understanding the personality archetypes that exist in the workplace. From this framework you can strengthen your ability to manage to different styles as well as how to your own style to suit a given situation. Learning about social styles raises awareness of the leadership weaknesses that are apparent in your style.
 ---
 
 [Social Style](https://tracom.com/social-style-training/model) and similar typologies give you a framework for understanding the personality archetypes that exist in the workplace. From this framework you can strengthen your ability to manage to different styles as well as how to your own style to suit a given situation. Learning about social styles raises awareness of the leadership weaknesses that are apparent in your style. Once embedded in the organization, the framework provides a way to drive separation between behaviors that are observed and the personality of individuals. The latter helps to avoid inferring intent from behaviors that you find frustrating or difficult when they are actually caused by differences in social style.

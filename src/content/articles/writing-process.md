@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-05-05T09:30:54Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: http://box5312.temp.domains/~jameswk2/?p=7115
-id: 7115
 image: stock/laptop-typing.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: My Writing Process
-url: /my-writing-process/
+excerpt: When I write, I start by defining the single purpose of the document and then I'll write just a few sentences that capture the key points I want to make in the introduction and the three or four supporting paragraphs. These few sentences are encased in square brackets and become the blocked-out structure of the document. Scroll down to see the blocks I used when writing this document. With this framework established, I then write the paragraphs that expand on the blocks one paragraph at a time.
 ---
 
 When I write, I start by defining the single purpose of the document and then I'll write just a few sentences that capture the key points I want to make in the introduction and the three or four supporting paragraphs. These few sentences are encased in square brackets and become the blocked-out structure of the document. Scroll down to see the blocks I used when writing this document. With this framework established, I then write the paragraphs that expand on the blocks one paragraph at a time. Breaking the document up into a single purpose statement and a few key points that support the single purpose helps you get started. It makes the process more approachable. You're no longer faced with the daunting task of writing a document. You've got your purpose defined, and now just need to fill out a couple of paragraphs for which you've already made a head start on!

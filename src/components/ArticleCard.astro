@@ -4,7 +4,7 @@ import { Image, Picture } from "@astrojs/image/components";
 ---
 
 <article
-  class="flex flex-col items-start justify-between rounded-lg bg-white p-3"
+  class="flex flex-col items-start rounded-lg bg-white p-3 ring-1 ring-inset ring-gray-900/10 text-gray-600"
 >
   <div class="relative w-full">
     <Image
@@ -23,7 +23,24 @@ import { Image, Picture } from "@astrojs/image/components";
     </a>
   </div>
   <div class="">
-    <div class="mt-8 flex items-center gap-x-4 text-xs">
+    <div class="group relative text-1 text-sm">
+      <h3
+        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+      >
+        <a href={`/articles/${article.slug}`}>
+          {article.data.title}
+        </a>
+      </h3>
+      <p class="mt-3">
+        {article.data.excerpt}
+      </p>
+      <div class="mt-1 mb-1">
+        <a href={`/articles/${article.slug}`} class="underline">Read more</a>
+      </div>
+    </div>
+    <div
+      class="mt-3 flex flex-grow justify-between items-center gap-x-4 text-1 text-xs"
+    >
       <time datetime="2020-03-16" class="text-gray-500"
         >{new Date(article.data.date).toLocaleDateString()}</time
       >
@@ -37,23 +54,6 @@ import { Image, Picture } from "@astrojs/image/components";
           </a>
         ))
       }
-    </div>
-    <div class="group relative">
-      <h3
-        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
-      >
-        <a href={`/articles/${article.slug}`}>
-          {article.data.title}
-        </a>
-      </h3>
-      <p class="mt-5 text-sm leading-6 text-gray-600 line-clamp-3">
-        {article.data.excerpt}<br />
-      </p>
-      <div class="mt-5 mb-2">
-        <a href={`/articles/${article.slug}`} class="font-medium text-gray-500"
-          >Read more</a
-        >
-      </div>
     </div>
   </div>
 </article>

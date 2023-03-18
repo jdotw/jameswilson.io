@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-05-20T04:53:46Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7515
-id: 7515
 image: stock/different-ideas.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Agree, Build, and Compare
-url: /agree-build-compare/
+excerpt: In Crucial Conversations, the authors introduce the Agree, Build and Compare framework for guiding conversations towards agreement. These are the three modes we can assume as we prepare to respond to someone in a conversation. You agree when something is said that you truly agree with, you build upon statements you agree with but feel the need to add more detail to, and you compare between your view and the other persons view when you disagree.
 ---
 
 In [Crucial Conversations](https://www.amazon.com/Crucial-Conversations-Talking-Stakes-Edition/dp/0071771328), the authors introduce the Agree, Build and Compare framework for guiding conversations towards agreement. These are the three modes we can assume as we prepare to respond to someone in a conversation. You agree when something is said that you truly agree with, you build upon statements you agree with but feel the need to add more detail to, and you compare between your view and the other persons view when you disagree. The aim of this framework is to find and leverage common ground in agreement such that the points of disagreement can be resolved. It helps us avoid concretizing into a permanent stance of offense or defense.

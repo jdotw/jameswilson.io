@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-05-25T11:07:10Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7522
-id: 7522
 image: stock/hands-meeting.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Difficult Conversations
-url: /difficult-conversations/
+excerpt: We make difficult conversations unnecessarily worse for all parties by delaying, procrastinating and ruminating. Don't delay, but do prepare enough so that you can confidently own the message you're conveying. Remember that everyone in the room is human, and after the meeting follow up to ensure clarity and progress toward the outcome you seek. If handled well, trust will be forged between both parties.
 ---
 
 We make difficult conversations unnecessarily worse for all parties by delaying, procrastinating and ruminating. Don't delay, but do prepare enough so that you can confidently own the message you're conveying. Remember that everyone in the room is human, and after the meeting follow up to ensure clarity and progress toward the outcome you seek. If handled well, trust will be forged between both parties.

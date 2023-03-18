@@ -2,36 +2,10 @@
 author: James Wilson
 categories:
   - Leadership
-  - Uncategorized
 date: "2020-06-02T11:51:31Z"
-excerpt:
-  "Leveraging a mental models allows us to build software that surprises and
-  delights the user by avoiding the trap of functional yet frustrating software. "
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7528
-id: 7528
+excerpt: Leveraging a mental models allows us to build software that surprises and delights the user by avoiding the trap of functional yet frustrating software.
 image: stock/brain-gears.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Mental Models
-url: /mental-models/
 ---
 
 Mental models describe the intentions, expectations and extenuating circumstances that are present when a person interacts with a user interface. The intentions help us understand what the user interface must make possible for the user. The expectations inform what elements must be present in order for the user to connect with the interface. The extenuating circumstances alert us to environmental factors that we can leverage, or mitigate, to influence the user experience. Rather than describing a reality, the mental model describes a filter through which the user perceives reality, determines how to act, and how they interpret the response to their actions.

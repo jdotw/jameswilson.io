@@ -3,31 +3,9 @@ author: James Wilson
 categories:
   - Leadership
 date: "2020-05-14T04:05:09Z"
-gf_format_audio_embed:
-  - ""
-gf_format_gallery_images:
-  - ""
-gf_format_link_text:
-  - ""
-gf_format_link_url:
-  - ""
-gf_format_quote_author_text:
-  - ""
-gf_format_quote_author_url:
-  - ""
-gf_format_quote_content:
-  - ""
-gf_format_video_embed:
-  - ""
-guid: https://jameswilson.io/?p=7438
-id: 7438
 image: stock/daily-plan.jpg
-rs_page_bg_color:
-  - "#ffffff"
-slide_template:
-  - default
 title: Hand-Written Plans
-url: /hand-written-plans/
+excerpt: Hand-writing your daily, weekly or ad-hoc todo lists introduces a surprisingly effective physical tax that prevents that list growing beyond what is achievable. Two years ago, I switched to hand-writing my daily to-do list and I find it to be one of the most important foundations to keeping me on track and helping to maintain a sense of reality about when I can commit to getting things done. Prior to that I had used countless to-do apps, and before then was trapped in the inbox-as-a-todo-list fallacy.
 ---
 
 Hand-writing your daily, weekly or ad-hoc todo lists introduces a surprisingly effective physical tax that prevents that list growing beyond what is achievable. Two years ago, I switched to hand-writing my daily to-do list and I find it to be one of the most important foundations to keeping me on track and helping to maintain a sense of reality about when I can commit to getting things done. Prior to that I had used countless to-do apps, and before then was trapped in the inbox-as-a-todo-list fallacy.
