@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2015-09-02T09:34:48Z"
 image: astro/m1.png
-title: M1 - Crab Nebula
+title: Crab Nebula
+catalog: M1
 ---
 
 The Crab Nebula that was the first target I had to put a lot of effort into trying to capture and process. This nebula is a spectacular super-nova remnant — what's left of a star collapsing in on itself and exploding, shedding unimaginable amounts of energy and charged gas. The first known record of this nebula being seen dates back to 1840 when it was spotted through a 36″ telescope — I got away with a mere 8″ for this image! I find it hard enough to imagine life in 1840, but am awestruck to think of the elation the observer must have felt when seeing this for the first time with their own eyes.

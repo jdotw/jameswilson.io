@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2020-01-27T11:05:12Z"
 image: astro/ngc6727.jpg
-title: NGC6727 - Dark Nebula
+title: Dark Nebula
+catalog: NGC6727
 ---
 
 My journey in astrophotography began with a desire to capture what I couldn't otherwise see in the night sky. The bright nebula targets in our galaxy were my first point of call, and even from humble beginnings using a DSLR, I was hooked! Upgrading to a better telescope and camera allowed me to capture galaxies with incredible detail, and nebula with gloriously wide fields of view. … But one target remained elusive. In the light polluted skies over San Jose, CA, I couldn't capture the contrast needed to see the brown hue of interstellar dust.

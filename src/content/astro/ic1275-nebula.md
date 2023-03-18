@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2020-01-27T10:35:00Z"
 image: astro/ic1275.jpg
-title: IC1275 - Nebula
+title: Nebula
+catalog: IC1275
 ---
 
 This is another cross-section of our own galaxy, much like [IC1305](https://jameswilson.io/ic1305-cross-section-of-our-galaxy/), but this time with a lot more nebulosity. I captured this target knowing that it was just outside the very well known and regularly imaged area known as the Lagoon Nebula. What fascinates me about this image is not just the glowing red nebula but the areas of darkness; the vast expanses where stars either do not exist or are masked out by clouds of dust.

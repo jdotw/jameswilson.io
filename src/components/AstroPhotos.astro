@@ -1,24 +1,35 @@
 ---
 import { getCollection } from "astro:content";
 import { Image } from "@astrojs/image/components";
+import { Debug } from "astro/components";
 
 const astroPosts = await getCollection("astro");
 ---
 
-<div>
-  <h1>Astrophotography</h1>
-  <h2>Deep Sky Objects: Nebula and Galaxies</h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
+<div class="mb-5">
+  <h2 class="heading-2">Astrophotography</h2>
+  <h3 class="heading-3 mb-5">Deep Sky Objects: Nebula and Galaxies</h3>
+  <p class="text-1 mb-5">
+    Astrophotography is using a telescope and a specialized camera to take
+    extremely exposure photos of distant, deep sky objects like nebula and
+    galaxies that are millions of light years away. It's like looking back in
+    time. The images seen here are a glimpse of how a remote part of our
+    universe looked millions of years ago. All images seen here were captured in
+    either San Jose, California or Sydney, Australia from 2015 onward.
+  </p>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
     {
       astroPosts.map((post) => (
-        <div>
-          <h2>{post.data.title}</h2>
+        <div class="relative ">
+          <div class="absolute bottom-0 bg-neutral-900 bg-opacity-60 w-full rounded-b-lg">
+            <h4 class="heading-5 mb-2 mt-1 px-2 text-sm font-light opacity-70 text-center">
+              {post.data.title}
+            </h4>
+          </div>
           <a href={`/astro/${post.slug}`}>
             <Image
-              class="rounded-md"
-              height={500}
-              width={500}
-              src={`/${post.data.image}`}
+              class="h-64 md:h-52 lg:h-64 object-cover rounded-lg"
+              src={import(`../../src/assets/${post.data.image}`)}
               alt={post.data.title}
               format="jpg"
             />
@@ -27,12 +38,4 @@ const astroPosts = await getCollection("astro");
       ))
     }
   </div>
-  <p>
-    Astrophotography is using a telescope and a specialized camera to take
-    extremely exposure photos of distant, deep sky objects like nebula and
-    galaxies that are millions of light years away. It's like looking back in
-    time. The images seen here are a glimpse of how a remote part of our
-    universe looked millions of years ago. All images seen here were captured in
-    either San Jose, California or Sydney, Australia from 2015 onward.
-  </p>
 </div>

@@ -1,0 +1,58 @@
+---
+import { Image } from "@astrojs/image/components";
+import PagePreview from "../components/PagePreview.astro";
+---
+
+<PagePreview page="maker" title="Maker" subtitle="Project: Analog Synthesizer">
+  <div slot="left">
+    <p class="text-1 mb-3">
+      Using analog audio components and an ARM Cortex microprocessor, this
+      project combines digital instrument control via MIDI with the gorgeous
+      sounds of legendary analog synthesizers from the 1980s. It's more than
+      just a re-make of any instrument of times gone by. This project is part of
+      an experiment to see if I can build instruments that are opinionated in
+      both sound and user interaction.
+    </p>
+    <p class="text-1 mb-3">
+      Many of the synthesizers available today can create an endless range of
+      sounds, but that comes at a cost to the user. The user has to either be
+      satisfied with the built-in presets, or spend extensive time learning the
+      in-depth sound design principals of the device. For some people, this is
+      what they want. They want a device that they can design their own sound
+      with from scratch. For many though, it's an exercise in frustration when
+      deviating from the presets leaves the user overwhelmed and unable to
+      create a sound they like on their own.
+    </p>
+    <p class="text-1 mb-3">
+      I want to see if I can build instruments that are opinionated: they do one
+      thing, they do it very, very well, and they sound always sound great while
+      still giving the user some controls to find their own sound."
+    </p>
+  </div>
+  <div class="grid grid-cols-1 gap-5 md:gap-2">
+    <Image
+      src={import("../../src/assets/projects/synth/breadboard.jpg")}
+      alt="Boardboard"
+      format="png"
+      class="object-cover col-span-1 h-72 md:h-36 rounded-lg"
+    />
+    <Image
+      src={import("../../src/assets/projects/synth/processor.jpg")}
+      alt="Processor"
+      format="png"
+      class="object-cover col-span-1 h-72 md:h-36 rounded-lg"
+    />
+    <Image
+      src={import("../../src/assets/projects/synth/scope.jpg")}
+      alt="Oscilloscope"
+      format="png"
+      class="object-cover col-span-1 h-72 md:h-36 rounded-lg"
+    />
+    <Image
+      src={import("../../src/assets/projects/synth/desk.jpg")}
+      alt="Workbench"
+      format="png"
+      class="object-cover col-span-1 h-72 md:h-36 rounded-lg"
+    />
+  </div>
+</PagePreview>

@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2015-12-05T09:19:00Z"
 image: astro/m51.jpg
-title: M51 - Whirlpool Galaxy
+title: Whirlpool Galaxy
+catalog: M51
 ---
 
 This stunning interaction between two galaxies was the first image I processed where I was happy with both the color and the detail. There is, of course, much more detail to be found with more data… but this is what I have for now. The Whirlpool galaxy was the first spiral galaxy to be discovered and classified as such. You can see there's two parts to this galaxy with the formation on the left. However, it wasn't until the advent of radio astronomy that astronomers could prove these two gargantuan structures are interacting with one another.

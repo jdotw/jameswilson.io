@@ -1,0 +1,18 @@
+---
+import { Image } from "@astrojs/image/components";
+import PagePreview from "../components/PagePreview.astro";
+---
+
+<PagePreview
+  page="leader"
+  title="Leader"
+  subtitle="People and Technical Leadership"
+  text="From starting my own company in Sydney, to leading organisations of engineers and scientists at Apple and Amazon in the US, and recently x15ventures and CBA in Sydney, I've been building and leading teams for over 15 years. I believe technical and people leadership is an exercise in life-long learning. It takes a combination of self-awareness, and awareness of the needs of the individuals, organization and customers to lead in a way that's best for the people, the product and the company."
+>
+  <Image
+    src={import("../../src/assets/about/looking-left.png")}
+    alt="James"
+    format="png"
+    class="object-cover h-72 rounded-lg"
+  />
+</PagePreview>

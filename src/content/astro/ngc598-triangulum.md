@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2015-11-20T10:34:01Z"
 image: astro/ngc598.jpg
-title: NGC598 - Triangulum
+title: Triangulum
+catalog: NGC598
 ---
 
 We live in a neighbourhood of 3 galaxies. The Milky Way, Andromeda, and Triangulum. What you're seeing here is an image produced from data collected in 2015, but the light itself was 2.7 million years old when it reached the surface of the Kodak sensor in my camera. Imagine that… what wonders did each of these photons pass by through their epic journey to my back yard?!

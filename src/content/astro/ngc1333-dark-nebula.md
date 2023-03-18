@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2015-11-30T10:50:23Z"
 image: astro/ngc1333.jpg
-title: NGC1333 - Dark Nebula
+title: Dark Nebula
+catalog: NGC1333
 ---
 
 This region of space is a precarious stroll down a fog-filled, neon-lit alley region of space. This is a dark nebula. What you can't see is as much a feature of what you can see. Other astrophotos show incredible fields of stars, nebula and galaxies. Here great clouds of dust are blotting out the stars.

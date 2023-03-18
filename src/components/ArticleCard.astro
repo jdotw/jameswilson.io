@@ -1,7 +1,6 @@
 ---
 const { article } = Astro.props;
 import { Image, Picture } from "@astrojs/image/components";
-import { Debug } from "astro/components";
 ---
 
 <article
@@ -16,10 +15,14 @@ import { Debug } from "astro/components";
       alt={article.data.title}
       class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
     />
-    <div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10">
-    </div>
+    <a href={`/articles/${article.slug}`}>
+      <div
+        class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10"
+      >
+      </div>
+    </a>
   </div>
-  <div class="max-w-xl">
+  <div class="">
     <div class="mt-8 flex items-center gap-x-4 text-xs">
       <time datetime="2020-03-16" class="text-gray-500"
         >{new Date(article.data.date).toLocaleDateString()}</time
@@ -27,7 +30,7 @@ import { Debug } from "astro/components";
       {
         article.data.tags.map((tag: string) => (
           <a
-            href="#"
+            href={`/tags/${tag}`}
             class="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 hover:bg-gray-100"
           >
             {tag}
@@ -39,8 +42,7 @@ import { Debug } from "astro/components";
       <h3
         class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
       >
-        <a href="#">
-          <span class="absolute inset-0"></span>
+        <a href={`/articles/${article.slug}`}>
           {article.data.title}
         </a>
       </h3>
@@ -48,7 +50,9 @@ import { Debug } from "astro/components";
         {article.data.excerpt}<br />
       </p>
       <div class="mt-5 mb-2">
-        <a href="#" class="font-medium text-gray-500">Read more</a>
+        <a href={`/articles/${article.slug}`} class="font-medium text-gray-500"
+          >Read more</a
+        >
       </div>
     </div>
   </div>

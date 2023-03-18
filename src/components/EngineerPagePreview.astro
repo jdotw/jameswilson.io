@@ -1,0 +1,43 @@
+---
+import { getCollection, getEntryBySlug } from "astro:content";
+import PagePreview from "../components/PagePreview.astro";
+import IconGrid from "../components/IconGrid.astro";
+---
+
+<PagePreview
+  page="engineer"
+  title="Software Engineer"
+  subtitle="C, Swift, Javascript - iOS, macOS, Linux, Web"
+  text="I've been writing software for over 20 years and thoroughly enjoy coding professionally and as a hobby. At Apple I worked extensively with C and Objective-C, and have since picked up Swift for iOS, macOS, watchOS and tvOS development. I've used JavaScript for front-end with React and React Native, and Node.js backend work. More recently I've been using Go for micro services development."
+>
+  <div class="flex flex-grow w-full">
+    <IconGrid
+      icons={[
+        {
+          image: "/employers/woolworths-5-logo-png-transparent.png",
+          title: "Chief Digital Technolgoy Officer",
+        },
+        {
+          image: "/employers/apple-76-white.png",
+          title: "Senior Engineering Manager",
+        },
+        {
+          image: "/employers/aws-76-white.png",
+          title: "Senior Engineering Manager",
+        },
+        {
+          image: "/employers/cba-76-color.png",
+          title: "Distinguished Engineer",
+        },
+        {
+          image: "/employers/cisco-76-color.png",
+          title: "Customer Support Engineer",
+        },
+        {
+          image: "/employers/lithium-76-color.png",
+          title: "Founder, Lithium",
+        },
+      ]}
+    />
+  </div>
+</PagePreview>

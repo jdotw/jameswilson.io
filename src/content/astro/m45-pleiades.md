@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2015-11-20T09:34:45Z"
 image: astro/m45.jpg
-title: M45 - Pleiades
+title: Pleiades
+catalog: M45
 ---
 
 Also known as the Seven Sisters, and more famously as the star formation in Subaru's logo, this is the magnificently blue Pleiades or M45 in Messier's catalog. Subaru is in fact the name of this constellation in Japanese, hence the connection to the car manufacturer!

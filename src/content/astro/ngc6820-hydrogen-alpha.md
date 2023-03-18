@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2015-05-01T10:45:00Z"
 image: astro/ngc6820.jpg
-title: NGC6820 - Hydrogen Alpha
+title: Hydrogen Alpha
+catalog: NGC6820
 ---
 
 I don't think we know nearly enough about the simplest things to be sure about anything. I was reminded of this when I looked over the data from this nebula. There's not much to see when looking at it through the red, green, and blue (RGB) visible spectrum of light — or at least, not from this vantage point. An entirely different and vastly more detailed expanse became visible when I captured much longer exposures looking at just an extremely thin slice of the visible spectrum. We base so much of what we believe on what we can see; yet so much is intrinsically invisible to us.

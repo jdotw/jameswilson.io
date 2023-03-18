@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2015-06-02T10:04:00Z"
 image: astro/ngc224.jpg
-title: NGC224 - Andromeda Galaxy
+title: Andromeda Galaxy
+catalog: NGC224
 ---
 
 This image serves as a reminder to choose the right scope for the job. If I'd used the WO-Star71 wide-field telescope instead of the AT8RC I would have been able to capture the whole galaxy. Instead, here's a cropped version of the Andromeda galaxy. Andromeda is 2.5 million light years away and yet it is our closest major galaxy. Just to put that in perspective, that means the nearest galaxy to us, is a 2.5 million year journey away from us …. assuming we found a way to travel at the speed of light. Still worried about the minutia of our own existence? I hope not, there's far more to this life!

@@ -3,7 +3,7 @@ import { getCollection, getEntryBySlug } from "astro:content";
 import { Debug } from "astro/components";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import type { date } from "astro/zod";
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 import ArticleCard from "../components/ArticleCard.astro";
 import Twitch from "../components/Twitch.astro";
 import YouTube from "../components/YouTube.astro";
@@ -12,6 +12,11 @@ import IconGrid from "../components/IconGrid.astro";
 import Articles from "../components/Articles.astro";
 import AstroPhotos from "../components/AstroPhotos.astro";
 import ArticlePreview from "../components/ArticlePreview.astro";
+import HomeHero from "../components/HomeHero.astro";
+import EngineerPagePreview from "../components/EngineerPagePreview.astro";
+import LeaderPagePreview from "../components/LeaderPagePreview.astro";
+import MakerPagePreview from "../components/MakerPagePreview.astro";
+import MusicPagePreview from "../components/MusicPagePreview.astro";
 
 const articlePosts = (await getCollection("articles")).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
@@ -20,95 +25,11 @@ const latestPost = articlePosts[0];
 ---
 
 <BaseLayout title="Hey">
-  <div class="bg-neutral-900 text-white">
-    <!-- Hero -->
-    <div
-      class="flex flex-row justify-end items-center bg-[url('/about/headshot-wide-cropped-left-no-bg.png')] bg-cover bg-no-repeat bg-left"
-    >
-      <div class="flex flex-col py-20 pr-5">
-        <h1 class="hero-heading-1">James Wilson</h1>
-        <h2 class="hero-heading-2">
-          <a href="/engineer" class="underline">Engineer</a>.<br /><a
-            href="/leader"
-            class="underline">Leader</a
-          >.<br /><a href="/astro" class="underline">Astrophotographer</a>.<br
-          /><a href="/music" class="underline">Musician</a>.
-        </h2>
-      </div>
-      <div class="hidden md:flex md:w-64 lg:w-72">
-        <ArticleCard article={latestPost} />
-      </div>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3">
-      <div class="col-span-1"><Twitch channel="jdotw" /></div>
-      <div class="col-span-1">
-        <YouTube embed="-ROZuPlJWFo?list=UUuNEUzvXLwaMn51uUsB0ILQ" />
-      </div>
-      <div class="col-span-1">
-        <YouTube embed="o83GysKTvO0?list=PL3kd2QrOG8tDcczjFb-Qwg2sSr_8w1vfP" />
-      </div>
-    </div>
-  </div>
-
-  <div class="p-5 sm:hidden">
-    <div class="w-full flex">
-      <ArticlePreview article={latestPost} />
-    </div>
-  </div>
+  <HomeHero />
 
   <div class="p-5 bg-neutral-800 text-white">
-    <PagePreview
-      page="engineer"
-      title="Software Engineer"
-      subtitle="C, Swift, Javascript - iOS, macOS, Linux, Web"
-      text="I've been writing software for over 20 years and thoroughly enjoy coding professionally and as a hobby. At Apple I worked extensively with C and Objective-C, and have since picked up Swift for iOS, macOS, watchOS and tvOS development. I've used JavaScript for front-end with React and React Native, and Node.js backend work. More recently I've been using Go for micro services development."
-    >
-      <div class="flex flex-grow w-full">
-        <IconGrid
-          icons={[
-            {
-              image: "/employers/woolworths-5-logo-png-transparent.png",
-              title: "Chief Digital Technolgoy Officer",
-            },
-            {
-              image: "/employers/apple-76-white.png",
-              title: "Senior Engineering Manager",
-            },
-            {
-              image: "/employers/aws-76-white.png",
-              title: "Senior Engineering Manager",
-            },
-            {
-              image: "/employers/cba-76-color.png",
-              title: "Distinguished Engineer",
-            },
-            {
-              image: "/employers/cisco-76-color.png",
-              title: "Customer Support Engineer",
-            },
-            {
-              image: "/employers/lithium-76-color.png",
-              title: "Founder, Lithium",
-            },
-          ]}
-        />
-      </div>
-    </PagePreview>
-
-    <PagePreview
-      page="leader"
-      title="Leader"
-      subtitle="People and Technical Leadership"
-      text="From starting my own company in Sydney, to leading organisations of engineers and scientists at Apple and Amazon in the US, and recently x15ventures and CBA in Sydney, I've been building and leading teams for over 15 years. I believe technical and people leadership is an exercise in life-long learning. It takes a combination of self-awareness, and awareness of the needs of the individuals, organization and customers to lead in a way that's best for the people, the product and the company."
-    >
-      <Image
-        src="/about/me-1-960.png"
-        alt="James"
-        width={450}
-        height={256}
-        format="png"
-      />
-    </PagePreview>
+    <EngineerPagePreview />
+    <LeaderPagePreview />
   </div>
 
   <div class="p-5">
@@ -116,63 +37,12 @@ const latestPost = articlePosts[0];
   </div>
 
   <div class="p-5 bg-neutral-200 text-black">
-    <PagePreview
-      page="maker"
-      title="Maker"
-      subtitle="Project: Analog Synthesizer"
-      text="Using analog audio components and an ARM Cortex microprocessor, this project combines digital instrument control via MIDI with the gorgeous sounds of legendary analog synthesizers from the 1980s. It's more than just a re-make of any instrument of times gone by. This project is part of an experiment to see if I can build instruments that are opinionated in both sound and user interaction. <br />Many of the synthesizers available today can create an endless range of sounds, but that comes at a cost to the user. The user has to either be satisfied with the built-in presets, or spend extensive time learning the in-depth sound design principals of the device. For some people, this is what they want. They want a device that they can design their own sound with from scratch. For many though, it's an exercise in frustration when deviating from the presets leaves the user overwhelmed and unable to create a sound they like on their own. <br />I want to see if I can build instruments that are opinionated: they do one thing, they do it very, very well, and they sound always sound great while still giving the user some controls to find their own sound."
-    >
-      <div class="grid grid-cols-2">
-        <Image
-          src="/projects/synth/breadboard.jpg"
-          alt="Baordboard"
-          width={450}
-          height={256}
-          format="png"
-        />
-        <Image
-          src="/projects/synth/processor.jpg"
-          alt="Processor"
-          width={450}
-          height={256}
-          format="png"
-        />
-        <Image
-          src="/projects/synth/scope.jpg"
-          alt="Oscilloscope"
-          width={450}
-          height={256}
-          format="png"
-        />
-        <Image
-          src="/projects/synth/desk.jpg"
-          alt="Workbench"
-          width={450}
-          height={256}
-          format="png"
-        />
-      </div>
-    </PagePreview>
+    <MakerPagePreview />
   </div>
-
-  <div class="p-5">
+  <div class="p-5 bg-neutral-800 text-white">
     <AstroPhotos />
   </div>
-
   <div class="p-5">
-    <PagePreview
-      page="music"
-      title="Musician"
-      subtitle="Guitar, Bass, Synths and Sampler"
-      text="Music is my creative outlet. Long ago I learned to play guitar and bass guitar, and since then a passion for electronic music has taken over. I enjoy fusing together elements of electronic, alternative rock and industrial genres. In 2019 I released my second album, Exit Mesa which was recorded in San Jose and then mixed and mastered in Sydney and on my plane trips between the two. This album uses a combination of electronic instruments, hardware and software, combined with guitar parts recorded live. I had the pleasure of performing work from this album at a few shows in San Francisco and Oakland.<br />Listen to Exit Mesa on Apple Music, Spotify, Amazon and other services."
-      flipped={true}
-    >
-      <iframe
-        width="100%"
-        height="390"
-        src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_n_z0Jz5xthBOi7zAACMD00Pk24qR4DdUs"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen=""></iframe>
-    </PagePreview>
+    <MusicPagePreview />
   </div>
 </BaseLayout>

@@ -1,0 +1,19 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { post } = Astro.props;
+---
+
+<BaseLayout
+  title={`${post.data.title}${post.data.catalog && ` (${post.data.catalog})`}`}
+>
+  <div class={`flex h-32 bg-black text-white bg-cover`}>
+    <div
+      class="flex flex-col h-full w-full bg-black bg-opacity-50 justify-center items-center"
+    >
+      <h1 class="text-4xl">{post.data.title}</h1>
+      {post.data.catalog && <h2>{post.data.catalog}</h2>}
+    </div>
+  </div>
+  <slot />
+</BaseLayout>

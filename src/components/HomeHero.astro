@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import ArticleCard from "../components/ArticleCard.astro";
+import Twitch from "../components/Twitch.astro";
+import YouTube from "../components/YouTube.astro";
+import ArticlePreview from "./ArticlePreview.astro";
+
+const articlePosts = (await getCollection("articles")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+const latestPost = articlePosts[0];
+---
+
+<div class="bg-neutral-900 text-white">
+  <!-- Hero -->
+  <div
+    class="flex flex-row justify-end items-center bg-[url('/about/headshot-wide-cropped-left-no-bg.png')] bg-cover bg-no-repeat bg-left"
+  >
+    <div class="flex flex-col py-20 pr-5">
+      <h1 class="hero-heading-1">James Wilson</h1>
+      <h2 class="hero-heading-2">
+        <a href="/engineer" class="underline">Engineer</a>.<br /><a
+          href="/leader"
+          class="underline">Leader</a
+        >.<br /><a href="/astro" class="underline">Astrophotographer</a>.<br
+        /><a href="/music" class="underline">Musician</a>.
+      </h2>
+    </div>
+    <div class="hidden md:flex md:w-80 lg:w-1/2 xl:w-1/2 md:p-5">
+      <ArticleCard article={latestPost} />
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3">
+    <div class="col-span-1"><Twitch channel="jdotw" /></div>
+    <div class="col-span-1">
+      <YouTube embed="-ROZuPlJWFo?list=UUuNEUzvXLwaMn51uUsB0ILQ" />
+    </div>
+    <div class="col-span-1">
+      <YouTube embed="o83GysKTvO0?list=PL3kd2QrOG8tDcczjFb-Qwg2sSr_8w1vfP" />
+    </div>
+  </div>
+</div>
+<div class="p-5 md:hidden">
+  <div class="w-full flex">
+    <ArticlePreview article={latestPost} />
+  </div>
+</div>

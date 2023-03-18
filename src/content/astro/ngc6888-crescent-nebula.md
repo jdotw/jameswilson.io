@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2018-05-25T10:22:00Z"
 image: astro/ngc6888.jpg
-title: NGC6888 - Crescent Nebula
+title: Crescent Nebula
+catalog: NGC6888
 ---
 
 The result of processing this data surprised me in terms of the detail and the way in which the false-color of red and blue narrow-band data creates a compelling rendition of this nebula! Two years elapsed between capturing this data and then processing it in 2018. I remember looking at the individual exposures and was blown away by the contrast of just a single frame.

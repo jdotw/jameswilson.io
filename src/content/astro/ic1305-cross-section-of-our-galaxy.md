@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2018-08-05T09:36:07Z"
 image: astro/ic1305.jpg
-title: IC1305 - Cross-Section of Our Galaxy
+title: Cross-Section of Our Galaxy
+catalog: IC1305
 ---
 
 This glorious mass of an unimaginable amount of stars is a cross-section of our own galaxy. Ponder that for a moment. This is our own neighborhood, and each of these tiny points of light could have worlds of untold beauty — and life! — orbiting them. It reminds me of a trip that I took, alone, to the Arches National Park in Utah. At around 9pm at night I drove back out to the park, walked in the pitch black under a new moon to find a clearing among the Park Avenue rock formation. I never had, and never have since, seen such an incredible sky. Ink black cloth coated in a diamond glitter.

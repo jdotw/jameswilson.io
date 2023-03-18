@@ -5,6 +5,7 @@ categories:
 date: "2018-05-16T09:57:00Z"
 image: astro/horsehead-mosaic.png
 title: Horsehead Region Mosaic
+catalog: IC431
 ---
 
 I've always been fascinated by the Horsehead nebula. And, I know that right next to it is the equally stunning Orion Nebula and the lesser known Burning / Running Man nebula. In 2018, toward the end of my time in California, I decided to try an ambitious project of capturing a multi-panel mosaic of the region that encompasses those three features. I figured that if there's enough ionized gas, dust, etc to form those gorgeous nebula so relatively close then it must be a very active region of space. … I was not disappointed!

@@ -4,7 +4,8 @@ categories:
   - Astrophotography
 date: "2018-05-06T09:55:00Z"
 image: astro/ngc5457.jpg
-title: NGC5475 - Pinwheel Galaxy
+title: Pinwheel Galaxy
+catalog: NGC5475
 ---
 
 This is the Pinwheel Galaxy, or at least how it looked around 21 million years ago, captured in 2015. Aside from being a beautiful example of a spiral galaxy, Pinwheel was also made famous by being the subject of one of the most detailed images that the Hubble Space Telescope ever produced. What I love about this image is all those glowing red and blue regions in the spiral arms. Those are intensely active star forming regions that would be full of the most amazing nebula unlike anything we could imagine. Oh to whisk our way through those dust lanes!

@@ -17,6 +17,7 @@ const astroCollection = defineCollection({
     title: z.string(),
     tags: z.array(z.string()).default(["astro"]),
     image: z.string(),
+    catalog: z.string().optional(),
     //image: image().refine((img) => img.width >= 1080, {
     //  message: "Astrophoto image must be at least 1080 pixels wide!",
     //}),
