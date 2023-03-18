@@ -88,14 +88,19 @@ import Articles from "../components/Articles.astro";
     </div>
   </div>
   <div class="bg-neutral-900 text-neutral-50 p-5">
-    <div class="mb-5">
+    <div class="mb-10">
       <h2 class="heading-3">Leadership Experience</h2>
       <h3 class="heading-4">
         At Apple, Amazon Web Services, x15ventures and CBA
       </h3>
     </div>
-    <History title="Apple" styles="bg-neutral-900" dark={true} timeline={true}>
-      <div>
+    <History
+      title="Apple"
+      styles="bg-neutral-900 mb-10"
+      dark={true}
+      timeline={true}
+    >
+      <div class="text-1 space-y-5 mt-0 md:mt-4">
         <p>
           Apple is a company obsessed with the customer and their experience
           with purchasing, setting up and using their products. I learned at
@@ -166,8 +171,13 @@ import Articles from "../components/Articles.astro";
       </div>
     </History>
 
-    <History title="AWS" styles="bg-neutral-900" dark={true} timeline={true}>
-      <div>
+    <History
+      title="AWS"
+      styles="bg-neutral-900 mb-10"
+      dark={true}
+      timeline={true}
+    >
+      <div class="text-1 space-y-5">
         <p>
           Amazon Web Services is a polar opposite to Apple in many regards, but
           one that added to my experience as a leader is their stance on remote
@@ -232,8 +242,13 @@ import Articles from "../components/Articles.astro";
       </div>
     </History>
 
-    <History title="CBA" styles="bg-neutral-900" dark={true} timeline={true}>
-      <div>
+    <History
+      title="CBA"
+      styles="bg-neutral-900 mb-5"
+      dark={true}
+      timeline={true}
+    >
+      <div class="text-1 space-y-5">
         <p>
           An insight I took from time at CBA is the importance of subtractive
           leadership: The higher you are on the org chart, the more you need to
@@ -263,5 +278,7 @@ import Articles from "../components/Articles.astro";
     </History>
   </div>
 
-  <Articles />
+  <div class="p-5">
+    <Articles />
+  </div>
 </PageLayout>
