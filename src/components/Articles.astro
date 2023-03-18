@@ -17,7 +17,7 @@ const latestPost = articlePosts[0];
   >
     <ArticlePreview article={latestPost} />
   </div>
-  <hr class="mb-5" />
+  <hr class="hidden md:block mb-5" />
   <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
     {articlePosts.slice(1).map((post) => <ArticleCard article={post} />)}
   </div>
