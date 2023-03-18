@@ -1,0 +1,62 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  background?: string;
+}
+const { title, subtitle, background } = Astro.props;
+---
+
+<div
+  x-data="{open: false}"
+  class={`bg-neutral-900 text-neutral-50 flex flex-col  bg-black text-white ${background} bg-cover bg-center bg-no-repeat`}
+>
+  <div class="bg-black bg-opacity-60 flex-grow">
+    <div class="flex p-5">
+      <div class="heading-5"><a href="/">James Wilson</a></div>
+      <div class="hidden md:flex flex-grow flew-row justify-end gap-2">
+        <a href="/">Home</a>
+        <a href="/engineer">Engineer</a>
+        <a href="/leader">Leader</a>
+        <a href="/astro">Astro</a>
+        <a href="/music">Music</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="flex flex-grow justify-end md:hidden">
+        <button @click="open = !open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu"
+            ><line x1="3" y1="12" x2="21" y2="12"></line><line
+              x1="3"
+              y1="6"
+              x2="21"
+              y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg
+          >
+        </button>
+      </div>
+    </div>
+    <div class="p-5" x-show="open" x-transition>
+      <div class="flex flex-col items-end gap-5">
+        <a href="/">Home</a>
+        <a href="/engineer">Engineer</a>
+        <a href="/leader">Leader</a>
+        <a href="/astro">Astro</a>
+        <a href="/music">Music</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+    <div class="p-5">
+      <h1 class="heading-2">{title}</h1>
+      {subtitle && <h2 class="heading-3">{subtitle}</h2>}
+    </div>
+  </div>
+</div>

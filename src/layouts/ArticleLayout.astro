@@ -1,0 +1,33 @@
+---
+import NavBar from "../components/NavBar.astro";
+import BaseLayout from "./BaseLayout.astro";
+import { Image } from "@astrojs/image/components";
+
+interface Props {
+  post: any;
+}
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout title={post.data.title}>
+  <NavBar
+    title={post.data.title}
+    subtitle={post.data.subtitle}
+    background={post.data.image}
+  />
+  <div class="p-5 bg-neutral-100">
+    <Image
+      src={import(`../assets/${post.data.image}`)}
+      format="webp"
+      alt={post.data.title}
+      class="rounded-lg"
+    />
+  </div>
+  <div class="p-5 pt-1 bg-neutral-100 text-black">
+    <div class="text-1 space-y-3">
+      <Content class="text-1" />
+    </div>
+    <slot />
+  </div>
+</BaseLayout>

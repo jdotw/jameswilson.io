@@ -12,7 +12,4 @@ const { entry: post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<AstroLayout post={post}>
-  <h1>{post.data.title}</h1>
-  <Content />
-</AstroLayout>
+<AstroLayout post={post} />
