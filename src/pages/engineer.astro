@@ -6,7 +6,7 @@ import PageLayout from "../layouts/PageLayout.astro";
 ---
 
 <PageLayout title="Engineer" background={`bg-[url("/backgrounds/xcode.jpg")]`}>
-  <div>
+  <div class="p-5 text-1">
     <p>
       I write software to solve problems. Whether that's in a corporate
       environment or an entrepreneurial side project, the process begins with
@@ -25,232 +25,238 @@ import PageLayout from "../layouts/PageLayout.astro";
     </p>
   </div>
 
-  <IconGrid
-    icons={[
-      {
-        image: "/icons/c-150.png",
-        title:
-          "Expert C and Objective-C skills with 20 years of experience in developing apps and frameworks using C and related languages. Fluent enough in C++ for some embedded/real-time development work as a hobby.",
-      },
-      {
-        image: "/icons/swift-150.png",
-        title:
-          "Extensive experience in Swift development for iOS and macOS in professional and side-projects.",
-      },
-      {
-        image: "/icons/js-150.png",
-        title:
-          "10 years of experience using Javascript for web and hybrid web/native app development (including object injection), as well as modern front-end development using React and back-end development using Node.js.",
-      },
-      {
-        image: "/icons/html-150.png",
-        title:
-          "I've been working with HTML and CSS since long before there was any templates or frameworks to use.",
-      },
-      {
-        image: "/icons/ios-150.png",
-        title:
-          "Contributed to many iOS, macOS and tvOS frameworks and apps at Apple, and have been developing for the iPhone and iPad since the first version of the SDK was released.",
-      },
-      {
-        image: "/icons/macos-150.png",
-        title:
-          "Released my first commercial macOS app in 2003, and have been actively developing on the Mac professional and entrepreneurially since then.",
-      },
-      {
-        image: "/icons/aws-150.png",
-        title:
-          "Experienced in back-end development and technologies using AWS including CloudFormation, Lambda, SNS/SQS, EC2 and GraphQL.",
-      },
-      {
-        image: "/icons/arm-150.png",
-        title:
-          "When I started iOS development, the devices had scarcely enough processor power and memory to run. That meant coding with extreme care. Now I practice the same on STM32 and PIC development for side-projects.",
-      },
-    ]}
-  />
+  <div class="p-5">
+    <IconGrid
+      icons={[
+        {
+          image: "/icons/c-150.png",
+          title:
+            "Expert C and Objective-C skills with 20 years of experience in developing apps and frameworks using C and related languages. Fluent enough in C++ for some embedded/real-time development work as a hobby.",
+        },
+        {
+          image: "/icons/swift-150.png",
+          title:
+            "Extensive experience in Swift development for iOS and macOS in professional and side-projects.",
+        },
+        {
+          image: "/icons/js-150.png",
+          title:
+            "10 years of experience using Javascript for web and hybrid web/native app development (including object injection), as well as modern front-end development using React and back-end development using Node.js.",
+        },
+        {
+          image: "/icons/html-150.png",
+          title:
+            "I've been working with HTML and CSS since long before there was any templates or frameworks to use.",
+        },
+        {
+          image: "/icons/ios-150.png",
+          title:
+            "Contributed to many iOS, macOS and tvOS frameworks and apps at Apple, and have been developing for the iPhone and iPad since the first version of the SDK was released.",
+        },
+        {
+          image: "/icons/macos-150.png",
+          title:
+            "Released my first commercial macOS app in 2003, and have been actively developing on the Mac professional and entrepreneurially since then.",
+        },
+        {
+          image: "/icons/aws-150.png",
+          title:
+            "Experienced in back-end development and technologies using AWS including CloudFormation, Lambda, SNS/SQS, EC2 and GraphQL.",
+        },
+        {
+          image: "/icons/arm-150.png",
+          title:
+            "When I started iOS development, the devices had scarcely enough processor power and memory to run. That meant coding with extreme care. Now I practice the same on STM32 and PIC development for side-projects.",
+        },
+      ]}
+    />
+  </div>
 
-  <History
-    title="Apple"
-    subtitle="Cupertino, California 2011-2018"
-    icons={["/employers/apple-76-white.png"]}
-    styles="bg-gray-300"
-  >
-    <div>
-      <p>
-        During my time at Apple, I first worked on the Mac App Store and
-        integrating the Software Update functionality into the App Store. As
-        part of this project, I led the effort to change how Software Engineers
-        at Apple updated their machines daily such that we could install daily
-        updates in the same way a customer would — through Software Update.
-        After delivering a few WWDC sessions in 2014 I then went on to help the
-        Wallet team complete the work for the first release of Apple Pay
-        including near-field tap payments and in-app payments.
-      </p>
-      <Image
-        alt="Apple App Icons"
-        src="/icons/apple-apps.png"
-        width={300}
-        height={215}
-        format="webp"
-        class="float-right"
-      />
-      <p>
-        I moved to a Senior Manager role in iOS Apps and Frameworks where I led
-        the Mail, Contacts, Calendar and Reminders app engineering teams, as
-        well as the Settings and Setup (out of box) experience teams, and the
-        teams responsible for Accounts, Authentication, iCloud Data Protection
-        and Mobile Device Management. During this time I was the directly
-        responsible individual for the development of the iCloud Two-Factor
-        Authentication mechanism, iCloud Data Protection, and iCloud Family
-        Sharing features including "Ask to Buy".
-      </p>
-    </div>
-  </History>
+  <div class="p-5 bg-gray-300">
+    <History
+      title="Apple"
+      subtitle="Cupertino, California 2011-2018"
+      icons={["/employers/apple-76-white.png"]}
+      styles=""
+    >
+      <div class="text-1 space-y-3">
+        <p>
+          During my time at Apple, I first worked on the Mac App Store and
+          integrating the Software Update functionality into the App Store. As
+          part of this project, I led the effort to change how Software
+          Engineers at Apple updated their machines daily such that we could
+          install daily updates in the same way a customer would — through
+          Software Update. After delivering a few WWDC sessions in 2014 I then
+          went on to help the Wallet team complete the work for the first
+          release of Apple Pay including near-field tap payments and in-app
+          payments.
+        </p>
+        <Image
+          alt="Apple App Icons"
+          src={import("../../src/assets/icons/apple-apps.png")}
+          format="webp"
+          class="float-right w-80 p-2"
+        />
+        <p>
+          I moved to a Senior Manager role in iOS Apps and Frameworks where I
+          led the Mail, Contacts, Calendar and Reminders app engineering teams,
+          as well as the Settings and Setup (out of box) experience teams, and
+          the teams responsible for Accounts, Authentication, iCloud Data
+          Protection and Mobile Device Management. During this time I was the
+          directly responsible individual for the development of the iCloud
+          Two-Factor Authentication mechanism, iCloud Data Protection, and
+          iCloud Family Sharing features including "Ask to Buy".
+        </p>
+      </div>
+    </History>
+  </div>
 
-  <History
-    title="CBA"
-    subtitle="Sydney, Australia 2020-2022"
-    icons={["/employers/cba-76-color.png", "/employers/x15-76-color.png"]}
-    styles="bg-gray-300"
-  >
-    <div>
-      <p>
-        x15ventures is the Commonwealth Bank of Australia's start-up builder and
-        scaler. At x15ventures, I established the cloud infrastructure and app
-        build patterns that enabled rapid time-to-market delivery of new
-        businesses. This pattern included out-of-the-box risk mitigation and
-        control attestation that is required in the heavily regulated financial
-        services industry without any burden on the venture itself. Leveraging
-        Hasura and PostgreSQL as an off-the-shelf GraphQL backend, and React /
-        React Native or native Swift for iOS and Kotlin for Android, we shipped
-        experimental business ideas out to market FAST! We pioneered the use of
-        graph databases and analysis techniques for real-time monitoring of code
-        changes, production and non-production environment changes, and
-        associated tickets. Combining the event data we had from multiple
-        sources we were able to demonstrate a way to raise exceptions direct to
-        the developers in near real-time to allow them to close gaps in controls
-        without audits and reports.
-      </p>
-      <p>
-        In an enterprise like CBA, building great, market-leading digital
-        experiences requires an API layer that consistently and intuitively
-        exposes the underlying capabilities and data that powers the
-        organisation's products and systems. In my role as Distinguished
-        Engineer at CBA, I defined the group's Cloud Native and API strategy. A
-        'north star' for evolving the complex banking landscape toward an
-        increasingly technology and software driven organisation. The strategy
-        leveraged Kubernetes and Cloud Native Compute Foundation projects that,
-        through a proof of concept build, demonstrated how a modern development
-        and hosting environment delivers an excellent developer experience and
-        ample control and policy hooks. These qualities made it inherently
-        suitable for a banking environment, and the platform provides a
-        step-change in safety and security compared to on-premises and bespoke
-        infrastructure-as-code implementations. Combining the work I had done at
-        x15 to create a low-risk, high-productivity working environment, we
-        extended this environment to create a new workplace for the future of
-        software engineering at CBA.
-      </p>
-    </div>
-  </History>
+  <div class="p-5 bg-gray-100">
+    <History
+      title="CBA"
+      subtitle="Sydney, Australia 2020-2022"
+      icons={["/employers/cba-76-color.png", "/employers/x15-76-color.png"]}
+      styles=""
+    >
+      <div class="text-1 space-y-5">
+        <p>
+          x15ventures is the Commonwealth Bank of Australia's start-up builder
+          and scaler. At x15ventures, I established the cloud infrastructure and
+          app build patterns that enabled rapid time-to-market delivery of new
+          businesses. This pattern included out-of-the-box risk mitigation and
+          control attestation that is required in the heavily regulated
+          financial services industry without any burden on the venture itself.
+          Leveraging Hasura and PostgreSQL as an off-the-shelf GraphQL backend,
+          and React / React Native or native Swift for iOS and Kotlin for
+          Android, we shipped experimental business ideas out to market FAST! We
+          pioneered the use of graph databases and analysis techniques for
+          real-time monitoring of code changes, production and non-production
+          environment changes, and associated tickets. Combining the event data
+          we had from multiple sources we were able to demonstrate a way to
+          raise exceptions direct to the developers in near real-time to allow
+          them to close gaps in controls without audits and reports.
+        </p>
+        <p>
+          In an enterprise like CBA, building great, market-leading digital
+          experiences requires an API layer that consistently and intuitively
+          exposes the underlying capabilities and data that powers the
+          organisation's products and systems. In my role as Distinguished
+          Engineer at CBA, I defined the group's Cloud Native and API strategy.
+          A 'north star' for evolving the complex banking landscape toward an
+          increasingly technology and software driven organisation. The strategy
+          leveraged Kubernetes and Cloud Native Compute Foundation projects
+          that, through a proof of concept build, demonstrated how a modern
+          development and hosting environment delivers an excellent developer
+          experience and ample control and policy hooks. These qualities made it
+          inherently suitable for a banking environment, and the platform
+          provides a step-change in safety and security compared to on-premises
+          and bespoke infrastructure-as-code implementations. Combining the work
+          I had done at x15 to create a low-risk, high-productivity working
+          environment, we extended this environment to create a new workplace
+          for the future of software engineering at CBA.
+        </p>
+      </div>
+    </History>
+  </div>
 
-  <History
-    title="Track Notes"
-    subtitle="Music Feedback and Annotation Platform"
-    icons={["/icons/tracknotes.png"]}
-  >
-    <div>
-      <p>
-        In my spare time, and as a creative outlet, I'm a musician. Part of the
-        creative process is listening back to what you've created, making notes
-        on what you do and do not like, and continuing the long, iterative
-        process of shaping the song into the (never) finished form. I found
-        myself with a desktop cluttered with .wav files and an iTunes library
-        filling up with lots of half-finished work and became increasingly
-        frustrated with the synchronization delays. Taking the notes either
-        electronically or by hand was not so much of an issue, but I yearned for
-        a way to take notes as I listened to the song such that those notes were
-        directly linked to the point in time in the song, and that particular
-        version of the composition. To fix this, I created Track Notes.
-      </p>
-      <Image
-        alt="Track Notes Screenshot"
-        src={import(
-          "../../src/assets/projects/tracknotes/screenshot-light.png"
-        )}
-        width={272}
-        height={481}
-        format="webp"
-        class="float-right"
-      />
-      <p>
-        Track Notes allows me to render an audio file on my desktop, and save it
-        to a specific folder or drag-and-drop it on the TrackNotes web site. The
-        audio file is then immediately accessible from iPhone or iPad where I
-        can use the TrackNotes app to listen back to the audio and add comments
-        about areas that need more work. But, creating music isn’t always a solo
-        endeavors. I often collaborate with other like-minded musicians. I added
-        social functions that allow audio tracks to be shared for collaborative
-        sharing and feedback.
-      </p>
-      <p>
-        The main iOS app is written in Swift 5 for iOS 11 and later. The macOS
-        app that monitors a folder and uploads the new audio files is written in
-        Swift, and the web site that allows drag-and-drop upload of files is
-        written in React and Javascript. The back-end of TrackNotes is entirely
-        described and deployed using CloudFormation with GraphQL being the
-        primary API surface, backed primarily by Lambda, DynamoDB and Cognito.
-        SNS and SQS is used for event processing and asynchronous decoupling of
-        workloads from user-interaction tasks. The app is currently in closed
-        beta testing, to be released mid 2020.
-      </p>
-    </div>
-  </History>
+  <div class="p-5">
+    <History
+      title="Track Notes"
+      subtitle="Music Feedback and Annotation Platform"
+      icons={["/icons/tracknotes.png"]}
+    >
+      <div class="text-1 space-y-5">
+        <p>
+          In my spare time, and as a creative outlet, I'm a musician. Part of
+          the creative process is listening back to what you've created, making
+          notes on what you do and do not like, and continuing the long,
+          iterative process of shaping the song into the (never) finished form.
+          I found myself with a desktop cluttered with .wav files and an iTunes
+          library filling up with lots of half-finished work and became
+          increasingly frustrated with the synchronization delays. Taking the
+          notes either electronically or by hand was not so much of an issue,
+          but I yearned for a way to take notes as I listened to the song such
+          that those notes were directly linked to the point in time in the
+          song, and that particular version of the composition. To fix this, I
+          created Track Notes.
+        </p>
+        <Image
+          alt="Track Notes Screenshot"
+          src={import(
+            "../../src/assets/projects/tracknotes/screenshot-light.png"
+          )}
+          format="webp"
+          class="float-right w-80"
+        />
+        <p>
+          Track Notes allows me to render an audio file on my desktop, and save
+          it to a specific folder or drag-and-drop it on the TrackNotes web
+          site. The audio file is then immediately accessible from iPhone or
+          iPad where I can use the TrackNotes app to listen back to the audio
+          and add comments about areas that need more work. But, creating music
+          isn’t always a solo endeavors. I often collaborate with other
+          like-minded musicians. I added social functions that allow audio
+          tracks to be shared for collaborative sharing and feedback.
+        </p>
+        <p>
+          The main iOS app is written in Swift 5 for iOS 11 and later. The macOS
+          app that monitors a folder and uploads the new audio files is written
+          in Swift, and the web site that allows drag-and-drop upload of files
+          is written in React and Javascript. The back-end of TrackNotes is
+          entirely described and deployed using CloudFormation with GraphQL
+          being the primary API surface, backed primarily by Lambda, DynamoDB
+          and Cognito. SNS and SQS is used for event processing and asynchronous
+          decoupling of workloads from user-interaction tasks. The app is
+          currently in closed beta testing, to be released mid 2020.
+        </p>
+      </div>
+    </History>
+  </div>
 
-  <History
-    title="Lithium"
-    subtitle="Network, Server and Storage Monitoring"
-    icons={["/icons/lithium.png"]}
-    styles=""
-    dark={true}
-  >
-    <div>
-      <p>
-        Lithium was my first commercial success as an independent software
-        developer. I debuted Lithium at MacWorld in 2007, the same event where
-        the iPhone was announced, and from there it became the network
-        monitoring tool of choice for clients including Apple, NHL Films, South
-        Park Studios, Saturday Night Live and NBC Universal, Bank of America,
-        and many other colleges and production companies using Apple's Xserve
-        and Xserve RAID platform.
-      </p>
-      <Image
-        alt="Lithium Screenshots"
-        src={import("../../src/assets/projects/lithium/screenshots.png")}
-        width={482}
-        height={291}
-        format="webp"
-        class="float-right"
-      />
-      <p>
-        I started development on Lithium a few years prior to the launch because
-        I couldn't stand how ugly and horrible most network monitoring and
-        management software packages were to use. None of them looked and felt
-        like a native app on the Mac, iPhone or iPad — many still don't! And so
-        I set about changing this by creating a native app for macOS and iOS to
-        view monitoring telemetry, triage faults and incidents, and generate
-        custom reports on the health of network, server and storage
-        infrastructure.
-      </p>
-      <p>
-        The back-end of Lithium was written in C — this project predates the
-        popularity of back-end frameworks like Ruby on Rails — and used a
-        combination of proprietary socket communications and XML for
-        transmission of data between the back-end and the client application.
-        The monitoring data was collected using SNMP and vendor-specific
-        protocols. The macOS and iOS apps were written entirely, and lovingly,
-        in Objective-C.
-      </p>
-    </div>
-  </History>
+  <div class="p-5 bg-neutral-900">
+    <History
+      title="Lithium"
+      subtitle="Network, Server and Storage Monitoring"
+      icons={["/icons/lithium.png"]}
+      styles=""
+      dark={true}
+    >
+      <div class="text-1 space-y-5">
+        <p>
+          Lithium was my first commercial success as an independent software
+          developer. I debuted Lithium at MacWorld in 2007, the same event where
+          the iPhone was announced, and from there it became the network
+          monitoring tool of choice for clients including Apple, NHL Films,
+          South Park Studios, Saturday Night Live and NBC Universal, Bank of
+          America, and many other colleges and production companies using
+          Apple's Xserve and Xserve RAID platform.
+        </p>
+        <Image
+          alt="Lithium Screenshots"
+          src={import("../../src/assets/projects/lithium/screenshots.png")}
+          format="webp"
+          class="float-right w-80"
+        />
+        <p>
+          I started development on Lithium a few years prior to the launch
+          because I couldn't stand how ugly and horrible most network monitoring
+          and management software packages were to use. None of them looked and
+          felt like a native app on the Mac, iPhone or iPad — many still don't!
+          And so I set about changing this by creating a native app for macOS
+          and iOS to view monitoring telemetry, triage faults and incidents, and
+          generate custom reports on the health of network, server and storage
+          infrastructure.
+        </p>
+        <p>
+          The back-end of Lithium was written in C — this project predates the
+          popularity of back-end frameworks like Ruby on Rails — and used a
+          combination of proprietary socket communications and XML for
+          transmission of data between the back-end and the client application.
+          The monitoring data was collected using SNMP and vendor-specific
+          protocols. The macOS and iOS apps were written entirely, and lovingly,
+          in Objective-C.
+        </p>
+      </div>
+    </History>
+  </div>
 </PageLayout>

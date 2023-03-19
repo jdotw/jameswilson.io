@@ -13,10 +13,10 @@ import Project from "../components/Project.astro";
   subtitle="And Related Projects"
   background={`bg-[url("/backgrounds/music.jpg")]`}
 >
-  <div class="flex flex-col md:flex-row">
-    <div>
-      <h1>Music</h1>
-      <p>
+  <div class="flex flex-col md:flex-row p-5 gap-5">
+    <div class="">
+      <h2 class="heading-2 mb-5">Music</h2>
+      <p class="text-1">
         I'm an amateur musician — amateur with a capital A! It's my creative
         outlet; my way of losing myself in a creative process that helps keep me
         focussed, sane and relieves stress. It's also been an unexpectedly great
@@ -27,8 +27,8 @@ import Project from "../components/Project.astro";
       </p>
     </div>
     <div>
-      <h1>Creating Musical Instrument</h1>
-      <p>
+      <h2 class="heading-2 mb-5">Creating an Instrument</h2>
+      <p class="text-1">
         Electronic musical instruments — synthesizers, drum machines, samplers,
         etc — appeal to me not just because of the wide pallet of sounds that
         can be produced but also because the technology behind them is
@@ -45,95 +45,112 @@ import Project from "../components/Project.astro";
       </p>
     </div>
   </div>
-  <Project
-    title="Project Instrument"
-    subtitle="Analog Bass Synthesizer"
-    images={[
-      { title: "Breadboard", src: "/projects/synth/breadboard.jpg" },
-      { title: "Desk", src: "/projects/synth/desk.jpg" },
-      { title: "Processor", src: "/projects/synth/processor.jpg" },
-      { title: "Oscilloscope", src: "/projects/synth/scope.jpg" },
-    ]}
-    featureType="twitch"
-    featureSrc="jdotw"
-  >
-    <p>
-      The completed prototype of this synthesizer took 10 breadboard strips and
-      contains 2 x CEM3340 oscillators, a CD4013 sub-oscillator, 4 x AS3310
-      Envelope Generators, 4 x AS3320 Voltage Controlled Filters and no less
-      than 6 x V2164D voltage controlled amplifiers. There’s also a STM32 G431
-      micro controller, a few MCP4728 Digital-to-Analog converters to drive
-      control voltages and the glorious Spin Semiconductors FV-1 programmable
-      DSP for reverb and other effects.
-    </p>
-  </Project>
-  <Project
-    title="Exit Mesa"
-    subtitle="Album - 2019"
-    featureType="youtube"
-    featureSrc="85msiWaTFgc?list=OLAK5uy_n_z0Jz5xthBOi7zAACMD00Pk24qR4DdUs"
-  >
-    <p>
-      Shortly before I left California, I finished composing and recording the
-      material for what would become my second album: Exit Mesa. This album uses
-      a combination of electronic instruments, hardware and software, combined
-      with guitar parts recorded live. Mixed and edited on many flights between
-      Sydney and San Francisco, and finally finished once I’d found my feet
-      again in Sydney, “Exit Mesa” was released in early 2019. The performance
-      name is was released under “Strollfold” is a combination of the two
-      working titles for the album “Strolling off the Mesa” and “Fold”, which
-      after being written many times on my to-do list became increasingly
-      shortened to “Work on Stroll & Fold”, and eventually “Strollfold” became
-      the name that stuck.
-    </p>
-    <p>
-      Ableton was the DAW of choice for this project, and the sounds were
-      primary from an Arturia Matrix Brute, Roland Juno 106, Roland TR8-S drum
-      machine, Access Virus TI2, and a host of software instruments from
-      Arturia, Xfer Records (Serum) and Native Instruments.
-    </p>
-    <p>
-      Listen to Exit Mesa on <a
-        href="https://music.apple.com/us/album/exit-mesa/1451816492"
-        >Apple Music</a
-      >, <a href="https://open.spotify.com/album/1zp1RLjxhHrNHmD1wuK7Qn"
-        >Spotify</a
-      >, <a href="http://www.amazon.com/gp/product/B07NF65PKH">Amazon</a> and <a
-        href="https://distrokid.com/hyperfollow/strollfold/exit-mesa"
-        >other services</a
-      >.
-    </p>
-  </Project>
+  <div class="p-5 bg-neutral-50">
+    <Project
+      title="Project Instrument"
+      subtitle="Analog Bass Synthesizer"
+      images={[
+        { title: "Breadboard", src: "/projects/synth/breadboard.jpg" },
+        { title: "Desk", src: "/projects/synth/desk.jpg" },
+        { title: "Processor", src: "/projects/synth/processor.jpg" },
+        { title: "Oscilloscope", src: "/projects/synth/scope.jpg" },
+      ]}
+      featureType="twitch"
+      featureSrc="jdotw"
+    >
+      <p class="text-1">
+        The completed prototype of this synthesizer took 10 breadboard strips
+        and contains 2 x CEM3340 oscillators, a CD4013 sub-oscillator, 4 x
+        AS3310 Envelope Generators, 4 x AS3320 Voltage Controlled Filters and no
+        less than 6 x V2164D voltage controlled amplifiers. There's also a STM32
+        G431 micro controller, a few MCP4728 Digital-to-Analog converters to
+        drive control voltages and the glorious Spin Semiconductors FV-1
+        programmable DSP for reverb and other effects.
+      </p>
+    </Project>
+  </div>
+  <div class="p-5 text-white bg-neutral-900">
+    <Project
+      title="Exit Mesa"
+      subtitle="Album - 2019"
+      featureType="youtube"
+      featureSrc="85msiWaTFgc?list=OLAK5uy_n_z0Jz5xthBOi7zAACMD00Pk24qR4DdUs"
+    >
+      <div class="text-1 space-y-3">
+        <p>
+          Shortly before I left California, I finished composing and recording
+          the material for what would become my second album: Exit Mesa. This
+          album uses a combination of electronic instruments, hardware and
+          software, combined with guitar parts recorded live. Mixed and edited
+          on many flights between Sydney and San Francisco, and finally finished
+          once I'd found my feet again in Sydney, “Exit Mesa” was released in
+          early 2019. The performance name is was released under “Strollfold” is
+          a combination of the two working titles for the album “Strolling off
+          the Mesa” and “Fold”, which after being written many times on my to-do
+          list became increasingly shortened to “Work on Stroll & Fold”, and
+          eventually “Strollfold” became the name that stuck.
+        </p>
+        <p>
+          Ableton was the DAW of choice for this project, and the sounds were
+          primary from an Arturia Matrix Brute, Roland Juno 106, Roland TR8-S
+          drum machine, Access Virus TI2, and a host of software instruments
+          from Arturia, Xfer Records (Serum) and Native Instruments.
+        </p>
+        <p>
+          Listen to Exit Mesa on <a
+            href="https://music.apple.com/us/album/exit-mesa/1451816492"
+            class="underline">Apple Music</a
+          >, <a
+            href="https://open.spotify.com/album/1zp1RLjxhHrNHmD1wuK7Qn"
+            class="underline">Spotify</a
+          >, <a
+            href="http://www.amazon.com/gp/product/B07NF65PKH"
+            class="underline">Amazon</a
+          > and
+          <a
+            href="https://distrokid.com/hyperfollow/strollfold/exit-mesa"
+            class="underline">other services</a
+          >.
+        </p>
+      </div>
+    </Project>
+  </div>
 
-  <Project
-    title="Long, Slow Accident"
-    subtitle="Album - 2006"
-    featureType="image"
-    featureSrc="/music/long-slow-accident.png"
-  >
-    <p>
-      Way back in 2005, over the Christmas and New Year holiday break, I locked
-      myself with a bunch of guitars, a bass guitar, a laptop and a drum
-      machine. The result was this album: Long, Slow Accident. Unlike Exit Mesa,
-      this album is very guitar driven and more alternative rock. This was
-      before the electronic influences took over. If I remember at the time I
-      also had a Roland JP8000 keyboard and an Akai MPC2000 but they just didn’t
-      gel with me and I ended up selling them soon after I made this album.
-    </p>
-    <p>
-      The main guitar used on most tracks is the one guitar I still have with me
-      from this time, my 1964 Fender Jazzmaster. Some tracks also used a 1974
-      Fender Thinline Deluxe that I had at the time but sold before moving to
-      the US. The acoustic was a Maton EGB808 Artist. And that reminds me, I
-      need an acoustic guitar again.
-    </p>
-    <p>
-      Listen to <a
-        href="https://soundcloud.com/jwilson511/sets/long-slow-accident"
-        >Long, Slow Accident</a
-      > on <a href="https://soundcloud.com/jwilson511/sets/long-slow-accident"
-        >SoundCloud</a
-      >.
-    </p>
-  </Project>
+  <div class="p-5 bg-white">
+    <Project
+      title="Long, Slow Accident"
+      subtitle="Album - 2006"
+      featureType="image"
+      featureSrc="/music/long-slow-accident-removebg.png"
+    >
+      <div class="text-1 space-y-3">
+        <p>
+          Way back in 2005, over the Christmas and New Year holiday break, I
+          locked myself with a bunch of guitars, a bass guitar, a laptop and a
+          drum machine. The result was this album: Long, Slow Accident. Unlike
+          Exit Mesa, this album is very guitar driven and more alternative rock.
+          This was before the electronic influences took over. If I remember at
+          the time I also had a Roland JP8000 keyboard and an Akai MPC2000 but
+          they just didn't gel with me and I ended up selling them soon after I
+          made this album.
+        </p>
+        <p>
+          The main guitar used on most tracks is the one guitar I still have
+          with me from this time, my 1964 Fender Jazzmaster. Some tracks also
+          used a 1974 Fender Thinline Deluxe that I had at the time but sold
+          before moving to the US. The acoustic was a Maton EGB808 Artist. And
+          that reminds me, I need an acoustic guitar again.
+        </p>
+        <p>
+          Listen to <a
+            href="https://soundcloud.com/jwilson511/sets/long-slow-accident"
+            class="underline">Long, Slow Accident</a
+          > on <a
+            href="https://soundcloud.com/jwilson511/sets/long-slow-accident"
+            class="underline">SoundCloud</a
+          >.
+        </p>
+      </div>
+    </Project>
+  </div>
 </PageLayout>

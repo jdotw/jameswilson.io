@@ -13,21 +13,20 @@ const { title, subtitle, images, featureType, featureSrc } = Astro.props;
 ---
 
 <div class="flex flex-col">
-  <div class="flex flex-col md:flex-row">
-    <div class="w-full md:w-2/5">
-      <div>
-        <h1>{title}</h1>
-        <h2>{subtitle}</h2>
-      </div>
-      <div>
+  <div class="mb-5">
+    <h2 class="heading-2">{title}</h2>
+    <h3 class="heading-3">{subtitle}</h3>
+  </div>
+  <div class="flex flex-col md:flex-row gap-5 mb-5">
+    <div class="w-full md:w-1/2 flex justify-center">
+      <div class="flex-grow">
         {
           featureType === "image" && (
             <Image
-              src={featureSrc}
-              width={600}
-              height={615}
+              src={import(`../../src/assets/${featureSrc}`)}
               alt={title}
               format="webp"
+              class={"rounded-lg object-contain m-5"}
             />
           )
         }
@@ -35,19 +34,22 @@ const { title, subtitle, images, featureType, featureSrc } = Astro.props;
         {featureType === "twitch" && <Twitch channel={featureSrc} />}
       </div>
     </div>
-    <div class="w-full md:w-3/5">
+    <div class="w-full md:w-1/2">
       <slot />
     </div>
   </div>
-  <div class="flex flex-row justify-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
     {
       images &&
         images.map((image) => (
-          <Image
-            src={import(`../../src/assets/${image.src}`)}
-            format="webp"
-            alt={image.title}
-          />
+          <div class="flex">
+            <Image
+              src={import(`../../src/assets/${image.src}`)}
+              format="webp"
+              alt={image.title}
+              class="rounded-lg object-cover h-64"
+            />
+          </div>
         ))
     }
   </div>

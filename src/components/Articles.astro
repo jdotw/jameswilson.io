@@ -8,12 +8,16 @@ const articlePosts = (await getCollection("articles")).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 const latestPost = articlePosts[0];
+interface Props {
+  latestPostStyles: boolean;
+}
+const { latestPostStyles } = Astro.props;
 ---
 
 <div class="">
-  <h2 class="heading-2">Articles</h2>
+  <h2 class="heading-2 mb-5">Articles</h2>
   <div
-    class="hidden md:flex items-center mt-5 md:flex-col justify-between rounded-lg bg-white mb-3"
+    class={`flex items-center mt-5 md:flex-col justify-between rounded-lg bg-white mb-3 ${latestPostStyles}`}
   >
     <ArticlePreview article={latestPost} />
   </div>

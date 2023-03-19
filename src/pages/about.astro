@@ -2,23 +2,21 @@
 import IconGrid from "../components/IconGrid.astro";
 import History from "../components/History.astro";
 import { Image } from "@astrojs/image/components";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 import Articles from "../components/Articles.astro";
 import AstroPhotos from "../components/AstroPhotos.astro";
 ---
 
-<BaseLayout title="About">
-  <div>
-    <div class="flex flex-col md:flex-row">
-      <Image
-        src="/about/headshot.jpg"
-        width={455}
-        height={455}
-        format="webp"
-        alt="Photo of James"
-      />
-      <div>
-        <h1>Who I Am</h1>
+<PageLayout title="About" background={`bg-[url("/backgrounds/pointing.jpg")]`}>
+  <div class="p-5">
+    <div class="flex flex-col md:flex-row gap-5 mb-5">
+      <div class="text-1">
+        <Image
+          src={import("../../src/assets/about/headshot.jpg")}
+          format="webp"
+          alt="Photo of James"
+          class="float-right w-1/2 rounded-lg ml-5 mb-2"
+        />
         <p>
           I'm an executive leader with 20 years of experience in Software and
           Network Engineering spanning Australia and the US. As Chief Engineer
@@ -37,55 +35,68 @@ import AstroPhotos from "../components/AstroPhotos.astro";
         </p>
       </div>
     </div>
+  </div>
+
+  <div class="p-5">
     <History title="What I Do">
+      <div slot="before-icon" class="flex justify-center h-28 py-5">
+        <div class="w-px h-full bg-neutral-400"></div>
+      </div>
       <div>
         <Image
-          src="/about/pointing.jpg"
-          width={698}
-          height={262}
+          src={import("../../src/assets/about/pointing.jpg")}
           alt="Pointing at a screen"
           format="webp"
+          class="w-full mb-5 rounded-lg h-52 object-cover"
         />
-        <p>
-          I lead teams to solve complex problems and achieve impactful outcomes
-          by being an integrated part of the problem solving process and the
-          development of talent within teams. I pride myself on staying active
-          as a coder and technical contributor either on the job or through side
-          projects to keep my skills sharp and knowledge relevant. When leading
-          engineers in an executive capacity, my role is to bridge between what
-          the business wants and what the engineering team can deliver. Crucial
-          to building trust and confidence within the team is being able to talk
-          their language, understand the complexities in their work, and to
-          enjoy the pursuit of excellence through software engineering.
-        </p>
-        <p>
-          I’m a driver by nature and have learned how to modulate my management
-          approach to suit the individuals that I’m working with and their own
-          style, capabilities, and confidence level. I don’t have a prescribed
-          management style, but instead strive to build learning organizations
-          through leveraging a shared self, organizational and situational
-          awareness. Each team is different, every person an individual, and
-          each challenge we face will require a different approach. The most
-          creative and innovative solutions require us to leverage experience
-          and embrace ambiguity.
-        </p>
+        <div class="text-1 space-y-3">
+          <p>
+            I lead teams to solve complex problems and achieve impactful
+            outcomes by being an integrated part of the problem solving process
+            and the development of talent within teams. I pride myself on
+            staying active as a coder and technical contributor either on the
+            job or through side projects to keep my skills sharp and knowledge
+            relevant. When leading engineers in an executive capacity, my role
+            is to bridge between what the business wants and what the
+            engineering team can deliver. Crucial to building trust and
+            confidence within the team is being able to talk their language,
+            understand the complexities in their work, and to enjoy the pursuit
+            of excellence through software engineering.
+          </p>
+          <p>
+            I'm a driver by nature and have learned how to modulate my
+            management approach to suit the individuals that I'm working with
+            and their own style, capabilities, and confidence level. I don't
+            have a prescribed management style, but instead strive to build
+            learning organizations through leveraging a shared self,
+            organizational and situational awareness. Each team is different,
+            every person an individual, and each challenge we face will require
+            a different approach. The most creative and innovative solutions
+            require us to leverage experience and embrace ambiguity.
+          </p>
+        </div>
       </div>
     </History>
+  </div>
+  <div class="p-5 bg-neutral-50">
     <History title="Where I've Worked">
+      <div slot="before-icon" class="flex justify-center h-28 py-5">
+        <div class="w-px h-full bg-neutral-400"></div>
+      </div>
+
       <div>
         <Image
-          src="/about/wwdc.png"
-          width={698}
-          height={262}
-          alt="On stage at Apples WWDC"
+          src={import("../../src/assets/about/wwdc.png")}
+          alt="On stage at Apple's World-Wide Developer Conference"
           format="webp"
+          class="w-full h-64 object-cover rounded-lg mb-5"
         />
         <IconGrid
           icons={[
             {
               image: "/employers/cba-76-color.png",
               title: "Distinguished Engineer",
-              text: "Building great digital experiences and leading the market requires an API layer that consistently and intuitively exposes the underlying capabilities and data that powers the organisations products and systems. In my role as Distinguished Engineer at CBA Retail Banking Service I defined the group’s Cloud Native and API strategy; a North Star for how to evolve the complex banking landscape toward an increasingly technology and software driven organization.",
+              text: "Building great digital experiences and leading the market requires an API layer that consistently and intuitively exposes the underlying capabilities and data that powers the organisations products and systems. In my role as Distinguished Engineer at CBA Retail Banking Service I defined the group's Cloud Native and API strategy; a North Star for how to evolve the complex banking landscape toward an increasingly technology and software driven organization.",
             },
             {
               image: "/employers/apple-76-black.png",
@@ -100,47 +111,52 @@ import AstroPhotos from "../components/AstroPhotos.astro";
             {
               image: "/employers/x15-76-color.png",
               title: "Chief Engineer",
-              text: "As the first Chief Engineer at x15ventures, I built up the engineering team that delivered the first few in-house built ventures. x15ventures is CBA group’s startup builder and scaler subsidiary. Our mission was to show that a high quality product can be built in much less time by using modern tools, languages and workplace environments; and to then translate these lessons back into the bank to improve software engineering across the group.",
+              text: "As the first Chief Engineer at x15ventures, I built up the engineering team that delivered the first few in-house built ventures. x15ventures is CBA group's startup builder and scaler subsidiary. Our mission was to show that a high quality product can be built in much less time by using modern tools, languages and workplace environments; and to then translate these lessons back into the bank to improve software engineering across the group.",
             },
             {
               image: "/employers/cisco-76-color.png",
               title: "CSE-3",
-              text: "Started at Cisco straight out of high school in a logistics support coordinator role. Spent nights and weekends in the lab learning everything I could about Cisco’s hardware and Software. Became one of the youngest ever Cisco Certified Internetworking Experts within a year. As a Customer Support Engineer, remotely troubleshot, and resolved problems for Cisco customers.",
+              text: "Started at Cisco straight out of high school in a logistics support coordinator role. Spent nights and weekends in the lab learning everything I could about Cisco's hardware and Software. Became one of the youngest ever Cisco Certified Internetworking Experts within a year. As a Customer Support Engineer, remotely troubleshot, and resolved problems for Cisco customers.",
             },
           ]}
         />
       </div>
     </History>
+  </div>
+  <div class="p-5 bg-neutral-800 text-neutral-100">
     <History title="The Value I Add">
+      <div slot="before-icon" class="flex justify-center h-28 py-5">
+        <div class="w-px h-full bg-neutral-400"></div>
+      </div>
       <div>
         <Image
-          src="/about/talking.jpg"
-          width={698}
-          height={262}
+          src={import("../../src/assets/about/talking.jpg")}
           alt="Talking to colleagues"
           format="webp"
+          class="object-cover h-64 mb-5 rounded-lg"
         />
-        <div>
-          <h1>Technical Leadership</h1>
+        <h3 class="heading-3 mb-5">Technical Leadership</h3>
+        <div class="text-1 space-y-3 mb-5">
           <p>
             I help organizations make technology choices that are aligned with
-            their vision and realize growth potential. I’ve learnt to develop
+            their vision and realize growth potential. I've learnt to develop
             frameworks for decision making practices that empower individuals
             and teams to arrive at sound technology choices through
             accountability and autonomy. I can lead an organization through the
             key milestones of their growth from delivering an minimum viable
             product, to readying that product for broad market penetration, to
             scaling up the workforce and infrastructure to support growth, and
-            the continued evolution and reinvention of a product or service. I’m
+            the continued evolution and reinvention of a product or service. I'm
             experienced in enacting architectural shifts to divest non-core
-            activities and increase efficiencies, and I’ve worked extensively
+            activities and increase efficiencies, and I've worked extensively
             with teams to plot a course through transforming and modernizing
             their front-end, native app and back-end code bases and
             infrastructure.
           </p>
         </div>
-        <div>
-          <h1>People Management</h1><p>
+        <h3 class="heading-3 mb-5">People Management</h3>
+        <div class="text-1 space-y-3 mb-5">
+          <p>
             I can increase the delivery capabilities of an engineering
             organization through hiring, talent development, organizational
             restructuring and performance management. Building trust between
@@ -151,13 +167,14 @@ import AstroPhotos from "../components/AstroPhotos.astro";
             different social styles present in a workforce. I am able to
             modulate the level of directive vs. supportive input I provide to
             match the capabilities vs confidence of a team or an individual.
-            I’ve created, restructured and grown teams in the US, EMEA and APAC
+            I've created, restructured and grown teams in the US, EMEA and APAC
             markets and am sensitive to the cultural strengths and opportunities
             to build diversity in thought through global expansion.
           </p>
         </div>
-        <div>
-          <h1>Problem Solving</h1><p>
+        <h3 class="heading-3 mb-5">Problem Solving</h3>
+        <div class="text-1 space-y-3 mb-5">
+          <p>
             I can be hands-on when a team needs deep technical guidance, or
             hands-off when a team can arrive at the solution but needs
             organizational help realizing that outcome. I remain an active
@@ -176,6 +193,8 @@ import AstroPhotos from "../components/AstroPhotos.astro";
         </div>
       </div>
     </History>
+  </div>
+  <div class="p-5">
     <Articles />
   </div>
-</BaseLayout>
+</PageLayout>

@@ -13,14 +13,19 @@ const { title, subtitle, icons = [], styles, dark, timeline } = Astro.props;
 ---
 
 <div
-  class={`flex flex-col md:flex-row ${
-    dark ? "bg-black text-white" : ""
+  class={`flex flex-col gap-5 md:flex-row ${
+    dark ? "bg-neutral-900 text-neutral-50" : ""
   } ${styles}`}
 >
   <div class="flex flex-col w-full md:w-1/5">
+    <slot name="before-icon" />
     <div class="">
-      <h3 class="heading-3 text-center font-semibold text-5xl">{title}</h3>
-      {subtitle && <h4 class="heading-4 text-center">{subtitle}</h4>}
+      <h3 class="heading-3 text-center font-semibold text-5xl mb-5">{title}</h3>
+      {
+        subtitle && (
+          <h4 class="heading-5 text-center font-light mb-5">{subtitle}</h4>
+        )
+      }
     </div>
     <div class="flex flex-col items-center flex-grow">
       {

@@ -7,23 +7,36 @@ interface Props {
     title: string;
     text?: string;
   }[];
+  dark?: boolean;
 }
-const { icons } = Astro.props;
+const { icons, dark } = Astro.props;
 ---
 
 <div class="grid grid-cols-3 gap-5">
   {
     icons.map((icon) => (
       <div class="flex flex-col items-center p-2 col-span-1">
-        <div class="flex flex-row h-[76px] w-[76px] items-center justify-center mb-5">
+        <div class="flex flex-row items-center justify-center mb-5 h-[76px] w-[76px]">
           <Image
             src={import(`../../src/assets/${icon.image}`)}
             alt={icon.title}
-            class=""
+            class="object-contain max-h-[76px] max-w-[76px]"
           />
         </div>
-        <p class="text-center text-sm text-gray-400">{icon.title}</p>
-        {icon.text && icon.text}
+        <p
+          class={`text-center text-1 text-sm  mb-5 ${
+            dark ? "text-neutral-50" : "text-neutral-900"
+          }`}
+        >
+          {icon.title}
+        </p>
+        <p
+          class={`text-1 text-sm text-left  ${
+            dark ? "text-neutral-50" : "text-neutral-600"
+          }`}
+        >
+          {icon.text && icon.text}
+        </p>
       </div>
     ))
   }
