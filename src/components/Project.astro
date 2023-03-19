@@ -28,6 +28,8 @@ const { title, subtitle, images, featureType, featureSrc } = Astro.props;
               src={`/${featureSrc}`}
               alt={title}
               format="webp"
+              fit="inside"
+              background="transparent"
               class={"rounded-lg object-contain m-5"}
             />
           )
@@ -46,8 +48,8 @@ const { title, subtitle, images, featureType, featureSrc } = Astro.props;
         images.map((image) => (
           <div class="flex">
             <Image
-              height={500}
-              width={500}
+              width={1024}
+              aspectRatio="16:9"
               src={`/${image.src}`}
               format="webp"
               alt={image.title}

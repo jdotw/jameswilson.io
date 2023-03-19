@@ -29,42 +29,42 @@ import PageLayout from "../layouts/PageLayout.astro";
     <IconGrid
       icons={[
         {
-          image: "/icons/c-150.png",
+          image: "icons/c-150.png",
           title:
             "Expert C and Objective-C skills with 20 years of experience in developing apps and frameworks using C and related languages. Fluent enough in C++ for some embedded/real-time development work as a hobby.",
         },
         {
-          image: "/icons/swift-150.png",
+          image: "icons/swift-150.png",
           title:
             "Extensive experience in Swift development for iOS and macOS in professional and side-projects.",
         },
         {
-          image: "/icons/js-150.png",
+          image: "icons/js-150.png",
           title:
             "10 years of experience using Javascript for web and hybrid web/native app development (including object injection), as well as modern front-end development using React and back-end development using Node.js.",
         },
         {
-          image: "/icons/html-150.png",
+          image: "icons/html-150.png",
           title:
             "I've been working with HTML and CSS since long before there was any templates or frameworks to use.",
         },
         {
-          image: "/icons/ios-150.png",
+          image: "icons/ios-150.png",
           title:
             "Contributed to many iOS, macOS and tvOS frameworks and apps at Apple, and have been developing for the iPhone and iPad since the first version of the SDK was released.",
         },
         {
-          image: "/icons/macos-150.png",
+          image: "icons/macos-150.png",
           title:
             "Released my first commercial macOS app in 2003, and have been actively developing on the Mac professional and entrepreneurially since then.",
         },
         {
-          image: "/icons/aws-150.png",
+          image: "icons/aws-150.png",
           title:
             "Experienced in back-end development and technologies using AWS including CloudFormation, Lambda, SNS/SQS, EC2 and GraphQL.",
         },
         {
-          image: "/icons/arm-150.png",
+          image: "icons/arm-150.png",
           title:
             "When I started iOS development, the devices had scarcely enough processor power and memory to run. That meant coding with extreme care. Now I practice the same on STM32 and PIC development for side-projects.",
         },
@@ -92,12 +92,14 @@ import PageLayout from "../layouts/PageLayout.astro";
           payments.
         </p>
         <Image
-          height={500}
-          width={500}
+          height={738}
+          width={1024}
           alt="Apple App Icons"
-          src={"/icons/apple-apps.png"}
+          src={"icons/apple-apps.png"}
           format="webp"
           class="float-right w-80 p-2"
+          fit="inside"
+          background="transparent"
         />
         <p>
           I moved to a Senior Manager role in iOS Apps and Frameworks where I
@@ -165,7 +167,7 @@ import PageLayout from "../layouts/PageLayout.astro";
     <History
       title="Track Notes"
       subtitle="Music Feedback and Annotation Platform"
-      icons={["/icons/tracknotes.png"]}
+      icons={["icons/tracknotes.png"]}
     >
       <div class="text-1 space-y-5">
         <p>
@@ -183,12 +185,14 @@ import PageLayout from "../layouts/PageLayout.astro";
           created Track Notes.
         </p>
         <Image
-          height={500}
-          width={500}
+          height={1024}
+          width={800}
           alt="Track Notes Screenshot"
           src={"/projects/tracknotes/screenshot-light.png"}
           format="webp"
           class="float-right w-80"
+          fit="inside"
+          background="transparent"
         />
         <p>
           Track Notes allows me to render an audio file on my desktop, and save
@@ -219,7 +223,7 @@ import PageLayout from "../layouts/PageLayout.astro";
     <History
       title="Lithium"
       subtitle="Network, Server and Storage Monitoring"
-      icons={["/icons/lithium.png"]}
+      icons={["icons/lithium.png"]}
       styles=""
       dark={true}
     >
@@ -234,12 +238,13 @@ import PageLayout from "../layouts/PageLayout.astro";
           Apple's Xserve and Xserve RAID platform.
         </p>
         <Image
-          height={500}
-          width={500}
+          height={600}
+          width={1024}
           alt="Lithium Screenshots"
           src={"/projects/lithium/screenshots.png"}
           format="webp"
           class="float-right w-80"
+          fit="inside"
         />
         <p>
           I started development on Lithium a few years prior to the launch

@@ -1,5 +1,4 @@
 ---
-import IconGrid from "../components/IconGrid.astro";
 import History from "../components/History.astro";
 import { Image } from "@astrojs/image/components";
 import PageLayout from "../layouts/PageLayout.astro";
@@ -50,10 +49,10 @@ import Project from "../components/Project.astro";
       title="Project Instrument"
       subtitle="Analog Bass Synthesizer"
       images={[
-        { title: "Breadboard", src: "/projects/synth/breadboard.jpg" },
-        { title: "Desk", src: "/projects/synth/desk.jpg" },
-        { title: "Processor", src: "/projects/synth/processor.jpg" },
-        { title: "Oscilloscope", src: "/projects/synth/scope.jpg" },
+        { title: "Breadboard", src: "projects/synth/breadboard.jpg" },
+        { title: "Desk", src: "projects/synth/desk.jpg" },
+        { title: "Processor", src: "projects/synth/processor.jpg" },
+        { title: "Oscilloscope", src: "projects/synth/scope.jpg" },
       ]}
       featureType="twitch"
       featureSrc="jdotw"
@@ -121,7 +120,7 @@ import Project from "../components/Project.astro";
       title="Long, Slow Accident"
       subtitle="Album - 2006"
       featureType="image"
-      featureSrc="/music/long-slow-accident-removebg.png"
+      featureSrc="music/long-slow-accident-removebg.png"
     >
       <div class="text-1 space-y-3">
         <p>

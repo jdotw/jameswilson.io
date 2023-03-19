@@ -31,11 +31,13 @@ const { title, subtitle, icons = [], styles, dark, timeline } = Astro.props;
       {
         icons.map((icon) => (
           <Image
-            height={500}
-            width={500}
+            height={76}
+            width={76}
             alt={title}
             src={`/${icon}`}
             format="webp"
+            fit="inside"
+            background="rgba(100,100,100, 0.0)"
           />
         ))
       }
