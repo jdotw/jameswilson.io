@@ -12,7 +12,9 @@ import AstroPhotos from "../components/AstroPhotos.astro";
     <div class="flex flex-col md:flex-row gap-5 mb-5">
       <div class="text-1">
         <Image
-          src={import("../../src/assets/about/headshot.jpg")}
+          height={500}
+          width={500}
+          src={"/about/headshot.jpg"}
           format="webp"
           alt="Photo of James"
           class="float-right w-1/2 rounded-lg ml-5 mb-2"
@@ -44,7 +46,9 @@ import AstroPhotos from "../components/AstroPhotos.astro";
       </div>
       <div>
         <Image
-          src={import("../../src/assets/about/pointing.jpg")}
+          height={500}
+          width={500}
+          src={"/about/pointing.jpg"}
           alt="Pointing at a screen"
           format="webp"
           class="w-full mb-5 rounded-lg h-52 object-cover"
@@ -86,7 +90,9 @@ import AstroPhotos from "../components/AstroPhotos.astro";
 
       <div>
         <Image
-          src={import("../../src/assets/about/wwdc.png")}
+          height={500}
+          width={500}
+          src={"/about/wwdc.png"}
           alt="On stage at Apple's World-Wide Developer Conference"
           format="webp"
           class="w-full h-64 object-cover rounded-lg mb-5"
@@ -94,27 +100,27 @@ import AstroPhotos from "../components/AstroPhotos.astro";
         <IconGrid
           icons={[
             {
-              image: "/employers/cba-76-color.png",
+              image: "employers/cba-76-color.png",
               title: "Distinguished Engineer",
               text: "Building great digital experiences and leading the market requires an API layer that consistently and intuitively exposes the underlying capabilities and data that powers the organisations products and systems. In my role as Distinguished Engineer at CBA Retail Banking Service I defined the group's Cloud Native and API strategy; a North Star for how to evolve the complex banking landscape toward an increasingly technology and software driven organization.",
             },
             {
-              image: "/employers/apple-76-black.png",
+              image: "employers/apple-76-black.png",
               title: "Snr. Eng. Manager",
               text: "Remained a hands-on contributor of code while leading an organization of 50 engineers. Delivered many sessions at WWDC and worked on the initial version of Apple Pay, App Store and Software Update. As a Senior Manager in iOS, managed the Mail, Contacts, Calendar, Reminders, Settings and Setup Assistant (out of box experience) apps as well as the frameworks for Accounts, Authentication and Mobile Device Management. Directly responsible for the design and implementation of iCloud Family Sharing, Two Factor Authentication for Apple ID, and iCloud Data Protection.",
             },
             {
-              image: "/employers/aws-76-color.png",
+              image: "employers/aws-76-color.png",
               title: "Snr. Eng. Manager",
               text: "Lead a global organization of 50 software engineers, system engineers, and data scientists to build, deploy and maintain the software that monitors the global Amazon Web Service (AWS) network. Lead a fundamental shift from threshold based monitoring to machine learning applications to detect anomalies at a massive scale with teams in San Jose, Denver, Seattle and Dublin, Ireland.",
             },
             {
-              image: "/employers/x15-76-color.png",
+              image: "employers/x15-76-color.png",
               title: "Chief Engineer",
               text: "As the first Chief Engineer at x15ventures, I built up the engineering team that delivered the first few in-house built ventures. x15ventures is CBA group's startup builder and scaler subsidiary. Our mission was to show that a high quality product can be built in much less time by using modern tools, languages and workplace environments; and to then translate these lessons back into the bank to improve software engineering across the group.",
             },
             {
-              image: "/employers/cisco-76-color.png",
+              image: "employers/cisco-76-color.png",
               title: "CSE-3",
               text: "Started at Cisco straight out of high school in a logistics support coordinator role. Spent nights and weekends in the lab learning everything I could about Cisco's hardware and Software. Became one of the youngest ever Cisco Certified Internetworking Experts within a year. As a Customer Support Engineer, remotely troubleshot, and resolved problems for Cisco customers.",
             },
@@ -130,7 +136,9 @@ import AstroPhotos from "../components/AstroPhotos.astro";
       </div>
       <div>
         <Image
-          src={import("../../src/assets/about/talking.jpg")}
+          height={500}
+          width={500}
+          src={"/about/talking.jpg"}
           alt="Talking to colleagues"
           format="webp"
           class="object-cover h-64 mb-5 rounded-lg"

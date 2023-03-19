@@ -76,7 +76,7 @@ import PageLayout from "../layouts/PageLayout.astro";
     <History
       title="Apple"
       subtitle="Cupertino, California 2011-2018"
-      icons={["/employers/apple-76-white.png"]}
+      icons={["employers/apple-76-white.png"]}
       styles=""
     >
       <div class="text-1 space-y-3">
@@ -92,8 +92,10 @@ import PageLayout from "../layouts/PageLayout.astro";
           payments.
         </p>
         <Image
+          height={500}
+          width={500}
           alt="Apple App Icons"
-          src={import("../../src/assets/icons/apple-apps.png")}
+          src={"/icons/apple-apps.png"}
           format="webp"
           class="float-right w-80 p-2"
         />
@@ -115,7 +117,7 @@ import PageLayout from "../layouts/PageLayout.astro";
     <History
       title="CBA"
       subtitle="Sydney, Australia 2020-2022"
-      icons={["/employers/cba-76-color.png", "/employers/x15-76-color.png"]}
+      icons={["employers/cba-76-color.png", "employers/x15-76-color.png"]}
       styles=""
     >
       <div class="text-1 space-y-5">
@@ -181,10 +183,10 @@ import PageLayout from "../layouts/PageLayout.astro";
           created Track Notes.
         </p>
         <Image
+          height={500}
+          width={500}
           alt="Track Notes Screenshot"
-          src={import(
-            "../../src/assets/projects/tracknotes/screenshot-light.png"
-          )}
+          src={"/projects/tracknotes/screenshot-light.png"}
           format="webp"
           class="float-right w-80"
         />
@@ -232,8 +234,10 @@ import PageLayout from "../layouts/PageLayout.astro";
           Apple's Xserve and Xserve RAID platform.
         </p>
         <Image
+          height={500}
+          width={500}
           alt="Lithium Screenshots"
-          src={import("../../src/assets/projects/lithium/screenshots.png")}
+          src={"/projects/lithium/screenshots.png"}
           format="webp"
           class="float-right w-80"
         />

@@ -18,7 +18,9 @@ const { Content } = await post.render();
   />
   <div class="p-5 bg-white">
     <Image
-      src={import(`../../src/assets/${post.data.image}`)}
+      height={500}
+      width={500}
+      src={`/${post.data.image}`}
       format="webp"
       alt={post.data.title}
       class="rounded-lg"

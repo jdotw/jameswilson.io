@@ -28,8 +28,10 @@ const astroPosts = await getCollection("astro");
           </div>
           <a href={`/astro/${post.slug}`}>
             <Image
+              height={500}
+              width={500}
               class="h-64 md:h-52 lg:h-64 object-cover rounded-lg"
-              src={import(`../../src/assets/${post.data.image}`)}
+              src={`/${post.data.image}`}
               alt={post.data.title}
               format="webp"
             />
