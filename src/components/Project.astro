@@ -44,9 +44,7 @@ const { title, subtitle, images, featureType, featureSrc } = Astro.props;
       images &&
         images.map((image) => (
           <Image
-            src={image.src}
-            width={200}
-            height={170}
+            src={import(`../../src/assets/${image.src}`)}
             format="webp"
             alt={image.title}
           />

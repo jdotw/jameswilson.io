@@ -27,9 +27,7 @@ const { title, subtitle, icons = [], styles, dark, timeline } = Astro.props;
         icons.map((icon) => (
           <Image
             alt={title}
-            src={icon}
-            width={150}
-            height={150}
+            src={import(`../../src/assets/${icon}`)}
             format="webp"
           />
         ))

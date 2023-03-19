@@ -175,7 +175,9 @@ import PageLayout from "../layouts/PageLayout.astro";
       </p>
       <Image
         alt="Track Notes Screenshot"
-        src="/projects/tracknotes/screenshot-light.png"
+        src={import(
+          "../../src/assets/projects/tracknotes/screenshot-light.png"
+        )}
         width={272}
         height={481}
         format="webp"
@@ -224,7 +226,7 @@ import PageLayout from "../layouts/PageLayout.astro";
       </p>
       <Image
         alt="Lithium Screenshots"
-        src="/projects/lithium/screenshots.png"
+        src={import("../../src/assets/projects/lithium/screenshots.png")}
         width={482}
         height={291}
         format="webp"
