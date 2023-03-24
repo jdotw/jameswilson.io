@@ -7,19 +7,21 @@ import Articles from "../components/Articles.astro";
 import AstroPhotos from "../components/AstroPhotos.astro";
 ---
 
-<PageLayout title="About" background={`bg-[url("/backgrounds/pointing.jpg")]`}>
+<PageLayout title="About">
   <div class="p-5">
     <div class="flex flex-col md:flex-row gap-5 mb-5">
       <div class="text-1">
-        <Image
-          height={1024}
-          width={1024}
-          src={"/about/headshot.jpg"}
-          format="webp"
-          fit="cover"
-          alt="Photo of James"
-          class="float-right w-1/2 rounded-lg ml-5 mb-2"
-        />
+        <div class="">
+          <Image
+            height={1000}
+            width={1000}
+            src={"/about/headshot.png"}
+            format="webp"
+            fit="cover"
+            alt="Photo of James"
+            class="float-right w-1/2 rounded-lg ml-5 mb-2 max-w-[250px]"
+          />
+        </div>
         <p>
           I'm an executive leader with 20 years of experience in Software and
           Network Engineering spanning Australia and the US. As Chief Engineer

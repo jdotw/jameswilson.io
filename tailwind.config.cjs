@@ -20,7 +20,8 @@ module.exports = {
     plugin(function astroComponentsPlugin({ addComponents, theme }) {
       addComponents({
         ".hero-heading-1": {
-          "@apply font-oswald text-5xl text-right leading-tight": {},
+          "@apply font-oswald text-4xl min-[500px]:text-5xl text-right leading-tight":
+            {},
         },
         ".hero-heading-2": {
           "@apply font-oswald text-3xl text-right leading-tight": {},
@@ -44,6 +45,10 @@ module.exports = {
 
         ".heading-5": {
           "@apply font-oswald text-xl leading-tight": {},
+        },
+
+        ".link-navbar": {
+          "@apply font-oswald text-lg leading-tight": {},
         },
 
         ".text-1": {

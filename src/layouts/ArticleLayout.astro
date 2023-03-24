@@ -11,11 +11,7 @@ const { Content } = await post.render();
 ---
 
 <BaseLayout title={post.data.title}>
-  <NavBar
-    title={post.data.title}
-    subtitle={post.data.subtitle}
-    background={`bg-[url("/backgrounds/me-side.png")]`}
-  />
+  <NavBar title={post.data.title} subtitle={post.data.subtitle} />
   <div class="p-5 bg-white">
     <Image
       width={2000}

@@ -11,11 +11,7 @@ const { Content } = await post.render();
 <BaseLayout
   title={`${post.data.title}${post.data.catalog && ` (${post.data.catalog})`}`}
 >
-  <NavBar
-    title={post.data.title}
-    subtitle={post.data.catalog}
-    background={`bg-[url("/backgrounds/stars.jpg")]`}
-  />
+  <NavBar title={post.data.title} subtitle={post.data.catalog} />
   <div class="p-5 bg-neutral-900">
     <Image
       height={1500}

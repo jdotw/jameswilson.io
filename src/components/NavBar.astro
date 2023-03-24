@@ -1,25 +1,36 @@
 ---
+import { Image, Picture } from "@astrojs/image/components";
 interface Props {
   title: string;
   subtitle?: string;
-  background?: string;
 }
-const { title, subtitle, background } = Astro.props;
+const { title, subtitle } = Astro.props;
 ---
-
-<div class="bg-black text-white flex flex-col" style="display: none;">
-  <a class="p-1" href="#">First</a>
-  <a class="p-1" href="#">Second</a>
-</div>
 
 <div
   x-data="{open: false}"
   class={`bg-black text-neutral-50 flex flex-col    `}
 >
   <div class="bg-black bg-opacity-70 flex-grow">
-    <div class="flex p-5">
-      <div class="heading-5"><a href="/">James Wilson</a></div>
-      <div class="hidden md:flex flex-grow flew-row justify-end gap-2">
+    <div class="flex items-center p-5">
+      <div class="heading-4 flex flex-row items-center gap-5">
+        <div
+          class="rounded-lg w-12 sm:w-14 h-12 sm:h-14 overflow-clip ring-2 ring-neutral-200 bg-neutral-800"
+        >
+          <Image
+            src="/about/headshot-transparent-bg.png"
+            width={500}
+            height={500}
+            fit="cover"
+            alt="James Wilson"
+            format="webp"
+          />
+        </div>
+        <a href="/" class="text-neutral-100">James Wilson</a>
+      </div>
+      <div
+        class="hidden md:flex flex-grow flew-row justify-end gap-2 link-navbar"
+      >
         <a href="/">Home</a>
         <a href="/engineer">Engineer</a>
         <a href="/leader">Leader</a>
@@ -59,7 +70,7 @@ const { title, subtitle, background } = Astro.props;
       x-transition:leave-start="transform opacity-100 scale-100"
       x-transition:leave-end="transform opacity-0 scale-100"
     >
-      <div class="flex flex-col items-end gap-5">
+      <div class="flex flex-col items-end gap-5 link-navbar">
         <a href="/">Home</a>
         <a href="/engineer">Engineer</a>
         <a href="/leader">Leader</a>

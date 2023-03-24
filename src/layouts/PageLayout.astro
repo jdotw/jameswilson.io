@@ -6,13 +6,12 @@ import { Image } from "@astrojs/image/components";
 interface Props {
   title: string;
   subtitle?: string;
-  background?: string;
 }
-const { title, subtitle, background } = Astro.props;
+const { title, subtitle } = Astro.props;
 ---
 
 <BaseLayout title={title}>
-  <NavBar title={title} subtitle={subtitle} background={background} />
+  <NavBar title={title} subtitle={subtitle} />
   <div class="bg-white text-neutral-900">
     <slot />
   </div>
