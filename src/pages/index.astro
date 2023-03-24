@@ -16,6 +16,7 @@ import EngineerPagePreview from "../components/EngineerPagePreview.astro";
 import LeaderPagePreview from "../components/LeaderPagePreview.astro";
 import MakerPagePreview from "../components/MakerPagePreview.astro";
 import MusicPagePreview from "../components/MusicPagePreview.astro";
+import NavBar from "../components/NavBar.astro";
 
 const articlePosts = (await getCollection("articles")).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
@@ -23,7 +24,7 @@ const articlePosts = (await getCollection("articles")).sort(
 const latestPost = articlePosts[0];
 ---
 
-<BaseLayout title="Hey">
+<BaseLayout>
   <HomeHero />
 
   <div class="p-5 bg-neutral-800 text-white">
@@ -41,7 +42,7 @@ const latestPost = articlePosts[0];
   <div class="p-5 bg-neutral-800 text-white">
     <AstroPhotos />
   </div>
-  <div class="p-5">
+  <div class="p-5 bg-white">
     <MusicPagePreview />
   </div>
 </BaseLayout>

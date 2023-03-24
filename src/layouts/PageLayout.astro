@@ -13,5 +13,7 @@ const { title, subtitle, background } = Astro.props;
 
 <BaseLayout title={title}>
   <NavBar title={title} subtitle={subtitle} background={background} />
-  <slot />
+  <div class="bg-white text-neutral-900">
+    <slot />
+  </div>
 </BaseLayout>
