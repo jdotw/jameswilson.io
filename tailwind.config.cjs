@@ -24,7 +24,7 @@ module.exports = {
             {},
         },
         ".hero-heading-2": {
-          "@apply font-oswald text-3xl text-right leading-tight": {},
+          "@apply font-oswald text-2xl text-right leading-tight": {},
         },
 
         ".heading-1": {
