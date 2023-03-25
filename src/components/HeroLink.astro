@@ -1,0 +1,29 @@
+---
+interface Props {
+  link: string;
+  title: string;
+}
+const { link, title } = Astro.props;
+---
+
+<div>
+  <a href={link} class="hover:underline"
+    ><div class="flex flex-row justify-end items-center">
+      {title}
+      <svg
+        class="mt-2 p-1 text-neutral-50"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-chevron-right"
+        ><polyline points="9 18 15 12 9 6"></polyline></svg
+      >
+    </div></a
+  >
+</div>

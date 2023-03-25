@@ -1,6 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 import PagePreview from "../components/PagePreview.astro";
+import YouTube from "./YouTube.astro";
 ---
 
 <PagePreview page="maker" title="Maker" subtitle="Project: Analog Synthesizer">
@@ -29,38 +30,43 @@ import PagePreview from "../components/PagePreview.astro";
       still giving the user some controls to find their own sound."
     </p>
   </div>
-  <div class="grid grid-cols-1 gap-5 md:gap-2">
-    <Image
-      width={1024}
-      aspectRatio="16:9"
-      src={"/projects/synth/breadboard.jpg"}
-      alt="Boardboard"
-      format="webp"
-      class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
-    />
-    <Image
-      width={1024}
-      aspectRatio="16:9"
-      src={"/projects/synth/processor.jpg"}
-      alt="Processor"
-      format="webp"
-      class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
-    />
-    <Image
-      width={1024}
-      aspectRatio="16:9"
-      src={"/projects/synth/scope.jpg"}
-      alt="Oscilloscope"
-      format="webp"
-      class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
-    />
-    <Image
-      width={1024}
-      aspectRatio="16:9"
-      src={"/projects/synth/desk.jpg"}
-      alt="Workbench"
-      format="webp"
-      class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
-    />
+  <div>
+    <div class="mb-5 md:mb-2 h-72 md:h-36 flex">
+      <YouTube embed="-ROZuPlJWFo?list=UUuNEUzvXLwaMn51uUsB0ILQ" />
+    </div>
+    <div class="grid grid-cols-1 gap-5 md:gap-2">
+      <Image
+        width={1024}
+        aspectRatio="16:9"
+        src={"/projects/synth/breadboard.jpg"}
+        alt="Boardboard"
+        format="webp"
+        class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
+      />
+      <Image
+        width={1024}
+        aspectRatio="16:9"
+        src={"/projects/synth/processor.jpg"}
+        alt="Processor"
+        format="webp"
+        class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
+      />
+      <Image
+        width={1024}
+        aspectRatio="16:9"
+        src={"/projects/synth/scope.jpg"}
+        alt="Oscilloscope"
+        format="webp"
+        class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
+      />
+      <Image
+        width={1024}
+        aspectRatio="16:9"
+        src={"/projects/synth/desk.jpg"}
+        alt="Workbench"
+        format="webp"
+        class="object-cover col-span-1 aspect-[16/9] h-72 md:h-36 rounded-lg"
+      />
+    </div>
   </div>
 </PagePreview>
