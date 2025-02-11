@@ -8,9 +8,9 @@ const articlePosts = (await getCollection("articles")).sort(
 );
 const latestPost = articlePosts[0];
 interface Props {
-  latestPostStyles: boolean;
+  latestPostStyles?: string;
 }
-const { latestPostStyles } = Astro.props;
+const { latestPostStyles = "" } = Astro.props;
 ---
 
 <div class="">
