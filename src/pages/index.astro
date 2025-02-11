@@ -1,22 +1,13 @@
 ---
-import { getCollection, getEntryBySlug } from "astro:content";
-import { Debug } from "astro/components";
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import type { date } from "astro/zod";
-import { Image } from "@astrojs/image/components";
-import ArticleCard from "../components/ArticleCard.astro";
-import Twitch from "../components/Twitch.astro";
-import YouTube from "../components/YouTube.astro";
-import PagePreview from "../components/PagePreview.astro";
 import Articles from "../components/Articles.astro";
 import AstroPhotos from "../components/AstroPhotos.astro";
-import ArticlePreview from "../components/ArticlePreview.astro";
 import HomeHero from "../components/HomeHero.astro";
 import EngineerPagePreview from "../components/EngineerPagePreview.astro";
 import LeaderPagePreview from "../components/LeaderPagePreview.astro";
 import MakerPagePreview from "../components/MakerPagePreview.astro";
 import MusicPagePreview from "../components/MusicPagePreview.astro";
-import NavBar from "../components/NavBar.astro";
 
 const articlePosts = (await getCollection("articles")).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()

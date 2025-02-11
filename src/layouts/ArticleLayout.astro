@@ -1,7 +1,7 @@
 ---
 import NavBar from "../components/NavBar.astro";
 import BaseLayout from "./BaseLayout.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 interface Props {
   post: any;
@@ -15,7 +15,7 @@ const { Content } = await post.render();
   <div class="p-5 bg-white">
     <Image
       width={2000}
-      aspectRatio="4:3"
+      height={1500}
       src={`/${post.data.image}`}
       format="webp"
       alt={post.data.title}
