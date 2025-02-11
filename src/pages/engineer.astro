@@ -1,7 +1,7 @@
 ---
 import IconGrid from "../components/IconGrid.astro";
 import History from "../components/History.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import PageLayout from "../layouts/PageLayout.astro";
 ---
 
@@ -95,11 +95,10 @@ import PageLayout from "../layouts/PageLayout.astro";
           height={738}
           width={1024}
           alt="Apple App Icons"
-          src={"icons/apple-apps.png"}
+          src={"/icons/apple-apps.png"}
           format="webp"
           class="float-right w-80 p-2"
           fit="inside"
-          background="transparent"
         />
         <p>
           I moved to a Senior Manager role in iOS Apps and Frameworks where I
@@ -192,7 +191,6 @@ import PageLayout from "../layouts/PageLayout.astro";
           format="webp"
           class="float-right w-80"
           fit="inside"
-          background="transparent"
         />
         <p>
           Track Notes allows me to render an audio file on my desktop, and save

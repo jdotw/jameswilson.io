@@ -1,5 +1,5 @@
 ---
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 interface Props {
   icons: {
@@ -25,7 +25,6 @@ const { icons, dark } = Astro.props;
             class="object-contain max-h-[76px] max-w-[76px]"
             format="webp"
             fit="inside"
-            background="rgba(100,100,100, 0.0)"
           />
         </div>
         <p

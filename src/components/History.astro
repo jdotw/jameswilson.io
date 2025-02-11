@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 type Props = {
   title: string;
@@ -37,7 +37,6 @@ const { title, subtitle, icons = [], styles, dark, timeline } = Astro.props;
             src={`/${icon}`}
             format="webp"
             fit="inside"
-            background="rgba(100,100,100, 0.0)"
           />
         ))
       }
