@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Twitch from "./Twitch.astro";
 import YouTube from "./YouTube.astro";
 interface Props {
@@ -29,7 +29,6 @@ const { title, subtitle, images, featureType, featureSrc } = Astro.props;
               alt={title}
               format="webp"
               fit="inside"
-              background="transparent"
               class={"rounded-lg object-contain m-5"}
             />
           )
@@ -49,7 +48,7 @@ const { title, subtitle, images, featureType, featureSrc } = Astro.props;
           <div class="flex">
             <Image
               width={1024}
-              aspectRatio="16:9"
+              height={576}
               src={`/${image.src}`}
               format="webp"
               alt={image.title}

@@ -1,7 +1,7 @@
 ---
 import IconGrid from "../components/IconGrid.astro";
 import History from "../components/History.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import PageLayout from "../layouts/PageLayout.astro";
 import Articles from "../components/Articles.astro";
 import AstroPhotos from "../components/AstroPhotos.astro";
@@ -50,7 +50,7 @@ import AstroPhotos from "../components/AstroPhotos.astro";
       <div>
         <Image
           width={1500}
-          aspectRatio="16:9"
+          height={576}
           fit="inside"
           src={"/about/pointing.jpg"}
           alt="Pointing at a screen"
@@ -95,7 +95,7 @@ import AstroPhotos from "../components/AstroPhotos.astro";
       <div>
         <Image
           width={1500}
-          aspectRatio="16:9"
+          height={576}
           fit="inside"
           src={"/about/wwdc.png"}
           alt="On stage at Apple's World-Wide Developer Conference"
@@ -142,7 +142,7 @@ import AstroPhotos from "../components/AstroPhotos.astro";
       <div>
         <Image
           width={1500}
-          aspectRatio="16:9"
+          height={576}
           fit="inside"
           src={"/about/talking.jpg"}
           alt="Talking to colleagues"

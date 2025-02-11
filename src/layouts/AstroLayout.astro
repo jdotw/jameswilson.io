@@ -1,8 +1,7 @@
 ---
-import { Debug } from "astro/components";
 import NavBar from "../components/NavBar.astro";
 import BaseLayout from "./BaseLayout.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 const { post } = Astro.props;
 const { Content } = await post.render();
@@ -21,7 +20,6 @@ const { Content } = await post.render();
       alt={post.data.title}
       class="rounded-lg"
       fit="cover"
-      background="transparent"
     />
   </div>
   <div class="p-5 bg-neutral-900 text-white">
