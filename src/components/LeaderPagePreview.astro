@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import PagePreview from "../components/PagePreview.astro";
 ---
 
@@ -11,8 +11,7 @@ import PagePreview from "../components/PagePreview.astro";
 >
   <Image
     width={1024}
-    aspectRatio="4:3"
-    fit="inside"
+    height={768}
     src={"/about/looking-left.png"}
     alt="James"
     format="webp"
