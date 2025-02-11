@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import PagePreview from "../components/PagePreview.astro";
 import YouTube from "./YouTube.astro";
 ---
@@ -37,7 +37,7 @@ import YouTube from "./YouTube.astro";
     <div class="grid grid-cols-1 gap-5 md:gap-2">
       <Image
         width={1024}
-        aspectRatio="16:9"
+        height={576}
         src={"/projects/synth/breadboard.jpg"}
         alt="Boardboard"
         format="webp"
@@ -45,7 +45,7 @@ import YouTube from "./YouTube.astro";
       />
       <Image
         width={1024}
-        aspectRatio="16:9"
+        height={576}
         src={"/projects/synth/processor.jpg"}
         alt="Processor"
         format="webp"
@@ -53,7 +53,7 @@ import YouTube from "./YouTube.astro";
       />
       <Image
         width={1024}
-        aspectRatio="16:9"
+        height={576}
         src={"/projects/synth/scope.jpg"}
         alt="Oscilloscope"
         format="webp"
@@ -61,7 +61,7 @@ import YouTube from "./YouTube.astro";
       />
       <Image
         width={1024}
-        aspectRatio="16:9"
+        height={576}
         src={"/projects/synth/desk.jpg"}
         alt="Workbench"
         format="webp"
