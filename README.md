@@ -1,3 +1,7 @@
+# Hosting
+
+This site is hosted using netlify.app
+
 # Astro Starter Kit: Minimal
 
 ```
