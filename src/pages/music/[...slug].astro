@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+import MusicAlbumLayout from "../../layouts/MusicAlbumLayout.astro";
+
+export async function getStaticPaths() {
+  const albumEntries = await getCollection("music");
+  return albumEntries.map((album) => ({
+    params: { slug: album.slug },
+    props: { album },
+  }));
+}
+const { album: post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<MusicAlbumLayout post={post} />

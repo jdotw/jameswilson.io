@@ -1,0 +1,47 @@
+---
+import Project from "./Project.astro";
+
+interface Props {
+  album: any;
+  index: number;
+  showTitle?: boolean;
+}
+const { album, index, showTitle = true } = Astro.props;
+const { Content } = await album.render();
+---
+
+<div
+  class={index % 2 == 0
+    ? "text-white bg-neutral-900 p-5 "
+    : "text-white bg-neutral-800 p-5 "}
+>
+  <Project
+    title={album.data.title}
+    subtitle={album.data.subtitle}
+    images={album.data.images}
+    featureType={album.data.feature.type}
+    featureSrc={album.data.feature.source}
+    showTitle={showTitle}
+    link={`/music/${album.slug}`}
+  >
+    <div>
+      <Content />
+    </div>
+    <div class="text-1 space-y-3 pt-5">
+      <p>
+        <ul>
+          Listen to {album.data.title} on:
+          {
+            album.data.streams.map((stream: any) => (
+              <li>
+                <a href={stream.url} class="underline">
+                  {stream.service.trim()}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </p>
+    </div>
+  </Project>
+</div>

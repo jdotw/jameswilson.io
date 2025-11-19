@@ -1,0 +1,25 @@
+---
+import Project from "./Project.astro";
+
+interface Props {
+  title: string;
+  subtitle?: string;
+  images?: { title: string; src: string }[];
+  featureType: "image" | "youtube" | "twitch" | any;
+  featureSrc: string;
+  showTitle: boolean;
+}
+const { title, subtitle, images, featureType, featureSrc, showTitle } =
+  Astro.props;
+---
+
+<Project
+  title={title}
+  subtitle={subtitle}
+  images={images}
+  featureType={featureType}
+  featureSrc={featureSrc}
+  showTitle={showTitle}
+>
+  <slot />
+</Project>

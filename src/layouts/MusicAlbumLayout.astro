@@ -1,0 +1,19 @@
+---
+import NavBar from "../components/NavBar.astro";
+import BaseLayout from "./BaseLayout.astro";
+import { Image } from "astro:assets";
+import Project from "../components/Project.astro";
+import MusicAlbumPreview from "../components/MusicAlbumPreview.astro";
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout
+  title={`${post.data.title}${post.data.catalog && ` (${post.data.catalog})`}`}
+>
+  <NavBar title={post.data.title} subtitle={post.data.subtitle} />
+  <MusicAlbumPreview album={post} index={0} showTitle={false}>
+    <Content />
+  </MusicAlbumPreview>
+</BaseLayout>
