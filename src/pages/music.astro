@@ -7,75 +7,81 @@ import { Image } from "astro:assets";
 import MusicAlbumPreview from "../components/MusicAlbumPreview.astro";
 
 const musicPosts = (await getCollection("music")).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
 ---
 
 <PageLayout title="Music" subtitle="And Related Projects">
-  <div class="flex flex-col md:flex-row p-5 gap-5">
-    <div class="">
-      <h2 class="heading-2 mb-5">Albums</h2>
-      <p class="text-1">
-        Music is my creative outlet; my way of losing myself in a creative
-        process that helps keep me focussed, sane and relieves stress. It's also
-        been an unexpectedly great way to bond with people over this shared joy
-        for creating music. I learned to play guitar, bass guitar and drums
-        many, many years ago. While I still enjoy picking up the guitar and
-        playing it, my taste and creativity has been more aligned with
-        electronic music.
-      </p>
+    <div class="flex flex-col md:flex-row p-5 gap-5">
+        <div class="">
+            <h3 class="heading-3 mb-3">Albums</h3>
+            <p class="text-1">
+                Music is my creative outlet; my way of losing myself in a
+                creative process that helps keep me focussed, sane and relieves
+                stress. It's also been an unexpectedly great way to bond with
+                people over this shared joy for creating music. I learned to
+                play guitar, bass guitar and drums many, many years ago. While I
+                still enjoy picking up the guitar and playing it, my taste and
+                creativity has been more aligned with electronic music.
+            </p>
+        </div>
+        <div>
+            <h3 class="heading-3 mb-3">Instruments</h3>
+            <p class="text-1">
+                Electronic musical instruments — synthesizers, drum machines,
+                samplers, etc — appeal to me not just because of the wide pallet
+                of sounds that can be produced but also because the technology
+                behind them is approachable for me. Whether it be the circuitry
+                in an analog or digital physical device or the software code
+                driving the digital signal processing in a software instrument,
+                those are things I get. More importantly, those are things I
+                know how to create. During the COVID-19 lock down I started work
+                in my spare time on building an analog synthesizer. The idea was
+                to create a bass synthesizer that used two voices, a
+                sub-oscillator and a noise generator combined with filters and
+                amplifiers to create a usable, playable, MIDI driven musical
+                instrument. Progress on this endeavor, to take it from
+                breadboard prototype to PCB to finished product was streamed
+                live daily via Twitch.
+            </p>
+        </div>
     </div>
-    <div>
-      <h2 class="heading-2 mb-5">Instruments</h2>
-      <p class="text-1">
-        Electronic musical instruments — synthesizers, drum machines, samplers,
-        etc — appeal to me not just because of the wide pallet of sounds that
-        can be produced but also because the technology behind them is
-        approachable for me. Whether it be the circuitry in an analog or digital
-        physical device or the software code driving the digital signal
-        processing in a software instrument, those are things I get. More
-        importantly, those are things I know how to create. During the COVID-19
-        lock down I started work in my spare time on building an analog
-        synthesizer. The idea was to create a bass synthesizer that used two
-        voices, a sub-oscillator and a noise generator combined with filters and
-        amplifiers to create a usable, playable, MIDI driven musical instrument.
-        Progress on this endeavor, to take it from breadboard prototype to PCB
-        to finished product is being streamed live almost daily now via Twitch.
-      </p>
+
+    <div class="text-white bg-neutral-900">
+        {
+            musicPosts.map((post) => (
+                <MusicAlbumPreview
+                    album={post}
+                    index={musicPosts.indexOf(post)}
+                />
+            ))
+        }
     </div>
-  </div>
 
-  <div class="text-white bg-neutral-900">
-    {
-      musicPosts.map((post) => (
-        <MusicAlbumPreview album={post} index={musicPosts.indexOf(post)} />
-      ))
-    }
-  </div>
-
-  <div class="p-5 bg-neutral-50">
-    <Project
-      title="Project Instrument"
-      subtitle="Analog Bass Synthesizer"
-      images={[
-        { title: "Breadboard", src: "projects/synth/breadboard.jpg" },
-        { title: "Desk", src: "projects/synth/desk.jpg" },
-        { title: "Processor", src: "projects/synth/processor.jpg" },
-        { title: "Oscilloscope", src: "projects/synth/scope.jpg" },
-      ]}
-      featureType="twitch"
-      featureSrc="jdotw"
-      showTitle={true}
-    >
-      <p class="text-1">
-        The completed prototype of this synthesizer took 10 breadboard strips
-        and contains 2 x CEM3340 oscillators, a CD4013 sub-oscillator, 4 x
-        AS3310 Envelope Generators, 4 x AS3320 Voltage Controlled Filters and no
-        less than 6 x V2164D voltage controlled amplifiers. There's also a STM32
-        G431 micro controller, a few MCP4728 Digital-to-Analog converters to
-        drive control voltages and the glorious Spin Semiconductors FV-1
-        programmable DSP for reverb and other effects.
-      </p>
-    </Project>
-  </div>
+    <div class="p-5 bg-neutral-50">
+        <Project
+            title="Project Instrument"
+            subtitle="Analog Bass Synthesizer"
+            images={[
+                { title: "Breadboard", src: "projects/synth/breadboard.jpg" },
+                { title: "Desk", src: "projects/synth/desk.jpg" },
+                { title: "Processor", src: "projects/synth/processor.jpg" },
+                { title: "Oscilloscope", src: "projects/synth/scope.jpg" },
+            ]}
+            featureType="twitch"
+            featureSrc="jdotw"
+            showTitle={true}
+        >
+            <p class="text-1">
+                The completed prototype of this synthesizer took 10 breadboard
+                strips and contains 2 x CEM3340 oscillators, a CD4013
+                sub-oscillator, 4 x AS3310 Envelope Generators, 4 x AS3320
+                Voltage Controlled Filters and no less than 6 x V2164D voltage
+                controlled amplifiers. There's also a STM32 G431 micro
+                controller, a few MCP4728 Digital-to-Analog converters to drive
+                control voltages and the glorious Spin Semiconductors FV-1
+                programmable DSP for reverb and other effects.
+            </p>
+        </Project>
+    </div>
 </PageLayout>

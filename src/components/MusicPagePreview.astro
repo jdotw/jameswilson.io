@@ -3,45 +3,35 @@ import PagePreview from "../components/PagePreview.astro";
 ---
 
 <PagePreview
-  page="music"
-  title="Musician"
-  subtitle="Guitar, Bass, Synths and Sampler"
-  flipped={true}
+    page="music"
+    title="Musician"
+    subtitle="Guitar, Bass, Synths and Samplers"
+    flipped={true}
 >
-  <div slot="left">
-    <p class="text-1 mb-5">
-      Music is my creative outlet. Long ago I learned to play guitar and bass
-      guitar, and since then a passion for electronic music has taken over. I
-      enjoy fusing together elements of electronic, alternative rock and
-      industrial genres. In 2019 I released my second album, Exit Mesa which was
-      recorded in San Jose and then mixed and mastered in Sydney and on my plane
-      trips between the two. This album uses a combination of electronic
-      instruments, hardware and software, combined with guitar parts recorded
-      live. I had the pleasure of performing work from this album at a few shows
-      in San Francisco and Oakland.
-    </p>
-    <p class="text-1">
-      Listen to Exit Mesa on <a
-        class="underline"
-        href="https://music.apple.com/us/album/exit-mesa/1451816492"
-        >Apple Music</a
-      >, <a
-        class="underline"
-        href="https://open.spotify.com/album/1zp1RLjxhHrNHmD1wuK7Qn">Spotify</a
-      >, <a class="underline" href="http://www.amazon.com/gp/product/B07NF65PKH"
-        >Amazon</a
-      > and <a
-        class="underline"
-        href="https://distrokid.com/hyperfollow/strollfold/exit-mesa"
-        >other services</a
-      >.
-    </p>
-  </div>
-  <div class="flex flex-col flex-grow h-72 md:h-36">
-    <iframe
-      src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_n_z0Jz5xthBOi7zAACMD00Pk24qR4DdUs"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen=""
-      class="rounded-lg flex-grow"></iframe>
-  </div>
+    <div slot="left">
+        <p class="text-1 mb-5">
+            Music is my creative outlet. Long ago I learned to play guitar and
+            bass guitar, and since then a passion for electronic music has taken
+            over. I enjoy fusing together elements of electronic, alternative
+            rock and industrial genres. In 2025 I've released two albums, Mi and
+            Leura. These follow on from the 2019 release of Exit Mesa which was
+            recorded in San Jose and then mixed and mastered in Sydney and on my
+            plane trips between the two. These albums uses a combination of
+            electronic instruments, hardware and software, combined with guitar
+            parts recorded live. I had the pleasure of performing work from this
+            album at a few shows in San Francisco and Oakland.
+        </p>
+        <p class="text-1">
+            <a href="/music" class="underline"
+                >Learn more and listen to these albums.</a
+            >
+        </p>
+    </div>
+    <div class="flex flex-col flex-grow h-72 md:h-36">
+        <iframe
+            src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_kdSz3eOhu1g9A9dYMmS6tDr6dGZN3NdSw"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+            class="rounded-lg flex-grow"></iframe>
+    </div>
 </PagePreview>

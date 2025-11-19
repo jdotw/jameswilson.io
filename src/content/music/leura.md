@@ -16,3 +16,7 @@ streams:
   - service: Other Services
     url: "https://distrokid.com/hyperfollow/yagojames/leura"
 ---
+
+A long weekend away in a cozy straw-bale cottage nestled in the Blue Mountains yielded the beginnings of this album. I took with me a small set of instruments. An ARP 2600, an Elektron Digitone, a few of the Moog semi-modular instruments, and an Eventide H90 and Strymon Bluesky for effects. Throughout the weekend we painted, designed sounds and melodies, and then let them loop while more art was created. All of this was recorded onto cassette tape with a Tascam Portastudio 414. 
+
+The tapes came back with me to Sydney and I used them as the base for this album. In this album I explored the harmonic series using the Moog Subharmonicon, and loved the rich bass that the ARP 2600 provides without much patching at all. The ARP 2600 also provided some of the arpeggios with liberal use of its ringmod circuit.

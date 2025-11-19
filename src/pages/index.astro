@@ -10,30 +10,27 @@ import MakerPagePreview from "../components/MakerPagePreview.astro";
 import MusicPagePreview from "../components/MusicPagePreview.astro";
 
 const articlePosts = (await getCollection("articles")).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
 const latestPost = articlePosts[0];
 ---
 
 <BaseLayout>
-  <HomeHero />
-
-  <div class="p-5 bg-neutral-800 text-white">
-    <EngineerPagePreview />
-    <LeaderPagePreview />
-  </div>
-
-  <div class="p-5 bg-white">
-    <Articles latestPostStyles="hidden md:flex" />
-  </div>
-
-  <div class="p-5 bg-neutral-200 text-black">
-    <MakerPagePreview />
-  </div>
-  <div class="p-5 bg-neutral-800 text-white">
-    <AstroPhotos />
-  </div>
-  <div class="p-5 bg-white">
-    <MusicPagePreview />
-  </div>
+    <HomeHero />
+    <div class="p-5 bg-white">
+        <MusicPagePreview />
+    </div>
+    <div class="p-5 bg-neutral-800 text-white">
+        <EngineerPagePreview />
+        <LeaderPagePreview />
+    </div>
+    <div class="p-5 bg-neutral-800 text-white">
+        <AstroPhotos />
+    </div>
+    <div class="p-5 bg-white">
+        <Articles latestPostStyles="hidden md:flex" />
+    </div>
+    <div class="p-5 bg-neutral-200 text-black">
+        <MakerPagePreview />
+    </div>
 </BaseLayout>

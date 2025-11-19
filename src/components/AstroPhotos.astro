@@ -6,42 +6,43 @@ const astroPosts = await getCollection("astro");
 ---
 
 <div class="mb-5 flex flex-col">
-  <div class="mb-5">
-    <h2 class="heading-3 sm:heading-2">Astrophotography</h2>
-    <h3 class="heading-5 sm:heading-4">
-      Deep Sky Objects: Nebula and Galaxies
-    </h3>
-  </div>
-  <p class="text-1 mb-5">
-    Astrophotography is using a telescope and a specialized camera to take
-    extremely exposure photos of distant, deep sky objects like nebula and
-    galaxies that are millions of light years away. It's like looking back in
-    time. The images seen here are a glimpse of how a remote part of our
-    universe looked millions of years ago. All images seen here were captured in
-    either San Jose, California or Sydney, Australia from 2015 onward.
-  </p>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
-    {
-      astroPosts.map((post) => (
-        <div class="relative ">
-          <div class="absolute bottom-0 bg-neutral-900 bg-opacity-60 w-full rounded-b-lg">
-            <h4 class="heading-5 mb-2 mt-1 px-2 text-sm font-light opacity-70 text-center">
-              {post.data.title}
-            </h4>
-          </div>
-          <a href={`/astro/${post.slug}`}>
-            <Image
-              height={800}
-              width={800}
-              class="h-64 md:h-52 lg:h-64 object-cover rounded-lg"
-              src={`/${post.data.image}`}
-              alt={post.data.title}
-              format="webp"
-              fit="cover"
-            />
-          </a>
-        </div>
-      ))
-    }
-  </div>
+    <div class="mb-5">
+        <h2 class="heading-2 sm:heading-2">Astrophotography</h2>
+        <h3 class="heading-5 sm:heading-4">
+            Deep Sky Objects: Nebula and Galaxies
+        </h3>
+    </div>
+    <p class="text-1 mb-5">
+        Astrophotography is using a telescope and a specialized camera to take
+        extremely exposure photos of distant, deep sky objects like nebula and
+        galaxies that are millions of light years away. It's like looking back
+        in time. The images seen here are a glimpse of how a remote part of our
+        universe looked millions of years ago. All images seen here were
+        captured in either San Jose, California or Sydney, Australia from 2015
+        onward.
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+        {
+            astroPosts.map((post) => (
+                <div class="relative ">
+                    <div class="absolute bottom-0 bg-neutral-900 bg-opacity-60 w-full rounded-b-lg">
+                        <h4 class="heading-5 mb-2 mt-1 px-2 text-sm font-light opacity-70 text-center">
+                            {post.data.title}
+                        </h4>
+                    </div>
+                    <a href={`/astro/${post.slug}`}>
+                        <Image
+                            height={800}
+                            width={800}
+                            class="h-64 md:h-52 lg:h-64 object-cover rounded-lg"
+                            src={`/${post.data.image}`}
+                            alt={post.data.title}
+                            format="webp"
+                            fit="cover"
+                        />
+                    </a>
+                </div>
+            ))
+        }
+    </div>
 </div>
