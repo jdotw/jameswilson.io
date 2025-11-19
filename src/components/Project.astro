@@ -6,25 +6,37 @@ interface Props {
   title: string;
   subtitle?: string;
   images?: { title: string; src: string }[];
-  featureType: "image" | "youtube" | "twitch";
+  featureType: "image" | "youtube" | "twitch" | any;
   featureSrc: string;
+  showTitle?: boolean;
+  link?: string;
 }
-const { title, subtitle, images, featureType, featureSrc } = Astro.props;
+const { title, subtitle, images, featureType, featureSrc, showTitle, link } =
+  Astro.props;
 ---
 
 <div class="flex flex-col">
-  <div class="mb-5">
-    <h2 class="heading-2">{title}</h2>
-    <h3 class="heading-3">{subtitle}</h3>
-  </div>
+  {
+    showTitle && (
+      <div class="mb-5">
+        {link && (
+          <a href={link}>
+            <h2 class="heading-2">{title}</h2>
+          </a>
+        )}
+        {!link && <h2 class="heading-2">{title}</h2>}
+        {subtitle && <h3 class="heading-3">{subtitle}</h3>}
+      </div>
+    )
+  }
   <div class="flex flex-col md:flex-row gap-5 mb-5">
     <div class="w-full md:w-1/2 flex justify-center">
       <div class="flex-grow">
         {
           featureType === "image" && (
             <Image
-              height={500}
-              width={500}
+              height={300}
+              width={300}
               src={`/${featureSrc}`}
               alt={title}
               format="webp"

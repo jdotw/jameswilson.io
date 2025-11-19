@@ -1,4 +1,4 @@
-import { image, z, defineCollection } from "astro:content";
+import { z, defineCollection } from "astro:content";
 const articlesCollection = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -24,7 +24,26 @@ const astroCollection = defineCollection({
     date: z.string().transform((str) => new Date(str)),
   }),
 });
+const musicCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string(),
+    tags: z.array(z.string()).default(["music"]),
+    date: z.string().transform((str) => new Date(str)),
+    feature: z.object({
+      type: z.enum(["image", "youtube", "twitch"]),
+      source: z.string(),
+    }),
+    streams: z.array(
+      z.object({
+        service: z.string(),
+        url: z.string(),
+      })
+    ),
+  }),
+});
 export const collections = {
   articles: articlesCollection,
   astro: astroCollection,
+  music: musicCollection,
 };
