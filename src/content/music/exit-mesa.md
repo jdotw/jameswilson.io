@@ -13,8 +13,6 @@ streams:
     url: "https://music.apple.com/us/album/exit-mesa/1451816492"
   - service: Spotify
     url: "https://open.spotify.com/album/1zp1RLjxhHrNHmD1wuK7Qn"
-  - service: Amazon
-    url: "http://www.amazon.com/gp/product/B07NF65PKH"
   - service: Other Services
     url: "https://distrokid.com/hyperfollow/strollfold/exit-mesa"
 ---
