@@ -3,15 +3,15 @@ const { src, allow } = Astro.props;
 const disabled = false;
 ---
 
-<div class="flex w-full h-[300px]">
-  {
-    !disabled && (
-      <iframe
-        class="flex-grow rounded-lg"
-        src={src}
-        allow={allow}
-        allowfullscreen
-      />
-    )
-  }
+<div class="flex w-full h-[300px] min-[580px]:h-[170px]">
+    {
+        !disabled && (
+            <iframe
+                class="flex-grow rounded-lg"
+                src={src}
+                allow={allow}
+                allowfullscreen
+            />
+        )
+    }
 </div>
