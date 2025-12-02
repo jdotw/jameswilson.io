@@ -1,0 +1,20 @@
+---
+interface Props {
+    service: string;
+    class?: string;
+}
+
+const { service, class: className = "w-5 h-5" } = Astro.props;
+
+const iconMap: Record<string, string> = {
+    spotify: "/icons/streaming/spotify.svg",
+    "apple music": "/icons/streaming/apple-music.svg",
+    soundcloud: "/icons/streaming/soundcloud.svg",
+    distrokid: "/icons/streaming/distrokid.svg",
+};
+
+const serviceLower = service.toLowerCase().trim();
+const iconPath = iconMap[serviceLower] || "/icons/streaming/external-link.svg";
+---
+
+<img src={iconPath} alt="" class={className} />

@@ -52,6 +52,13 @@
     .music-text p {
         @apply mb-5;
     }
+
+    .music-text a {
+        text-decoration: underline;
+        text-decoration-color: border-s-stone-500;
+        text-underline-offset: 3px;
+        @apply text-blue-400 decoration-stone-500;
+    }
 }
 
 blockquote {

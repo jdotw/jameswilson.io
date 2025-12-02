@@ -1,47 +1,52 @@
 ---
 import Project from "./Project.astro";
+import StreamingServiceIcon from "./StreamingServiceIcon.astro";
 
 interface Props {
-  album: any;
-  index: number;
-  showTitle?: boolean;
+    album: any;
+    index: number;
+    showTitle?: boolean;
 }
 const { album, index, showTitle = true } = Astro.props;
 const { Content } = await album.render();
 ---
 
 <div
-  class={index % 2 == 0
-    ? "text-white bg-neutral-900 p-5 "
-    : "text-white bg-neutral-800 p-5 "}
+    class={index % 2 == 0
+        ? "text-white bg-neutral-900 p-5 "
+        : "text-white bg-neutral-800 p-5 "}
 >
-  <Project
-    title={album.data.title}
-    subtitle={album.data.subtitle}
-    images={album.data.images}
-    featureType={album.data.feature.type}
-    featureSrc={album.data.feature.source}
-    showTitle={showTitle}
-    link={`/music/${album.slug}`}
-  >
-    <div class="music-text">
-      <Content />
-    </div>
-    <div class="text-1 space-y-3">
-      <p>
-        Listen to {album.data.title} on:
-        <ul>
-          {
-            album.data.streams.map((stream: any) => (
-              <li>
-                <a href={stream.url} class="underline">
-                  {stream.service.trim()}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </p>
-    </div>
-  </Project>
+    <Project
+        title={album.data.title}
+        subtitle={album.data.subtitle}
+        images={album.data.images}
+        featureType={album.data.feature.type}
+        featureSrc={album.data.feature.source}
+        showTitle={showTitle}
+        link={`/music/${album.slug}`}
+    >
+        <div class="music-text">
+            <Content />
+        </div>
+        <div class="text-1 space-y-3">
+            <p>Listen to {album.data.title} on:</p>
+            <ul class="flex flex-wrap gap-3">
+                {
+                    album.data.streams.map((stream: any) => (
+                        <li>
+                            <a
+                                href={stream.url}
+                                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-700 hover:bg-neutral-600 transition-colors"
+                            >
+                                <StreamingServiceIcon
+                                    service={stream.service}
+                                />
+                                {stream.service.trim()}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </Project>
 </div>
