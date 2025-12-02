@@ -24,13 +24,13 @@ const { Content } = await album.render();
     showTitle={showTitle}
     link={`/music/${album.slug}`}
   >
-    <div>
+    <div class="music-text">
       <Content />
     </div>
-    <div class="text-1 space-y-3 pt-5">
+    <div class="text-1 space-y-3">
       <p>
+        Listen to {album.data.title} on:
         <ul>
-          Listen to {album.data.title} on:
           {
             album.data.streams.map((stream: any) => (
               <li>
