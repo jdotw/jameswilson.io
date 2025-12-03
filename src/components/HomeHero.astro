@@ -19,7 +19,9 @@ const latestPost = articlePosts[0];
         class="flex flex-row justify-end bg-[url('/about/headshot-wide-cropped-left-no-bg.png')] bg-cover bg-no-repeat bg-left min-h-[24rem]"
     >
         <div class="flex w-full justify-end">
-            <div class="hidden min-[580px]:flex flex-row items-end pl-5 pb-5">
+            <div
+                class="hidden min-[580px]:flex flex-row items-end ml-5 mb-5 w-[290px]"
+            >
                 <Twitch channel="jdotw" />
             </div>
             <div class="flex flex-grow flex-shrink-0 flex-col justify-center">
@@ -42,7 +44,7 @@ const latestPost = articlePosts[0];
     <div
         class="flex flex-col px-3 mb-5 gap-5 min-[600px]:flex-row md:hidden bg-neutral-800"
     >
-        <div class="flex min-[580px]:hidden h-48 mb-26">
+        <div class="flex min-[580px]:hidden aspect-video">
             <Twitch channel="jdotw" />
         </div>
         <!-- <div class="">
