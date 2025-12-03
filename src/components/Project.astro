@@ -3,71 +3,71 @@ import { Image } from "astro:assets";
 import Twitch from "./Twitch.astro";
 import YouTube from "./YouTube.astro";
 interface Props {
-  title: string;
-  subtitle?: string;
-  images?: { title: string; src: string }[];
-  featureType: "image" | "youtube" | "twitch" | any;
-  featureSrc: string;
-  showTitle?: boolean;
-  link?: string;
+    title: string;
+    subtitle?: string;
+    images?: { title: string; src: string }[];
+    featureType: "image" | "youtube" | "twitch" | any;
+    featureSrc: string;
+    showTitle?: boolean;
+    link?: string;
 }
 const { title, subtitle, images, featureType, featureSrc, showTitle, link } =
-  Astro.props;
+    Astro.props;
 ---
 
 <div class="flex flex-col">
-  {
-    showTitle && (
-      <div class="mb-5">
-        {link && (
-          <a href={link}>
-            <h2 class="heading-2">{title}</h2>
-          </a>
-        )}
-        {!link && <h2 class="heading-2">{title}</h2>}
-        {subtitle && <h3 class="heading-3">{subtitle}</h3>}
-      </div>
-    )
-  }
-  <div class="flex flex-col md:flex-row gap-5 mb-5">
-    <div class="w-full md:w-1/2 flex justify-center">
-      <div class="flex-grow">
-        {
-          featureType === "image" && (
-            <Image
-              height={300}
-              width={300}
-              src={`/${featureSrc}`}
-              alt={title}
-              format="webp"
-              fit="inside"
-              class={"rounded-lg object-contain m-5"}
-            />
-          )
-        }
-        {featureType === "youtube" && <YouTube embed={featureSrc} />}
-        {featureType === "twitch" && <Twitch channel={featureSrc} />}
-      </div>
-    </div>
-    <div class="w-full md:w-1/2">
-      <slot />
-    </div>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
     {
-      images &&
-        images.map((image) => (
-          <div class="flex">
-            <Image
-              width={1024}
-              height={576}
-              src={`/${image.src}`}
-              format="webp"
-              alt={image.title}
-              class="rounded-lg object-cover h-64"
-            />
-          </div>
-        ))
+        showTitle && (
+            <div class="mb-5">
+                {link && (
+                    <a href={link}>
+                        <h2 class="heading-2">{title}</h2>
+                    </a>
+                )}
+                {!link && <h2 class="heading-2">{title}</h2>}
+                {subtitle && <h3 class="heading-3">{subtitle}</h3>}
+            </div>
+        )
     }
-  </div>
+    <div class="flex flex-col md:flex-row gap-5 mb-5">
+        <div class="md:w-1/2 flex-grow justify-center">
+            <div class="flex aspect-video">
+                {
+                    featureType === "image" && (
+                        <Image
+                            height={300}
+                            width={300}
+                            src={`/${featureSrc}`}
+                            alt={title}
+                            format="webp"
+                            fit="inside"
+                            class={"rounded-lg object-contain m-5"}
+                        />
+                    )
+                }
+                {featureType === "youtube" && <YouTube embed={featureSrc} />}
+                {featureType === "twitch" && <Twitch channel={featureSrc} />}
+            </div>
+        </div>
+        <div class="w-full md:w-1/2">
+            <slot />
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {
+            images &&
+                images.map((image) => (
+                    <div class="flex">
+                        <Image
+                            width={1024}
+                            height={576}
+                            src={`/${image.src}`}
+                            format="webp"
+                            alt={image.title}
+                            class="rounded-lg object-cover h-64"
+                        />
+                    </div>
+                ))
+        }
+    </div>
 </div>
